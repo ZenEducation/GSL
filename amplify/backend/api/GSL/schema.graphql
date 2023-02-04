@@ -1,0 +1,196 @@
+type Blog @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  name: String!
+  posts: [Post] @hasMany
+}
+
+type Post @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  title: String!
+  blog: Blog @belongsTo
+  comments: [Comment] @hasMany
+}
+
+type Comment @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  post: Post @belongsTo
+  content: String!
+}
+
+type Message @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  content: AWSJSON
+  chatgroupID: ID! @index(name: "byChatGroup")
+}
+
+type ChatGroup @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  name: String!
+  messages: [Message] @hasMany(indexName: "byChatGroup", fields: ["id"])
+}
+
+type AuthInfo @model @auth(rules: [{ allow: public }]) {
+   id: ID!
+   firstName: String
+   middleName: String
+   lastName: String
+   email: AWSEmail
+   phoneNum: AWSPhone
+   createdAt: AWSDateTime
+   updatedAt: AWSDateTime
+}
+
+type UserMale @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  userMaleTextEmployee: [TextEmployee] @manyToMany(relationName: "UserMaleTextEmployee")
+  userMaleDelightEmployee: [DelightEmployee] @manyToMany(relationName: "UserMaleDelightEmployee")
+ }
+
+type UserFemale @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  userFemaleTextEmployee: [TextEmployee] @manyToMany(relationName: "UserFemaleTextEmployee")
+  userFemaleDelightEmployee: [DelightEmployee] @manyToMany(relationName: "UserFemaleDelightEmployee")
+}
+
+type UserMisc @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  userMiscTextEmployee: [TextEmployee] @manyToMany(relationName: "UserMiscTextEmployee")
+  userMiscDelightEmployee: [DelightEmployee] @manyToMany(relationName: "UserMiscDelightEmployee")
+}
+
+type TextEmployee @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  userMaleTextEmployee: [UserMale] @manyToMany(relationName: "UserMaleTextEmployee")
+  userFemaleTextEmployee: [UserFemale] @manyToMany(relationName: "UserFemaleTextEmployee")
+  userMiscTextEmployee: [UserMisc] @manyToMany(relationName: "UserMiscTextEmployee")
+}
+
+type DelightEmployee @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+  userMaleDelightEmployee: [UserMale] @manyToMany(relationName: "UserMaleDelightEmployee")
+  userFemaleDelightEmployee: [UserFemale] @manyToMany(relationName: "UserFemaleDelightEmployee")
+  userMiscDelightEmployee: [UserMisc] @manyToMany(relationName: "UserMiscDelightEmployee")
+}
+
+type InternApplicant @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type JobApplicant @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Intern @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Employee @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type Admin @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
+
+type SuperAdmin @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  firstName: String!
+  middleName: String
+  lastName: String!
+  email: AWSEmail!
+  altEmails: AWSEmail
+  phoneNum: AWSPhone
+  altPhoneNums: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}

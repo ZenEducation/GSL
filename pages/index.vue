@@ -1,6 +1,7 @@
 <template>
-  <div class="bg-gray-900 text-white flex justify-center">
+  <div class="bg-gray-900 text-white flex justify-evenly">
     <h1>Index Page</h1>
+    <NuxtLink to="/SwipeableCards"> SwipeableCards </NuxtLink>
   </div>
 </template>
 

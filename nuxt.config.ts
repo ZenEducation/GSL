@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   srcDir: "./",
-  css: ["@/assets/css/main.css"],
+  css: ["@/assets/css/main.css",
+  "@fortawesome/fontawesome-svg-core/styles.css",
+],
 
   modules: [
     // ...

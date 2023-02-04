@@ -80,7 +80,7 @@ type TextEmployee @model @auth(rules: [{ allow: public }]) {
     @manyToMany(relationName: "UserMale_TextEmployee")
   UserFemale_TextEmployee: [UserFemale]
     @manyToMany(relationName: "UserFemale_TextEmployee")
-  UserMisc_TextEmployee: [UserFemale]
+  UserMisc_TextEmployee: [UserMisc]
     @manyToMany(relationName: "UserMisc_TextEmployee")
 }
 
@@ -99,7 +99,7 @@ type DelightEmployee @model @auth(rules: [{ allow: public }]) {
     @manyToMany(relationName: "UserMale_DelightEmployee")
   UserFemale_DelightEmployee: [UserFemale]
     @manyToMany(relationName: "UserFemale_DelightEmployee")
-  UserMisc_DelightEmployee: [UserFemale]
+  UserMisc_DelightEmployee: [UserMisc]
     @manyToMany(relationName: "UserMisc_DelightEmployee")
 }
 

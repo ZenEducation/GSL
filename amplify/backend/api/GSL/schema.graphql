@@ -1,4 +1,0 @@
-type AuthInfo @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  email: AWSEmail!
-}

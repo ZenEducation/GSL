@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-zencodeislove-dev-111629-authRole",
+      "UnauthRoleArn": "arn:aws:iam::317786172055:role/amplify-zencodeislove-dev-111629-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::317786172055:role/amplify-zencodeislove-dev-111629-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-zencodeislove-dev-111629-deployment",
+      "UnauthRoleName": "amplify-zencodeislove-dev-111629-unauthRole",
+      "StackName": "amplify-zencodeislove-dev-111629",
+      "StackId": "arn:aws:cloudformation:ap-south-1:317786172055:stack/amplify-zencodeislove-dev-111629/90b5c1f0-97bc-11ed-a8b4-06fbce83237a",
+      "AmplifyAppId": "dazlf1cgu59ap"
+    }
+  }
+}

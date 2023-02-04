@@ -10,6 +10,11 @@
       "StackName": "amplify-gsl-dev-113424",
       "StackId": "arn:aws:cloudformation:ap-south-1:317786172055:stack/amplify-gsl-dev-113424/c7513e50-a451-11ed-b993-06ca1beddde6",
       "AmplifyAppId": "dbwywa3d9v9jy"
+    },
+    "categories": {
+      "api": {
+        "GSL": {}
+      }
     }
   }
 }

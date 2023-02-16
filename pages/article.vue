@@ -8,7 +8,6 @@
       </head>
   
   <div data-spy="scroll" data-target=".fixed-top">
-
       <!-- Navigation -->
       <nav class="navbar fixed-top">
           <div class="container flex flex-wrap items-center justify-between sm:px-4 lg:flex-nowrap lg:px-8">

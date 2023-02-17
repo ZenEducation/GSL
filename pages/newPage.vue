@@ -1,8 +1,5 @@
 <template>
-  <div class="bg-gray-900 text-white flex justify-evenly">
-    <NuxtLink to="/">Index Page</NuxtLink>
-    <NuxtLink to="/newPage">  Theme </NuxtLink>
-  </div>
+  <Theme/>
 </template>
 
 <script>
@@ -22,5 +19,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 
 </style>

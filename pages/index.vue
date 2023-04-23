@@ -1,10 +1,20 @@
 <template>
-  <div class="bg-gray-900 text-white flex justify-center">
-    <h1>Index Page</h1>
-  </div>
+  <Navbar/>
+  <IndexBanner/>
+  <IndexFeature/>
+  <IndexFlirting/>
+  <IndexHowItWorks/>
+  <IndexStatistics/>
+  <IndexJoinNow/>
+  <IndexFeatures/>
+  <IndexLatestRegistered/>
+  <IndexSuccessStories/>
+  <NewsLatter/>
 </template>
 
 <script>
+
+
 import { reactive, toRefs } from "vue";
 
 export default {

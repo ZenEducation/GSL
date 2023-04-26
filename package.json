@@ -38,9 +38,10 @@
     "numeral": "^2.0.6",
     "owl.carousel": "^2.3.4",
     "paper": "^0.12.17",
-    "pinia": "^2.0.28",
+    "pinia": "^2.0.35",
     "readable-stream": "^4.2.0",
     "rollup-plugin-node-polyfills": "^0.2.1",
+    "tw-elements": "^1.0.0-beta2",
     "uuid4": "^2.0.3",
     "vue": "^3.2.33",
     "vue-number-animation": "^1.1.2"

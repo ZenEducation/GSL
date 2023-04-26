@@ -10,24 +10,12 @@
                     </div>
                     <ul
                         class="menu min-[992px]:flex min-[992px]:flex-wrap min-[992px]:justify-end min-[992px]:items-center">
+                        
                         <li
                             class="min-[992px]:relative min-[992px]:px-3 py-[5px] min-[992px]:hover:opacity-100 min-[992px]:hover:visible min-[992px]:hover:translate-y-0 min-[992px]:hover:block">
-                            <NuxtLink to="#"
-                                class="active px-3 py-[5px] no-underline min-[992px]:text-[#e9eeff] min-[992px]:text-base min-[992px]:font-bold min-[992px]:uppercase min-[992px]:relative min-[992px]:before:w-[calc(100%_-_10px)] min-[992px]:before:h-0.5 min-[992px]:before:bg-white min-[992px]:before:absolute min-[992px]:before:content-[''] min-[992px]:before:transition-all min-[992px]:before:duration-[ease] min-[992px]:before:delay-[0.3s] min-[992px]:before:origin-left min-[992px]:before:scale-x-0 min-[992px]:before:top-[calc(100%_+_18px)] min-[992px]:hover:scale-x-100">
+                            <NuxtLink to="/"
+                                class="px-3 py-[5px] no-underline min-[992px]:text-[#e9eeff] min-[992px]:text-base min-[992px]:font-bold min-[992px]:uppercase min-[992px]:relative min-[992px]:before:w-[calc(100%_-_10px)] min-[992px]:before:h-0.5 min-[992px]:before:bg-white min-[992px]:before:absolute min-[992px]:before:content-[''] min-[992px]:before:transition-all min-[992px]:before:duration-[ease] min-[992px]:before:delay-[0.3s] min-[992px]:before:origin-left min-[992px]:before:scale-x-0 min-[992px]:before:top-[calc(100%_+_18px)] min-[992px]:hover:scale-x-100">
                                 Home</NuxtLink>
-                            <ul
-                                class="submenu min-[992px]:absolute min-[992px]:bg-white min-[992px]:min-w-[240px] min-[992px]:shadow-[0px_0px_11.7px_1.3px_rgba(0,0,0,0.08)] min-[992px]:opacity-0 min-[992px]:invisible min-[992px]:transition-all min-[992px]:duration-[ease] min-[992px]:delay-[0.3s] min-[992px]:translate-y-[15px] min-[992px]:px-0 min-[992px]:py-5 min-[992px]:left-1.5 min-[992px]:top-full min-[992px]:before:absolute min-[992px]:before:content-[''] min-[992px]:before:-translate-y-full min-[992px]:before:w-0 min-[992px]:before:h-0 min-[992px]:before:border-t-transparent min-[992px]:before:border-b-[15px] min-[992px]:before:border-x-transparent min-[992px]:before:border-[10px] min-[992px]:before:border-solid min-[992px]:before:border-white min-[992px]:before:left-[15px] min-[992px]:before:top-0">
-                                <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
-                                    <NuxtLink to="/peyamba"
-                                        class="active min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
-                                        Home One</NuxtLink>
-                                </li>
-                                <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
-                                    <NuxtLink to="/peyamba/index2"
-                                        class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
-                                        Home Two</NuxtLink>
-                                </li>
-                            </ul>
                         </li>
                         <li
                             class="min-[992px]:relative min-[992px]:px-3 py-[5px] min-[992px]:hover:opacity-100 min-[992px]:hover:visible min-[992px]:hover:translate-y-0 min-[992px]:hover:block">
@@ -60,7 +48,7 @@
                                         User Panel</NuxtLink>
                                 </li>
                                 <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
-                                    <NuxtLink to="/peyamba/aboutus"
+                                    <NuxtLink to="/about"
                                         class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
                                         About Us</NuxtLink>
                                 </li>
@@ -100,7 +88,7 @@
                                         Shop Details</NuxtLink>
                                 </li>
                                 <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
-                                    <NuxtLink to="/peyamba/contact"
+                                    <NuxtLink to="/contact"
                                         class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
                                         Contact</NuxtLink>
                                 </li>
@@ -123,6 +111,11 @@
                                     <NuxtLink to="/peyamba/503error"
                                         class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
                                         503</NuxtLink>
+                                </li>
+                                <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
+                                    <NuxtLink to="/report"
+                                        class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
+                                        Report</NuxtLink>
                                 </li>
                             </ul>
                         </li>
@@ -150,7 +143,10 @@
                         <li>
                             <div class="serch-icon min-[992px]:cursor-pointer min-[992px]:text-white">
                                 <i class="fas fa-search min-[992px]:text-white min-[992px]:text-base"></i>
-                                <!-- <font-awesome-icon :icon="['fas', 'fa-search']" /> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                                </svg>
                             </div>
                         </li>
                         <li>
@@ -196,8 +192,13 @@
     </div>
 </template>
 
-<script>
+<script setup>
 
+// import { useStyleStore } from "@/stores/style";
+// import { storeToRefs } from "pinia";
+// const styleStore = useStyleStore();
+// const { darkMode } = storeToRefs(styleStore);
+// const { setDarkMode } = styleStore;
 </script>
 
 <style scoped>

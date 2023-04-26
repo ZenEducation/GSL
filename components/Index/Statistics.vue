@@ -11,7 +11,7 @@
                                     <img src="@/assets/frontend/images/statistics/stat01.png" class="h-40" alt="">
                                 </div>
                                 <div>
-                                    <h3 class="text-6xl leading-[70px]"><span class=" odometer" data-odometer-final="350"></span>M</h3>
+                                    <h3 class="text-6xl leading-[70px]"><span class=" odometer" data-odometer-final="350"></span>350M</h3>
 
                                     <span class="block mt-[5px]">Tickets Booked</span>
                                 </div>
@@ -25,7 +25,7 @@
                                 </div>
                                 <div>
                                     <h3 class="text-6xl leading-[70px]"><span class=" odometer"
-                                            data-odometer-final="447"></span>M</h3>
+                                            data-odometer-final="447"></span>447M</h3>
                                     <span class="block mt-[5px]">Usefull Sessions</span>
                                 </div>
                             </div>
@@ -38,7 +38,7 @@
                                 </div>
                                 <div>
                                     <h3 class="text-6xl leading-[70px]"><span class=" odometer"
-                                            data-odometer-final="60"></span>M</h3>
+                                            data-odometer-final="60"></span>60M</h3>
                                     <span class="block mt-[5px]">Talented Speakers</span>
                                 </div>
                             </div>

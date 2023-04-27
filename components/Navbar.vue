@@ -1,6 +1,7 @@
 <template>
     <div>
-        <header class="fixed w-full z-[99] px-0 py-2.5 border-b border-solid border-[rgba(255,255,255,0.102)] left-0 top-0">
+        <header 
+            class="fixed bg-[#5650ce] w-full z-[99] px-0 py-2.5 border-b border-solid border-[rgba(255,255,255,0.102)] left-0 top-0">
             <div class="container mx-auto sm:px-4">
                 <div class="header-wrapper flex flex-wrap justify-between items-center">
                     <div class="w-[170px]">
@@ -10,7 +11,7 @@
                     </div>
                     <ul
                         class="menu min-[992px]:flex min-[992px]:flex-wrap min-[992px]:justify-end min-[992px]:items-center">
-                        
+
                         <li
                             class="min-[992px]:relative min-[992px]:px-3 py-[5px] min-[992px]:hover:opacity-100 min-[992px]:hover:visible min-[992px]:hover:translate-y-0 min-[992px]:hover:block">
                             <NuxtLink to="/"
@@ -117,6 +118,21 @@
                                         class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
                                         Report</NuxtLink>
                                 </li>
+                                <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
+                                    <NuxtLink to="/privacy_policy"
+                                        class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
+                                        Privacy Policy</NuxtLink>
+                                </li>
+                                <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
+                                    <NuxtLink to="/cookie_policy"
+                                        class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
+                                        Cookie Policy</NuxtLink>
+                                </li>
+                                <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
+                                    <NuxtLink to="/end_user"
+                                        class="min-[992px]:capitalize min-[992px]:font-semibold min-[992px]:flex min-[992px]:text-[#292929] min-[992px]:hover:text-[#5650ce] min-[992px]:hover:pl-2.5">
+                                        End-User Agreement</NuxtLink>
+                                </li>
                             </ul>
                         </li>
                         <li
@@ -181,6 +197,7 @@
                 </div>
             </div>
         </header>
+        
         <div class="search-overlay">
             <div class="absolute top-0 bottom-0 right-0 px-4 py-3">
                 <i class="fas fa-times"></i>
@@ -192,18 +209,8 @@
     </div>
 </template>
 
-<script setup>
-
-// import { useStyleStore } from "@/stores/style";
-// import { storeToRefs } from "pinia";
-// const styleStore = useStyleStore();
-// const { darkMode } = storeToRefs(styleStore);
-// const { setDarkMode } = styleStore;
-</script>
 
 <style scoped>
-
-
 .header-wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -212,6 +219,8 @@
     -ms-flex-align: center;
     align-items: center;
 }
+
+
 
 .header-wrapper .logo {
     width: 170px;

@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <div class="profile-main-content">
             <ul class="block text-center">
                 <li class="inline-block m-0.5">
@@ -9,17 +8,17 @@
                     </NuxtLink>
                 </li>
                 <li class="inline-block m-0.5">
-                    <NuxtLink to="profile-notfound.html" class="text-[#333] font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] active:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">
+                    <NuxtLink to="#" class="text-[#333] font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] active:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">
                         Favorites
                     </NuxtLink>
                 </li>
                 <li class="inline-block m-0.5">
-                    <NuxtLink to="profile-notfound.html" class="text-[#333] font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] active:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">
+                    <NuxtLink to="#" class="text-[#333] font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] active:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">
                         Friends
                     </NuxtLink>
                 </li>
                 <li class="inline-block m-0.5">
-                    <NuxtLink href="profile-notfound.html" class="text-[#333] font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] active:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">
+                    <NuxtLink href="#" class="text-[#333] font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] active:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] active:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">
                         Groups
                     </NuxtLink>
                 </li>
@@ -40,8 +39,8 @@
                 <div class="flex justify-between items-center pt-[13px]">
                     <div class="flex items-center">
                         <div>
-                            <NuxtLink href="#" class="h-[30px] w-[60px] leading-[30px] bg-[#f7e9f8] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] inline-block text-center mr-[5px] rounded-[20px]">
-                                <i class="fas fa-paperclip "></i>
+                            <NuxtLink href="#" class="h-[30px] w-[60px] leading-[30px] bg-[#f7e9f8]  inline-block text-center mr-[5px] rounded-[20px]">
+                                <i class="fas fa-paperclip bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]"></i>
                             </NuxtLink>
                         </div>
                         <div class="inline-block">
@@ -69,8 +68,8 @@
                     <h6 class="text-lg leading-7 font-semibold inline-block ml-[15px] mr-[5px] mb-0">
                         Albert Don
                     </h6>
-                    <span class="w-5 h-5 bg-[#fce9f3] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] inline-block text-center leading-[15px] relative rounded-[50%] -top-0.5">
-                        <i class="fas fa-check  text-[10px]"></i>
+                    <span class="w-5 h-5 bg-[#fce9f3] inline-block text-center leading-[15px] relative rounded-[50%] -top-0.5">
+                        <i class="fas fa-check bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px]"></i>
                     </span>
                     <span class="text-sm mx-2.5">
                         @albertdon
@@ -120,8 +119,8 @@
                     <h6 class="text-lg leading-7 font-semibold inline-block ml-[15px] mr-[5px] mb-0">
                         Albert Don
                     </h6>
-                    <span class="w-5 h-5 bg-[#fce9f3] inline-block text-center leading-[15px] relative rounded-[50%] -top-0.5 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] ">
-                        <i class="fas fa-check  text-[10px]"></i>
+                    <span class="w-5 h-5 bg-[#fce9f3] inline-block text-center leading-[15px] relative rounded-[50%] -top-0.5  ">
+                        <i class="fas fa-check bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px]"></i>
                     </span>
                     <span class="text-sm mx-2.5">
                         @albertdon
@@ -172,8 +171,8 @@
                     <h6 class="text-lg leading-7 font-semibold inline-block ml-[15px] mr-[5px] mb-0">
                         Albert Don
                     </h6>
-                    <span class="w-5 h-5 bg-[#fce9f3] inline-block text-center leading-[15px] relative rounded-[50%] -top-0.5 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]">
-                        <i class="fas fa-check  text-[10px]"></i>
+                    <span class="w-5 h-5 bg-[#fce9f3] inline-block text-center leading-[15px] relative rounded-[50%] -top-0.5 ">
+                        <i class="fas fa-check bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px]"></i>
                     </span>
                     <span class="text-sm mx-2.5">
                         @albertdon
@@ -219,11 +218,11 @@
     </div>
 </template>
 
-<script setup>
 
-
-
-
-</script>
-
-<style lang="scss" scoped></style>
+<style scoped>
+i {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+    background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+}</style>

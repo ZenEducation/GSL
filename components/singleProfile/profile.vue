@@ -2,7 +2,10 @@
 import left_profile_area from './left_profile_area.vue';
 import profile_main_content from './profile_main_content.vue';
 import profile_aside_area from './profile_aside_area.vue';
+import profile_section from './profile_section.vue';
+import friend_section from './friend_section.vue';
 
+console.log("object");
 
 
 </script>
@@ -50,6 +53,8 @@ import profile_aside_area from './profile_aside_area.vue';
                             </ul>
                         </div>
                         <profile_main_content />
+                        <profile_section />
+                        <friend_section />
                     </div>
                     <div class="xl:w-1/4 lg:w-2/5  pr-4 pl-4 ">
                         <profile_aside_area/>

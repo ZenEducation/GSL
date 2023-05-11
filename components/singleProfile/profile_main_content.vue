@@ -1,36 +1,7 @@
 <template>
     <div>
+
         <div class="profile-main-content">
-            <ul class="bg-white shadow-[0px_5px_30px_0px_rgba(35,57,184,0.2)] block text-center mb-px pt-1.5 pb-2.5 px-2.5 rounded-[10px]">
-                <li class="inline-block px-0 py-[5px] list-none">
-                    <NuxtLink to="single-profile.html" class="active text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
-                        Activity
-                    </NuxtLink>
-                </li>
-                <li class="inline-block px-0 py-[5px] list-none">
-                    <NuxtLink to="single-profile2.html" class="text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
-                        Profile
-                    </NuxtLink>
-                </li>
-                <li class="inline-block px-0 py-[5px] list-none">
-                    <NuxtLink to="single-profile3.html" class="text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
-                        Friends
-                        <div class="absolute bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px] leading-[10px] text-white right-[-17px] px-[5px] py-[3px] rounded-[30px] -top-1.5">04</div>
-                    </NuxtLink>
-                </li>
-                <li class="inline-block px-0 py-[5px] list-none">
-                    <NuxtLink to="profile-notfound.html" class="text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
-                        Groups
-                        <div class="absolute bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px] leading-[10px] text-white right-[-17px] px-[5px] py-[3px] rounded-[30px] -top-1.5">14</div>
-                    </NuxtLink>
-                </li>
-                <li class="inline-block px-0 py-[5px] list-none">
-                    <NuxtLink to="profile-notfound.html" class="text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
-                        Media
-                        <div class="absolute bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px] leading-[10px] text-white right-[-17px] px-[5px] py-[3px] rounded-[30px] -top-1.5">47</div>
-                    </NuxtLink>
-                </li>
-            </ul>
             <ul class="block text-center">
                 <li class="inline-block m-0.5">
                     <NuxtLink to="#" class="font-semibold text-xs leading-3 uppercase border pt-[5px] pb-[3px] px-1.5 rounded-[50px] border-solid border-[rgba(0,0,0,0.2)] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">

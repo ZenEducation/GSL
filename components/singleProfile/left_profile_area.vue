@@ -24,7 +24,7 @@
                         </li>
                         <li
                             class="inline-block mr-0 px-0 py-[5px] relative before:absolute before:content-['|'] left-[-18px] top-0.5 box-border">
-                            <span> <i
+                            <span> <i style="-webkit-text-fill-color: transparent;"
                                     class="fas fa-map-marker-alt bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] inline-block not-italic leading-none font-black mx-[7px] font-['Font_Awesome_5_Free']"></i>Paris,France</span>
                         </li>
                     </ul>
@@ -171,6 +171,14 @@
 
 <script setup>
 
+
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+    i{
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+        background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+    }
+</style>

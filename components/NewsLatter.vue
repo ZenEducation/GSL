@@ -1,6 +1,6 @@
 <template>
     <div>
-        <footer class="relative bg-[#3b2196] overflow-hidden pt-[120px] pb-[25px] px-0">
+        <footer class="relative bg-[#3b2196]  dark:bg-slate-800 overflow-hidden pt-[120px] pb-[25px] px-0">
         <img class="absolute left-0 top-0" src="@/assets/frontend/images/footer/f-shape.png" alt="">
         <img class="absolute animate-[scaleAni_3s_linear_infinite] left-0 bottom-[10%]" src="@/assets/frontend/images/footer/flower01.png" alt="">
         <img class="absolute animate-[upDown_3s_linear_infinite] right-0 bottom-[20%]" src="@/assets/frontend/images/footer/right-shape.png" alt="">
@@ -210,6 +210,12 @@
 
                                 </a>
                             </li>
+                            <li class="inline-block ml-3.5">
+                                <div @click="toggledark" class=" cursor-pointer w-[50px] h-[50px] flex justify-center items-center text-white leading-[50px] text-center rounded-[50%] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm87.65 96.18q-3.82-.18-7.65-.18a168.58 168.58 0 0 0-43.94 5.84A166.52 166.52 0 0 0 150.61 96a168.32 168.32 0 0 0 38.2-31.55a87.78 87.78 0 0 1 26.84 55.73Zm-39.37-65.72A151.75 151.75 0 0 1 142 82.52a169.22 169.22 0 0 0-38.63-39a88 88 0 0 1 73 10.94Zm-90.63-3.58a153.13 153.13 0 0 1 42 39.18A151.82 151.82 0 0 1 64 104a154.19 154.19 0 0 1-20.28-1.35a88.39 88.39 0 0 1 41.93-51.77ZM40 128a87.73 87.73 0 0 1 .53-9.64A168.85 168.85 0 0 0 64 120a167.84 167.84 0 0 0 72.52-16.4a150.82 150.82 0 0 1 12.31 27.13a167.11 167.11 0 0 0-24.59 11.6a169.22 169.22 0 0 0-55.07 51.06A87.8 87.8 0 0 1 40 128Zm42 75a152.91 152.91 0 0 1 50.24-46.79a148.81 148.81 0 0 1 20.95-10a152.48 152.48 0 0 1 3.73 33.47a152.93 152.93 0 0 1-3.49 32.56A87.92 87.92 0 0 1 82 203Zm89.06 1.73a170 170 0 0 0 1.86-25a168.69 168.69 0 0 0-4.45-38.47A152.31 152.31 0 0 1 208 136q3.8 0 7.61.19a88.13 88.13 0 0 1-44.55 68.53Z"/></svg>
+
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -219,13 +225,15 @@
     </div>
 </template>
 
-<script>
+<script setup>
+import { useStyleStore } from '~~/stores/style';
+const styleStore = useStyleStore();
+const toggledark = ()=>{
+    styleStore.setDarkMode();
+}
+
 import { Icon } from '@iconify/vue';
-export default {
-	components: {
-		Icon,
-	},
-};
+
 
 </script>
 

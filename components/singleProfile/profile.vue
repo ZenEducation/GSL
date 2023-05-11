@@ -14,7 +14,7 @@ const changeSection = ( update )=>{
 
 <template>
     <div>
-        <section class="px-0 py-[120px] block">            
+         <section class="px-0 py-[120px] block">            
 
             <div class=" w-full mx-auto px-[15px] sm:max-w-[540px] sm:px-4 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] ">
                 <div class=" flex flex-wrap mr-[-15px] ml-[-15px] justify-center">

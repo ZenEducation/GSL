@@ -13,7 +13,7 @@
                                 <div class="w-[140px] h-[140px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-center leading-[140px]  flex justify-center items-center mt-[23px] mb-5 rounded-[50%]">
                                     <img src="@/assets/frontend/images/footer/n-icon.png" alt="">
                                 </div>
-                                <p class="text-white block">Sign up to recieve a monthly email on the latest news!</p>
+                                <p class="text-white block">  Sign up to recieve a monthly email on the latest news!</p>
                                 <form class="relative mt-[55px]">
                                     <input type="text" placeholder="Your Email Address" class="h-12 bg-[#4126a1] border text-white pl-[30px] pr-[60px] py-0 rounded-[50px] border-solid border-[rgba(255,255,255,0.3)] placeholder-[rgba(255,255,255,0.4)]">
                                     <button type="submit" class="absolute flex justify-center items-center w-11 h-11 text-white text-[22px] mx-1 leading-[44px] rounded-[50%] right-[3px] top-[3px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]">

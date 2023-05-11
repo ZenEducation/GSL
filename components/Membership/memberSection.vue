@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="overflow-hidden px-0 py-[118px]  dark:bg-slate-800 dark:text-gray-50">
+        <section class="overflow-hidden px-0 py-[118px]  dark:bg-[#202342] dark:text-gray-50">
         <div class="w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]">
             <div class="flex flex-wrap  justify-center">
                 <div class="lg:w-1/2 pr-4 pl-4">

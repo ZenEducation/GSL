@@ -2,20 +2,20 @@
     <div>
         <div class="left-profile-area">
             <div
-                class=" bg-white shadow-[0px_10px_5px_0px_rgb(119_123_146_/_2%)] transition-all duration-[ease] delay-[0.3s] rounded-[10px]">
+                class=" bg-white dark:bg-[#262950] shadow-[0px_10px_5px_0px_rgb(119_123_146_/_2%)] transition-all duration-[ease] delay-[0.3s] rounded-[10px]">
                 <div
                     class="h-40 bg-[url('https://pixner.net/peyamba/peyamba-dark/assets/images/profile/profile-box-bg.png')] bg-no-repeat bg-[bottom_center] bg-contain">
                 </div>
                 <div class="relative text-center pt-[90px] pb-[30px] px-[30px]">
                     <div
-                        class=" bg-white w-[120px] h-[120px] absolute -translate-x-2/4 top-[-60px] z-[9] rounded-[50%] left-2/4 before:absolute before:content-[''] before:w-[140px] before:h-[140px] before:bg-[rgba(255,255,255,0.2)] before:z-[-1] before:rounded-[50%] before:-left-2.5 before:-top-2.5 before:box-border after:box-border after:absolute after:content-[''] after:w-40 after:h-40 after:bg-[rgba(255,255,255,0.2)] after:z-[-1] after:rounded-[50%] after:-left-5 after:-top-5">
+                        class=" bg-white dark:bg-[#262950] w-[120px] h-[120px] absolute -translate-x-2/4 top-[-60px] z-[9] rounded-[50%] left-2/4 before:absolute before:content-[''] before:w-[140px] before:h-[140px] before:bg-[rgba(255,255,255,0.2)] before:z-[-1] before:rounded-[50%] before:-left-2.5 before:-top-2.5 before:box-border after:box-border after:absolute after:content-[''] after:w-40 after:h-40 after:bg-[rgba(255,255,255,0.2)] after:z-[-1] after:rounded-[50%] after:-left-5 after:-top-5">
                         <img src="@/assets/frontend/images/profile/profile-user.png"
                             class="align-middle rounded-[50%] border-none" alt="">
                         <div
                             class="absolute w-5 h-5 bg-[#1ce36f] rounded-[50%] border-[3px] border-solid border-white right-[9px] bottom-[9px]">
                         </div>
                     </div>
-                    <h5 class="text-[28px] leading-[38px] text-[#333333] -mt-2 mb-0 mx-0 font-['Fira_Sans',sans]">
+                    <h5 class="text-[28px] leading-[38px] text-[#333333] dark:text-gray-50 -mt-2 mb-0 mx-0 font-['Fira_Sans',sans]">
                         Albert Don
                     </h5>
                     <ul>
@@ -37,7 +37,7 @@
                         </div>
                         <div>
                             <a href="#"
-                                class="inline-block font-[normal] bg-[linear-gradient(-51deg,rgb(246,100,188)_0%,rgb(251,123,188)_35%,rgb(255,146,187)_100%)] shadow-[0px_5px_20px_0px_rgb(139_122_132_/_50%)] text-white cursor-pointer w-auto h-auto px-[15px] py-[5px] rounded-[50px] border-0">
+                                class="inline-block font-[normal] bg-[linear-gradient(-51deg,rgb(246,100,188)_0%,rgb(251,123,188)_35%,rgb(255,146,187)_100%)] shadow-[0px_5px_20px_0px_rgb(139_122_132_/_50%)] text-white  cursor-pointer w-auto h-auto px-[15px] py-[5px] rounded-[50px] border-0">
                                 <i class="fab fa-cloudversify inline-block not-italic leading-none"></i> Get Premium
                             </a>
                         </div>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div
-                class="bg-white shadow-[0px_10px_5px_0px_rgb(119_123_146_/_2%)] transition-all duration-[ease] delay-[0.3s] mt-[30px] p-5 rounded-[10px]">
+                class="bg-white dark:bg-[#262950] shadow-[0px_10px_5px_0px_rgb(119_123_146_/_2%)] transition-all duration-[ease] delay-[0.3s] mt-[30px] p-5 rounded-[10px]">
                 <ul class="flex flex-wrap w-full">
                     <li class="flex-[33.33%] w-[33.33%] text-center px-0 py-[5px] list-none">
                         <a href="#" data-toggle="modal" data-target="#usermessage"
@@ -77,9 +77,9 @@
                 </ul>
             </div>
             <div
-                class=" bg-white shadow-[0px_10px_5px_0px_rgb(119_123_146_/_2%)] transition-all duration-[ease] delay-[0.3s] mt-[30px] pt-[35px] pb-2.5 px-5 rounded-[10px]">
+                class=" bg-white dark:bg-[#262950] shadow-[0px_10px_5px_0px_rgb(119_123_146_/_2%)] transition-all duration-[ease] delay-[0.3s] mt-[30px] pt-[35px] pb-2.5 px-5 rounded-[10px]">
                 <h4
-                    class="p-u-p-header text-2xl font-semibold block leading-[1.3] text-[#333333] mb-[25px] m-0 px-2.5 py-0 font-['Fira_Sans',_sans-serif]">
+                    class="p-u-p-header text-2xl font-semibold block leading-[1.3] text-[#333333] dark:text-gray-50 mb-[25px] m-0 px-2.5 py-0 font-['Fira_Sans',_sans-serif]">
                     <i
                         class="fas fa-camera bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] inline-block not-italic leading-none font-black mr-[7px] font-['Font_Awesome_5_Free'] before:content-['\f030']"></i>
                     21 Upload Photos

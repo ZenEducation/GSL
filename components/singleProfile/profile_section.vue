@@ -2,15 +2,15 @@
     <div>
         <div class="profile-main-content">
 
-            <div class="info-box bg-white mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
-                <div class="header border-b-[rgba(0,0,0,0.1)] border-b border-solid">
-                    <h4 class="title text-2xl leading-[34px] font-semibold pb-2.5">
+            <div class="info-box bg-white dark:bg-[#262950] mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
+                <div class="header border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-solid">
+                    <h4 class="dark:text-white title text-2xl leading-[34px] font-semibold pb-2.5">
                         Base
                     </h4>
                 </div>
                 <div class="content">
                     <ul class="infolist">
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Name
                             </span>
@@ -18,7 +18,7 @@
                                 Albert Don
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Birthday
                             </span>
@@ -26,7 +26,7 @@
                                 1998-01-19
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 I am a
                             </span>
@@ -34,7 +34,7 @@
                                 Man
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Looking for a
                             </span>
@@ -42,7 +42,7 @@
                                 Woman
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Marital status
                             </span>
@@ -50,7 +50,7 @@
                                 single
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Country
                             </span>
@@ -58,7 +58,7 @@
                                 France
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b-0 border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b-0 border-dashed">
                             <span class="text-base leading-[26px]">
                                 City
                             </span>
@@ -69,9 +69,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="info-box bg-white mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
-                <div class="header border-b-[rgba(0,0,0,0.1)] border-b border-solid">
-                    <h4 class="title text-2xl leading-[34px] font-semibold pb-2.5">
+            <div class="info-box bg-white dark:bg-[#262950] mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
+                <div class="header border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-solid">
+                    <h4 class="dark:text-white title text-2xl leading-[34px] font-semibold pb-2.5">
                         Myself Summary
                     </h4>
                 </div>
@@ -82,15 +82,15 @@
                     </p>
                 </div>
             </div>
-            <div class="info-box bg-white mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
-                <div class="header border-b-[rgba(0,0,0,0.1)] border-b border-solid">
-                    <h4 class="title text-2xl leading-[34px] font-semibold pb-2.5">
+            <div class="info-box bg-white dark:bg-[#262950] mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
+                <div class="header border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-solid">
+                    <h4 class="dark:text-white title text-2xl leading-[34px] font-semibold pb-2.5">
                         Lifestyle
                     </h4>
                 </div>
                 <div class="content">
                     <ul class="infolist">
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Interests
                             </span>
@@ -98,7 +98,7 @@
                                 Billiards
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Looking for
                             </span>
@@ -106,7 +106,7 @@
                                 Just friends
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Smoking
                             </span>
@@ -114,7 +114,7 @@
                                 Never
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b-0 border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b-0 border-dashed">
                             <span class="text-base leading-[26px]">
                                 Language
                             </span>
@@ -125,15 +125,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="info-box bg-white mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
-                <div class="header border-b-[rgba(0,0,0,0.1)] border-b border-solid">
-                    <h4 class="title text-2xl leading-[34px] font-semibold pb-2.5">
+            <div class="info-box bg-white dark:bg-[#262950] mt-[30px] pt-[30px] pb-[22px] px-[30px] rounded-[10px]">
+                <div class="header border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-solid">
+                    <h4 class="dark:text-white title text-2xl leading-[34px] font-semibold pb-2.5">
                         Physical
                     </h4>
                 </div>
                 <div class="content">
                     <ul class="infolist">
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Height
                             </span>
@@ -141,7 +141,7 @@
                                 5’10
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Weight
                             </span>
@@ -149,7 +149,7 @@
                                 71
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Hair Color
                             </span>
@@ -157,7 +157,7 @@
                                 Black
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span class="text-base leading-[26px]">
                                 Eye Color
                             </span>
@@ -165,7 +165,7 @@
                                 Brown
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b-0 border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b-0 border-dashed">
                             <span class="text-base leading-[26px]">
                                 Body Type
                             </span>
@@ -173,7 +173,7 @@
                                 Tall
                             </span>
                         </li>
-                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] border-b border-dashed">
+                        <li class="flex justify-between border-b-[rgba(0,0,0,0.1)] dark:border-b-[white] border-b border-dashed">
                             <span  class="text-base leading-[26px]">
                                 Ethnicity
                             </span>

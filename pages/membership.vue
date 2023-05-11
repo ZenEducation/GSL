@@ -1,6 +1,6 @@
 <template>
     <div>
-    
+        <Navbar/>
         <breadcrumb/>
         <member/>
         <faq/>

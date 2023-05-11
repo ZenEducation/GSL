@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- <Navbar/> -->
+        <Navbar/>
         <breadcrumb/>
         <commusection/>
         <NewsLatter/>
@@ -17,7 +17,7 @@
 
 </script>
 
-<style>
+<style scoped>
 i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="overflow-hidden px-0 py-[118px]">
+        <section class="overflow-hidden px-0 py-[118px]  dark:bg-slate-800 dark:text-gray-50">
         <div class="w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]">
             <div class="flex flex-wrap  justify-center">
                 <div class="lg:w-1/2 pr-4 pl-4">
@@ -9,10 +9,10 @@
                             <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]">
                                 Upgrade Your Profile
                             </h6>
-                            <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                            <h2 class="text-[50px] dark:text-gray-50 leading-[60px] font-bold block text-[#292929] mb-[11px]">
                                 Premium Memeber Plan
                             </h2>
-                            <p class="inline-block text-[#333333]">
+                            <p class="inline-block text-[#333333] dark:text-gray-50">
                                 Benefit from Peyamba at its maximum you!
                             </p>
                         </div>
@@ -22,10 +22,12 @@
             <div class="flex flex-wrap  pb-24">
                 <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
                     <div class="text-center">
-                        <div class=" mb-[33px]">
-                            <img src="@/assets/frontend/images/membership/icon1.png" class="h-20" alt="">
+                        <div class="mb-[33px] flex justify-center">
+                            <div>
+                                <img src="@/assets/frontend/images/membership/icon1.png" class="h-20" alt="">
+                            </div>
                         </div>
-                        <h4 class="text-2xl leading-[34px] font-semibold mb-[18px]">
+                        <h4 class="text-2xl dark:text-gray-50 leading-[34px] font-semibold mb-[18px]">
                             Unlimited Messages
                         </h4>
                         <p>
@@ -35,10 +37,12 @@
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
                     <div class="text-center">
-                        <div class="mb-[33px]">
-                            <img src="@/assets/frontend/images/membership/icon2.png" class="h-20" alt="">
+                        <div class="mb-[33px] flex justify-center">
+                            <div>
+                                <img src="@/assets/frontend/images/membership/icon2.png" class="h-20" alt="">
+                            </div>
                         </div>
-                        <h4 class="text-2xl leading-[34px] font-semibold mb-[18px]">
+                        <h4 class="text-2xl dark:text-gray-50 leading-[34px] font-semibold mb-[18px]">
                             VIP Badge
                         </h4>
                         <p>
@@ -48,10 +52,12 @@
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
                     <div class="text-center">
-                        <div class="mb-[33px]">
-                            <img src="@/assets/frontend/images/membership/icon3.png" class="h-20" alt="">
+                        <div class="mb-[33px] flex justify-center">
+                            <div>
+                                <img src="@/assets/frontend/images/membership/icon3.png" class="h-20" alt="">
+                            </div>
                         </div>
-                        <h4 class="text-2xl leading-[34px] font-semibold mb-[18px]">
+                        <h4 class="text-2xl dark:text-gray-50 leading-[34px] font-semibold mb-[18px]">
                             Unlimited matches
                         </h4>
                         <p>
@@ -61,10 +67,12 @@
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
                     <div class="text-center">
-                        <div class="mb-[33px]">
-                            <img src="@/assets/frontend/images/membership/icon4.png" class="h-20" alt="">
+                        <div class="mb-[33px] flex justify-center">
+                            <div>
+                                <img src="@/assets/frontend/images/membership/icon4.png" class="h-20" alt="">
+                            </div>
                         </div>
-                        <h4 class="text-2xl leading-[34px] font-semibold mb-[18px]">
+                        <h4 class="text-2xl dark:text-gray-50 leading-[34px] font-semibold mb-[18px]">
                             Take more messages
                         </h4>
                         <p>
@@ -80,8 +88,8 @@
                         <img class=" absolute right-[-260px] top-0" src="@/assets/frontend/images/membership/right-img.png" alt="">
                         <div class="flex flex-wrap ">
                             <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
-                                <div class="bg-white text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
-                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b border-solid">
+                                <div class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
+                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
                                         1 Month
                                     </p>
                                     <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
@@ -95,8 +103,8 @@
                                 </div>
                             </div>
                             <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
-                                <div class="bg-white text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
-                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b border-solid">
+                                <div class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
+                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
                                         1 Month
                                     </p>
                                     <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
@@ -110,8 +118,8 @@
                                 </div>
                             </div>
                             <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
-                                <div class="bg-white text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
-                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b border-solid">
+                                <div class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
+                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
                                         1 Month
                                     </p>
                                     <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
@@ -125,8 +133,8 @@
                                 </div>
                             </div>
                             <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
-                                <div class="bg-white text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
-                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b border-solid">
+                                <div class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
+                                    <p class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
                                         1 Month
                                     </p>
                                     <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">

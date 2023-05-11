@@ -3,10 +3,10 @@
         <section>
             <div class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] ">
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-full pr-4 pl-4">
+                    <div class="w-full pr-4 pl-4">
                         <div
-                            class="flex justify-between mb-[30px] px-0 py-5 border-y-[rgba(0,0,0,0.1)] border-t border-solid border-b">
-                            <div class="flex content-center h-10 ">
+                            class="sm:flex sm:justify-between block mb-[30px] px-0 py-5 border-y-[rgba(0,0,0,0.1)] border-t border-solid border-b">
+                            <div class="flex justify-center content-center h-10 ">
                                 <NuxtLink to="#" data-toggle="modal" data-target="#exampleModalCenter"
                                     class="bg-[rgb(238,243,251)] shadow-[0px_5px_10px_0px_rgba(143,175,202,0.5)] text-[#333] px-[30px] py-1.5 rounded-[50px]">
                                     <i
@@ -14,7 +14,7 @@
                                     Filter your search
                                 </NuxtLink>
                             </div>
-                            <div class="flex content-center h-10 ">
+                            <div class="flex justify-center content-center h-10 ">
                                 <div class="flex content-center items-center text-base leading-[26px] relative mr-[7px] ">
                                     Order By :
                                 </div>
@@ -262,7 +262,8 @@
                         <div class="text-lg mr-[-15px] ml-[-15px] my-0 text-center">
                             <NuxtLink to="#"
                                 class=" inline-block text-[#333] bg-white shadow-[0px_15px_30px_0px_rgba(119,123,146,0.2)] w-[50px] h-[50px] leading-[50px] mx-0.5 my-0 rounded-[50%] hover:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]">
-                                0</NuxtLink>
+                                <i class="fas fa-angle-double-left"></i></NuxtLink>
+                                
                             <NuxtLink to="#"
                                 class="inline-block  text-[#333] bg-white shadow-[0px_15px_30px_0px_rgba(119,123,146,0.2)] w-[50px] h-[50px] leading-[50px] mx-0.5 my-0 rounded-[50%] hover:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] no-underline">
                                 1</NuxtLink>
@@ -280,7 +281,7 @@
                                 5</NuxtLink>
                             <NuxtLink to="#"
                                 class="inline-block text-[#333] bg-white shadow-[0px_15px_30px_0px_rgba(119,123,146,0.2)] w-[50px] h-[50px] leading-[50px] mx-0.5 my-0 rounded-[50%] hover:text-white">
-                                <i class="fas fa-angle-double-right"></i>6
+                                <i class="fas fa-angle-double-right"></i>
                             </NuxtLink>
                         </div>
                     </div>

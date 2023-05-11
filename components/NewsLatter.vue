@@ -5,7 +5,7 @@
         <img class="absolute animate-[scaleAni_3s_linear_infinite] left-0 bottom-[10%]" src="@/assets/frontend/images/footer/flower01.png" alt="">
         <img class="absolute animate-[upDown_3s_linear_infinite] right-0 bottom-[20%]" src="@/assets/frontend/images/footer/right-shape.png" alt="">
         <div>
-            <div class="container mx-auto sm:px-4">
+            <div class="w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] sm:px-4">
                 <div class="flex flex-wrap  justify-center">
                     <div class="lg:w-1/2 md:w-2/3 pr-4 pl-4">
                         <div>
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto sm:px-4">
+        <div class="w-full px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
             <div>
                 <div class="flex flex-wrap ">
                     <div class="lg:w-full pr-4 pl-4">

@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="bg-white dark:bg-[#262950] shadow-[0px_10px_30px_0px_rgba(61,83,209,0.2)] block text-[#333] text-center h-10 font-semibold text-base leading-10 mt-[30px] rounded-[50px] hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">Load More..</a>
+            <a href="#" class="bg-white dark:bg-[#262950] shadow-[0px_10px_30px_0px_rgba(61,83,209,0.2)] block text-[#333] text-center h-10 font-semibold dark:text-[white] text-base leading-10 mt-[30px] rounded-[50px] hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:text-white">Load More..</a>
         </div>
     </div>
 </template>

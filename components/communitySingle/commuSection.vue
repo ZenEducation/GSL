@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div class="bg-[#4827bb]">
+        <div class="bg-[#4827bb] dark:bg-[#4827bb] ">
             <div class=" w-full mx-auto px-[15px] sm:max-w-[540px] sm:px-4 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] ">
                 <div class="flex flex-wrap ">
-                <div class="lg:w-full pr-4 pl-4">
-                    <ul class="block relative z-[9] ml-[30px] mb-px pl-[25%] pt-1.5 pb-2.5 px-2.5 rounded-[10px]">
+                <div class="w-full pr-4 pl-4">
+                    <ul class="block relative z-[9] lg:ml-[30px] mb-px lg:pl-[25%] pt-1.5 pb-2.5 px-2.5 rounded-[10px]">
                         <li class="inline-block">
                             <NuxtLink to="#" class="active text-white text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] mx-3 my-0 active:text-[#ff3366] hover:text-[#ff3366] no-underline">
                                 Activity 

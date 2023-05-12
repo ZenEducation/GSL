@@ -24,18 +24,18 @@ const changeSection = ( update )=>{
                     <div class="xl:w-2/5 lg:w-1/2 pr-4 pl-4 mb-30">
                         <div class="profile-main-content">
                             <ul class="bg-white dark:bg-[#262950] shadow-[0px_5px_30px_0px_rgba(35,57,184,0.2)] block text-center mb-px pt-1.5 pb-2.5 px-2.5 rounded-[10px]">
-                                <li @click="()=>{ changeSection('activity') }" class="inline-block px-0 py-[5px] list-none">
-                                    <div  class=" cursor-pointer active dark:text-gray-50 text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
-                                        Activity
-                                    </div>
-                                </li>
                                 <li @click="()=>{ changeSection('profile') }" class="inline-block px-0 py-[5px] list-none">
-                                    <div  class=" cursor-pointer dark:text-gray-50 text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
+                                    <div :class="{ 'text-[#ac216c] dark:text-[#ac216c]' : currentSection=='profile'}" class=" cursor-pointer dark:text-gray-50 text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
                                         Profile
                                     </div>
                                 </li>
+                                <li @click="()=>{ changeSection('activity') }" class="inline-block px-0 py-[5px] list-none">
+                                    <div :class="{ 'text-[#ac216c] dark:text-[#ac216c]' : currentSection=='activity'}" class=" cursor-pointer active dark:text-gray-50 text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
+                                        Activity
+                                    </div>
+                                </li>
                                 <li @click="()=>{ changeSection('friends') }" class="inline-block px-0 py-[5px] list-none">
-                                    <div   class=" cursor-pointer dark:text-gray-50 text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c]">
+                                    <div :class="{ 'text-[#ac216c] dark:text-[#ac216c]' : currentSection=='friends'}"  class=" cursor-pointer dark:text-gray-50 text-[#333333] text-base leading-[26px] font-bold relative transition-all duration-[ease] delay-[0.3s] bg-transparent no-underline inline-block mx-3 my-0 active:text-[#ac216c] hover:text-[#ac216c] dark:hover:text-[#ac216c]">
                                         Friends
                                         <div class="absolute bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-[10px] leading-[10px] text-white right-[-17px] px-[5px] py-[3px] rounded-[30px] -top-1.5">04</div>
                                     </div>

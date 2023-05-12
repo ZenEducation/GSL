@@ -5,7 +5,7 @@ import profile_aside_area from './profile_aside_area.vue';
 import profile_section from './profile_section.vue';
 import friend_section from './friend_section.vue';
 
-const currentSection = ref('activity');
+const currentSection = ref('profile');
 const changeSection = ( update )=>{
     currentSection.value = update;
 }

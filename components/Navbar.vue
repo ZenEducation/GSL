@@ -4,9 +4,9 @@
             class="fixed bg-[#5650ce] w-full z-[99] px-0 py-2.5 border-b border-solid border-[rgba(255,255,255,0.102)] left-0 top-0">
             <div class="container mx-auto sm:px-4">
                 <div class="header-wrapper flex flex-wrap justify-between items-center">
-                    <div class="w-[170px]">
-                        <NuxtLink to="/peyamba" class="inline-block">
-                            <img src="@/assets/frontend/images/logo/logo.png" alt="logo" class="max-w-full" />
+                    <div class="w-[100px]">
+                        <NuxtLink to="/" class="inline-block">
+                            <img src="@/assets/frontend/images/logo/logo1.png" alt="logo" class="max-w-full" />
                         </NuxtLink>
                     </div>
                     <ul

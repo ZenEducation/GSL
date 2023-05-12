@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class=" py-[116px]">
+        <section class=" py-[10px]">
             <div class="container mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
 
@@ -10,9 +10,7 @@
                                 <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
 
                                 </h6>
-                                <h2 class=" text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
-                                    Cookie Policy
-                                </h2>
+                                
 
                                 <p class="my-2 text-justify">This Cookie Policy ("Policy") describes how Get Set Love
                                     ("Website") uses cookies and

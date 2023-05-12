@@ -52,7 +52,7 @@
                                     <div
                                         class="flex flex-wrap justify-between mt-[5px] border-t-[rgba(0,0,0,0.1)] border-t border-solid">
                                         <div class="flex flex-wrap mt-[25px]">
-                                            <span class="text-lg font-semibold text-[#333]">
+                                            <span class="text-lg font-semibold dark:text-[white] text-[#333]">
                                                 Tags :
                                             </span>
                                             <div>
@@ -68,12 +68,6 @@
                                                 <NuxtLink to="#"
                                                     class="w-9 h-9 leading-9 text-center border text-[#a3a5ac] text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
                                                     <i class="fab fa-facebook-f"></i>
-                                                </NuxtLink>
-                                            </li>
-                                            <li class="p-[7.5px]">
-                                                <NuxtLink to="#"
-                                                    class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-white w-9 h-9 leading-9 text-center border text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
-                                                    <i class="fab fa-twitter"></i>
                                                 </NuxtLink>
                                             </li>
                                             <li class="p-[7.5px]">

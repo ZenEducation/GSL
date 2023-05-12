@@ -224,7 +224,7 @@
                     <div class="pt-10 lg:mt-48 ">
                         <div class=" bg-white dark:bg-[#262950] shadow-[0px_5px_20px_0px_rgba(78,64,128,0.1)] px-5 py-[30px] rounded-[20px]">
                             <form action="#" class="relative">
-                                <input type="text" placeholder="Search" class="w-full h-10 border pl-[45px] pr-5 py-0 rounded-[50px] border-solid border-[rgba(0,0,0,0.15)] dark:border-b-[rgba(256,256,256,0.15)]">
+                                <input type="text" placeholder="Search" class="w-full dark:bg-transparent dark:text-white h-10 border pl-[45px] pr-5 py-0 rounded-[50px] border-solid border-[rgba(0,0,0,0.15)] dark:border-b-[rgba(256,256,256,0.15)]">
                                 <button type="submit" class="absolute bg-[none] w-10 h-10 text-sm text-[#777] rounded-[50%] border-0 left-1 top-0"><i class="fas fa-search"></i></button>
                             </form>
                         </div>

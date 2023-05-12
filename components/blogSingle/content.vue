@@ -73,11 +73,6 @@
                                             </NuxtLink>
                                         </li>
                                         <li class="p-[7.5px]">
-                                            <NuxtLink to="#" class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-white w-9 h-9 leading-9 text-center border text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
-                                                <i class="fab fa-twitter"></i>
-                                            </NuxtLink>
-                                        </li>
-                                        <li class="p-[7.5px]">
                                             <NuxtLink to="#" class="w-9 h-9 leading-9 text-center border text-[#a3a5ac] text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
                                                 <i class="fab fa-instagram"></i>
                                             </NuxtLink>
@@ -144,13 +139,13 @@
                             <h5 class="uppercase  dark:text-[white] text-[22px] pb-[15px] min-[576px]:text-[28px]">leave comment</h5>
                             <form>
                                 <div class="mb-4">
-                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Enter Your Full Name" required>
+                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white  dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 rounded" placeholder="Enter Your Full Name" required>
                                 </div>
                                 <div class="mb-4">
-                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" placeholder="Enter Your Email Address" required>
+                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 rounded" placeholder="Enter Your Email Address" required>
                                 </div>
                                 <div class="mb-4">
-                                    <textarea placeholder="Write A Message" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded" required></textarea>
+                                    <textarea placeholder="Write A Message" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 rounded" required></textarea>
                                 </div>
                                 <div class="mb-4">
                                     <button class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]" type="submit">Submit Now</button>

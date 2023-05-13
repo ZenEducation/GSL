@@ -1,12 +1,13 @@
 <template>
     <Navbar/>
-    <ContactBreadcrumb/>
+    <Breadcrumb title="Contact"/>
     <ContactSection/>
     <NewsLatter/>
 </template>
 
-<script>
-    
+<script setup>
+    import Breadcrumb from '~~/components/Breadcrumb.vue';
+
 </script>
 
 <style lang="scss" scoped>

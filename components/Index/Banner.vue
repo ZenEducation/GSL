@@ -1,12 +1,12 @@
 <template>
     <div>
-        <section
-            class="bg-no-repeat bg-bottom bg-cover relative overflow-hidden pt-[189px] pb-[120px] px-0">
+        <section class="bg-no-repeat bg-bottom bg-cover relative overflow-hidden pt-[189px] pb-[120px] px-0">
             <img class="absolute animate-[leftRight_5s_linear_infinite] right-[10%]"
                 src="@/assets/frontend/images/banner/aimg1.png" alt="">
             <img class="absolute animate-[upDown_5s_linear_infinite] right-[17%] bottom-[20%]"
                 src="@/assets/frontend/images/banner/aimg2.png" alt="">
-            <div class="container mx-auto sm:px-4">
+            <div
+                class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
                     <div class="xl:w-1/3 lg:w-2/5 pr-4 pl-4">
                         <h1 class="text-6xl leading-[70px] font-bold uppercase text-white text-center mb-[15px]">
@@ -98,21 +98,22 @@
                             <div class="text-center">
                                 <button
                                     class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Join
-                                Now!</button>
+                                    Now!</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div></template>
+        </section>
+    </div>
+</template>
 
 <script setup>
 
 </script>
 
 <style scoped>
-section{
+section {
     background-image: url("@/assets/frontend/images/banner/hero-banner.png");
 }
 </style>

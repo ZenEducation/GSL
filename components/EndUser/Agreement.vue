@@ -1,7 +1,8 @@
 <template>
     <div>
         <section class=" py-[116px]">
-            <div class="container mx-auto sm:px-4">
+            <div
+                class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
 
                     <div class="pr-4 pl-4">
@@ -89,7 +90,8 @@
                                             accuracy
                                             or completeness of any information or User Content posted on its services.
                                         </p>
-                                        <p class="my-2">In no event shall the Website or its affiliates be liable for any indirect,
+                                        <p class="my-2">In no event shall the Website or its affiliates be liable for any
+                                            indirect,
                                             incidental, special,
                                             or consequential damages arising out of or in connection with your use of the
                                             Website's
@@ -114,7 +116,8 @@
                                             [Insert State/Country], without giving effect to any principles of conflicts of
                                             law.
                                         </p>
-                                        <p class="my-2">Any dispute arising out of or in connection with this Agreement shall be resolved
+                                        <p class="my-2">Any dispute arising out of or in connection with this Agreement
+                                            shall be resolved
                                             through binding arbitration in accordance with the rules of the American
                                             Arbitration
                                             Association. The arbitration shall take place in [Insert City], and the award
@@ -123,20 +126,23 @@
                                     </li>
                                     <li>Modification and Termination
                                         <br>
-                                        <p class="my-2">The Website reserves the right to modify or terminate this Agreement at any time
+                                        <p class="my-2">The Website reserves the right to modify or terminate this Agreement
+                                            at any time
                                             without notice. If you do not agree to any modification of this Agreement, you
                                             must
                                             immediately cease using the Website's services.</p>
                                     </li>
                                     <li>Entire Agreement
                                         <br>
-                                        <p class="my-2">This Agreement constitutes the entire agreement between you and the Website
+                                        <p class="my-2">This Agreement constitutes the entire agreement between you and the
+                                            Website
                                             regarding your use of its services and supersedes all prior agreements and
                                             understandings, whether written or oral.</p>
                                     </li>
                                     <li>Contact Information
                                         <br>
-                                        <p class="my-2">If you have any questions or concerns about this Agreement or the Website's
+                                        <p class="my-2">If you have any questions or concerns about this Agreement or the
+                                            Website's
                                             services,
                                             please contact us at [Insert Contact Information].</p>
                                     </li>
@@ -166,6 +172,5 @@ ol {
 
 ul {
     list-style-type: disc;
-}
-</style>
+}</style>
 

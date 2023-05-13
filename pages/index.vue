@@ -13,8 +13,7 @@
 </template>
 
 <script>
-
-
+import Breadcrumb from '~~/components/Breadcrumb.vue';
 import { reactive, toRefs } from "vue";
 
 export default {

@@ -1,8 +1,9 @@
 <template>
     <div>
-        <header 
+        <header
             class="fixed bg-[#5650ce] w-full z-[99] px-0 py-2.5 border-b border-solid border-[rgba(255,255,255,0.102)] left-0 top-0">
-            <div class="container mx-auto sm:px-4">
+            <div
+                class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="header-wrapper flex flex-wrap justify-between items-center">
                     <div class="w-[170px]">
                         <NuxtLink to="/peyamba" class="inline-block">
@@ -197,7 +198,7 @@
                 </div>
             </div>
         </header>
-        
+
         <div class="search-overlay">
             <div class="absolute top-0 bottom-0 right-0 px-4 py-3">
                 <i class="fas fa-times"></i>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <breadcrumb/>
+        <breadcrumb title="Profile"/>
         <profile/>
         <NewsLatter/>
     </div>
@@ -9,7 +9,7 @@
 
 <script setup>
 
-import breadcrumb from '@/components/singleProfile/breadcrumb.vue'
+import Breadcrumb from '~~/components/Breadcrumb.vue';
 import profile from '@/components/singleProfile/profile.vue'
 
 </script>

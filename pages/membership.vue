@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <breadcrumb/>
+        <breadcrumb title="Membership"/>
         <member/>
         <faq/>
         <NewsLatter/>
@@ -11,7 +11,7 @@
 
 <script setup>
     
-    import breadcrumb from '@/components/Membership/breadcrumb.vue'
+    import Breadcrumb from '~~/components/Breadcrumb.vue';
     import member from '@/components/Membership/memberSection.vue'
     import faq from '@/components/Membership/faq.vue'
 

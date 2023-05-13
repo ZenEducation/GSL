@@ -1,7 +1,8 @@
 <template>
     <div>
         <section class=" py-[116px]">
-            <div class="container mx-auto sm:px-4">
+            <div
+                class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
 
                     <div class="pr-4 pl-4">

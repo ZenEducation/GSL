@@ -1,10 +1,10 @@
 <template>
     <div>
-        <section class=" pt-40 pb-16 bg-[url('@/assets/frontend/images/banner/bc-about.jpg')] bg-cover bg-bottom bg-no-repeat  ">
-        <div class="container mx-auto sm:px-4">
+        <section class=" pt-40 pb-16 bg-[url('../images/banner/bc-about.jpg')] bg-cover bg-bottom bg-no-repeat  ">
+        <div class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]">
             <div >
                 <h2 class="text-white block pb-4 text-5xl font-black">
-                    Report Abuse
+                    {{ props.title }}
                 </h2>
                 <ul class="bg-transparent block pb-1 max-[575px]:p-0">
                     <li class="capitalize inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0">
@@ -14,8 +14,8 @@
                     </li>
 
                     <li class="capitalize no-underline inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0">
-                        <NuxtLink to="/report" class="capitalize no-underline text-indigo-200 text-lg inline-flex items-center max-[575px]:text-base max-[575px]:p-0">
-                            Report
+                        <NuxtLink to="#" class="capitalize no-underline text-indigo-200 text-lg inline-flex items-center max-[575px]:text-base max-[575px]:p-0">
+                            {{ props.title}}
                         </NuxtLink>
                     </li>
                 </ul>
@@ -26,6 +26,13 @@
 </template>
 
 <script setup>
+
+const props = defineProps({
+    title: {
+        type:String,
+        default:'title'
+    }
+})
 
 </script>
 

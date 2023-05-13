@@ -1,7 +1,7 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
         <Navbar/>
-        <breadcrumb/>
+        <breadcrumb title="Community"/>
         <communication/>
         <profile/>
         <NewsLatter/>
@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import breadcrumb from '@/components/communitySingle/breadcrumb.vue'
+import Breadcrumb from '~~/components/Breadcrumb.vue';
 import communication from '@/components/communitySingle/commuSection.vue'
 import profile from '@/components/communitySingle/profileSection.vue'
 

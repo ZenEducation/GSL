@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <breadcrumb/>
+        <breadcrumb title="Community"/>
         <commusection/>
         <NewsLatter/>
         
@@ -10,7 +10,7 @@
 
 <script setup>
     
-    import breadcrumb from '@/components/Community/breadcrumb.vue'
+    import Breadcrumb from '~~/components/Breadcrumb.vue';
     import commusection from '@/components/Community/commuSection.vue'
     
 

@@ -1,6 +1,6 @@
 <template>
   <Navbar/>
-  <AboutusBreadcrumb/>
+  <Breadcrumb title="About Us"/>
   <AboutusFlirting/>
   <AboutusWhyChooseUs/>
   <IndexFeatures/>
@@ -9,10 +9,9 @@
   <NewsLatter/>
 </template>
 
-<script>
-  export default {
-    
-  }
+<script setup >
+import Breadcrumb from '~~/components/Breadcrumb.vue';
+
 </script>
 
 <style lang="scss" scoped>

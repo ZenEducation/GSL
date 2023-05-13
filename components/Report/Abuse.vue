@@ -1,7 +1,8 @@
 <template>
     <div>
         <section class=" py-[116px]">
-            <div class="container mx-auto sm:px-4">
+            <div
+                class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
 
                     <div class="pr-4 pl-4">
@@ -104,14 +105,17 @@
 
                         </div>
                         <div class=" justify-center items-center h-auto px-40 py-10">
-                            <form action="" method="post" class="w-full flex justify-center p-7 flex-col items-center rounded-2xl">
+                            <form action="" method="post"
+                                class="w-full flex justify-center p-7 flex-col items-center rounded-2xl">
                                 <h1 class="text-white text-2xl ">Report About Abuser</h1>
                                 <input type="text" placeholder="Enter Your Username:" class="w-2/3 rounded-lg my-2">
                                 <input type="email" placeholder="Enter Your Email:" class="w-2/3 rounded-lg my-2">
                                 <input type="text" placeholder="Enter Your Abuser Username:" class="w-2/3 rounded-lg my-2">
                                 <input type="file" name="proff" id="proff" class="w-2/3 my-2 text-white" accept="image/*">
-                                <textarea name="message" id="message" placeholder="Enter Details...." cols="30" rows="10" class="my-2 w-2/3 rounded-lg"></textarea>
-                                <input type="button" value="Submit" id="submit" class="w-1/3 rounded-lg bg-white text-black text-2xl uppercase h-10">
+                                <textarea name="message" id="message" placeholder="Enter Details...." cols="30" rows="10"
+                                    class="my-2 w-2/3 rounded-lg"></textarea>
+                                <input type="button" value="Submit" id="submit"
+                                    class="w-1/3 rounded-lg bg-white text-black text-2xl uppercase h-10">
                             </form>
                         </div>
                     </div>
@@ -134,8 +138,7 @@ ul {
     list-style-type: disc;
 }
 
-form{
+form {
     background-image: url("@/assets/frontend/images/banner/bc-about.jpg");
-}
-</style>
+}</style>
 

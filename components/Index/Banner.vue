@@ -1,9 +1,9 @@
 <template>
     <div>
         <section class="bg-no-repeat bg-bottom bg-cover relative overflow-hidden pt-[189px] pb-[120px] px-0">
-            <img class="absolute animate-[leftRight_5s_linear_infinite] right-[10%]"
+            <img class="absolute animate-[leftRight_5s_linear_infinite] right-[10%] max-lg:h-16 max-lg:top-[120px] max-lg:left-[40%] "
                 src="@/assets/frontend/images/banner/aimg1.png" alt="">
-            <img class="absolute animate-[upDown_5s_linear_infinite] right-[17%] bottom-[20%]"
+            <img class="absolute animate-[upDown_5s_linear_infinite] right-[17%] bottom-[20%]  h-16"
                 src="@/assets/frontend/images/banner/aimg2.png" alt="">
             <div
                 class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
@@ -13,7 +13,7 @@
                             Find Love Your Life
                         </h1>
                         <div
-                            class="bg-white shadow-[0px_3px_10px_0px_rgba(0,0,0,0.1)] pt-[23px] pb-[60px] px-0 rounded-[30px]">
+                            class="dark:bg-[#262950] relative bg-white shadow-[0px_3px_10px_0px_rgba(0,0,0,0.1)] pt-[23px] pb-[60px] px-0 rounded-[30px]">
                             <div class="flex pt-[22px] pb-[15px] px-5 border-b-[rgba(0,0,0,0.1)] border-b border-solid">
                                 <p class="text-lg leading-7 font-bold relative mr-5 top-[7px]">
                                     I am a :

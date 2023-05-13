@@ -10,10 +10,10 @@
                                 <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
                                     An Exhaustive List Of
                                 </h6>
-                                <h2 class=" text-[50px] leading-[60px] font-bold block text-[#292929] mb-[21px]">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[21px]">
                                     Amazing Features
                                 </h2>
-                                <p class="inline-block text-[#333333]">
+                                <p class="inline-block dark:text-[white] text-[#333333]">
                                     To find meaningful connections, dates, and life partners.
                                 </p>
                             </div>
@@ -23,7 +23,7 @@
             </div>
             <div class="relative">
                 <div
-                    class="absolute w-[46%] h-full bg-[#5650ce] bg-[url('../images/feature/left-img.jpg')] bg-no-repeat bg-cover bg-center rounded-[0px_30px_30px_0px] left-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(86,80,206,0.7)] before:rounded-[0px_30px_30px_0px] before:left-0">
+                    class="absolute w-[46%] max-lg:relative max-lg:mb-24 h-full bg-[#5650ce] bg-[url('../images/feature/left-img.jpg')] bg-no-repeat bg-cover bg-center rounded-[0px_30px_30px_0px] left-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(86,80,206,0.7)] before:rounded-[0px_30px_30px_0px] before:left-0">
                     <div
                         class="absolute w-60 h-60 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-center -translate-y-2/4 right-[-120px] rounded-[50%] top-2/4 before:absolute before:content-[''] before:w-[260px] before:h-[260px] before:bg-[rgba(222,41,139,0.2)] before:z-[-1] before:rounded-[50%] before:-left-2.5 before:-top-2.5">
                         <div class="mt-[26%]">
@@ -36,9 +36,9 @@
                     </div>
                 </div>
                 <div
-                    class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
+                    class=" w-full max-lg:pt-24 mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                     <div class="flex flex-wrap  justify-end">
-                        <div class="lg:w-2/5 pr-4 pl-4">
+                        <div class="lg:w-2/5 max-lg:w-full pr-4 pl-4">
                             <div class="pt-[50px] pb-[42px] px-0">
                                 <div class="flex mb-[30px] hover:shadow-[0px_5px_10px_0px_rgba(64,36,155,0.4)]"
                                     data-wow-delay="0.1s">
@@ -48,7 +48,7 @@
                                             class="h-10 inline-block relative">
                                     </div>
                                     <div class="flex-[1] pb-6 border-b-[#cecece] border-b border-solid">
-                                        <h4 class="text-2xl leading-[34px] font-bold mb-2.5">
+                                        <h4 class=" dark:text-[white] text-2xl leading-[34px] font-bold mb-2.5">
                                             Simple to use
                                         </h4>
                                         <p class="my-0">
@@ -64,7 +64,7 @@
                                             class="h-10 inline-block relative">
                                     </div>
                                     <div class=" flex-[1] pb-6 border-b-[#cecece] border-b border-solid">
-                                        <h4 class=" text-2xl leading-[34px] font-bold mb-2.5">
+                                        <h4 class=" dark:text-[white]  text-2xl leading-[34px] font-bold mb-2.5">
                                             Smart Matching
                                         </h4>
                                         <p class="my-0">
@@ -80,7 +80,7 @@
                                             class="h-10 inline-block relative">
                                     </div>
                                     <div class=" flex-[1] pb-6 border-b-[#cecece] border-b border-solid">
-                                        <h4 class=" text-2xl leading-[34px] font-bold mb-2.5">
+                                        <h4 class=" dark:text-[white]  text-2xl leading-[34px] font-bold mb-2.5">
                                             Filter very fast
                                         </h4>
                                         <p class="my-0">
@@ -96,7 +96,7 @@
                                             class="h-10 inline-block relative">
                                     </div>
                                     <div class=" pb-0 border-b-0 flex-[1]  border-b-[#cecece] border-solid">
-                                        <h4 class=" text-2xl leading-[34px] font-bold mb-2.5">
+                                        <h4 class=" dark:text-[white]  text-2xl leading-[34px] font-bold mb-2.5">
                                             Cool community
                                         </h4>
                                         <p class="my-0">

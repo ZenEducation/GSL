@@ -12,10 +12,10 @@
                                 <h6 class="sub-title text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
                                     Contact Us
                                 </h6>
-                                <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
                                     Get in Touch
                                 </h2>
-                                <p class="inline-block text-[#333333]">
+                                <p class="dark:text-[white] inline-block text-[#333333]">
                                     We'd love to hear from you! Let us know how we can help.
                                 </p>
                             </div>
@@ -23,13 +23,13 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-3/5 pr-4 pl-4">
+                    <div class="relative  lg:w-3/5 w-full p-14 pr-4 pl-4 bg-[white] dark:text-[black] rounded-2xl">
                         <div>
-                            <div class="relative mb-[30px]">
+                            <div class="relative lg:mb-[30px]">
                                 <i style="display: grid; place-content: center;"
                                     class="far fa-user absolute -translate-y-2/4 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] w-[30px] h-[30px] text-center leading-[30px] text-white text-sm rounded-[50%] top-2/4"></i>
                                 <input type="text" placeholder="Full Name"
-                                    class="h-[50px] pl-[49px] pr-5 py-0 rounded-none border-t-0 border-b-[rgba(0,0,0,0.1)] border-x-0 border-b border-solid placeholder:text-[#8790ad] placeholder:text-base">
+                                    class=" h-[50px] pl-[49px] pr-5 py-0 rounded-none border-t-0 border-b-[rgba(0,0,0,0.1)] border-x-0 border-b border-solid placeholder:text-[#8790ad] placeholder:text-base">
                             </div>
                             <div class="relative mb-[30px]">
                                 <i style="display: grid; place-content: center;"

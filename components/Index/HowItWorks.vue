@@ -26,8 +26,8 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-1/3 md:w-1/2 pr-4 pl-4">
-                        <div class=" bg-white shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
+                    <div class="lg:w-1/3 md:w-1/2 max-md:w-full mb-12 pr-4 pl-4">
+                        <div class=" bg-white dark:bg-[#262950] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
                             data-wow-delay="0.1s">
                             <div class=" relative inline-block mb-[34px]">
                                 <img src="@/assets/frontend/images/h-it-w/icon1.png" alt="">
@@ -36,7 +36,7 @@
                                     01
                                 </div>
                             </div>
-                            <h4 class=" text-2xl leading-[34px] font-bold mb-[25px]">
+                            <h4 class=" dark:text-[white] text-2xl leading-[34px] font-bold mb-[25px]">
                                 Tell us who you are!
                             </h4>
                             <NuxtLink to="#"
@@ -44,8 +44,8 @@
                                 Join Now !</NuxtLink>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 md:w-1/2 pr-4 pl-4">
-                        <div class=" bg-white shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
+                    <div class="lg:w-1/3 max-md:w-full mb-12  md:w-1/2 pr-4 pl-4">
+                        <div class=" bg-white dark:bg-[#262950] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
                             data-wow-delay="0.2s">
                             <div class=" relative inline-block mb-[34px]">
                                 <img src="@/assets/frontend/images/h-it-w/icon2.png" alt="">
@@ -54,7 +54,7 @@
                                     02
                                 </div>
                             </div>
-                            <h4 class=" text-2xl leading-[34px] font-bold mb-[25px]">
+                            <h4 class=" dark:text-[white] text-2xl leading-[34px] font-bold mb-[25px]">
                                 Find the right person
                             </h4>
                             <NuxtLink to="#"
@@ -62,8 +62,8 @@
                                 Join Now !</NuxtLink>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 md:w-1/2 pr-4 pl-4">
-                        <div class=" bg-white shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
+                    <div class="lg:w-1/3 max-md:w-full mb-12  md:w-1/2 pr-4 pl-4">
+                        <div class=" bg-white dark:bg-[#262950] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
                             data-wow-delay="0.3s">
                             <div class=" relative inline-block mb-[34px]">
                                 <img src="@/assets/frontend/images/h-it-w/icon3.png" alt="">
@@ -72,7 +72,7 @@
                                     03
                                 </div>
                             </div>
-                            <h4 class=" text-2xl leading-[34px] font-bold mb-[25px]">
+                            <h4 class=" dark:text-[white] text-2xl leading-[34px] font-bold mb-[25px]">
                                 Start Dating
                             </h4>
                             <NuxtLink to="#"

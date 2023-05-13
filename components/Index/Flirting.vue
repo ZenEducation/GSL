@@ -10,7 +10,7 @@
                                 <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px] text-left">
                                     Meet New People Today!
                                 </h6>
-                                <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929]  mb-[21px] text-left">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929]  mb-[21px] text-left">
                                     Start Flirting
                                 </h2>
                                 <p class="text-left">

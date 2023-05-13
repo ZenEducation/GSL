@@ -11,7 +11,7 @@
                                 <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
 
                                 </h6>
-                                <h2 class=" text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
                                     Cookie Policy
                                 </h2>
 

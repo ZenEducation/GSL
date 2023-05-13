@@ -19,9 +19,7 @@
             .language-select{
                 margin-left: 10px;
             }
-            a{
-                padding: 5px 12px;
-            }
+
         }
         @include breakpoint(lg) {
             display: flex;

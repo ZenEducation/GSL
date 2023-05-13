@@ -1,9 +1,9 @@
 <template>
     <div>
         <section class="bg-no-repeat bg-bottom bg-cover relative overflow-hidden pt-[189px] pb-[120px] px-0">
-            <img class="absolute animate-[leftRight_5s_linear_infinite] right-[10%] max-lg:h-16 max-lg:top-[120px] max-lg:left-[40%] "
+            <img class="absolute leftRight right-[10%] max-lg:h-16 max-lg:top-[120px] max-lg:left-[40%] "
                 src="@/assets/frontend/images/banner/aimg1.png" alt="">
-            <img class="absolute animate-[upDown_5s_linear_infinite] right-[17%] bottom-[20%]  h-16"
+            <img class="absolute upDown right-[17%] bottom-[20%]  h-16"
                 src="@/assets/frontend/images/banner/aimg2.png" alt="">
             <div
                 class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
@@ -31,6 +31,12 @@
                                             class="w-5 h-5 border  rounded-[50%] border-solid border-[#5650ce] hover:shadow-[0_0_5px_0px_#5650ce_inset] before:content-[''] before:block before:w-3/5 before:h-3/5 before:mx-auto before:my-[20%] before:rounded-[50%] checked:before:bg-[#5650ce] checked:bg-[#5650ce]"><label
                                             for="females" class=" ml-2">Woman</label>
                                     </div>
+                                    <div>
+
+                                        <input type="radio" name="gender" id="others"
+                                            class="ml-2 w-5 h-5 border  rounded-[50%] border-solid border-[#5650ce] hover:shadow-[0_0_5px_0px_#5650ce_inset] before:content-[''] before:block before:w-3/5 before:h-3/5 before:mx-auto before:my-[20%] before:rounded-[50%] checked:before:bg-[#5650ce] checked:bg-[#5650ce]"><label
+                                            for="others" class=" ml-2">Other</label>
+                                    </div>
                                 </div>
                             </div>
                             <div
@@ -50,6 +56,11 @@
                                         <input type="radio" name="seeking" id="females"
                                             class="w-5 h-5 border  rounded-[50%] border-solid border-[#5650ce] hover:shadow-[0_0_5px_0px_#5650ce_inset] before:content-[''] before:block before:w-3/5 before:h-3/5 before:mx-auto before:my-[20%] before:rounded-[50%] checked:before:bg-[#5650ce] checked:bg-[#5650ce]"><label
                                             for="females" class=" ml-2">Woman</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="seeking" id="others"
+                                            class=" ml-2 w-5 h-5 border  rounded-[50%] border-solid border-[#5650ce] hover:shadow-[0_0_5px_0px_#5650ce_inset] before:content-[''] before:block before:w-3/5 before:h-3/5 before:mx-auto before:my-[20%] before:rounded-[50%] checked:before:bg-[#5650ce] checked:bg-[#5650ce]"><label
+                                            for="others" class="ml-2">Other</label>
                                     </div>
                                 </div>
                             </div>
@@ -115,5 +126,40 @@
 <style scoped>
 section {
     background-image: url("@/assets/frontend/images/banner/hero-banner.png");
+    
+}
+.leftRight{
+    animation: leftRight 5s linear infinite;
+}
+.upDown{
+    animation: upDown 5s linear infinite;
+}
+@keyframes leftRight {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    50% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes upDown {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
 }
 </style>

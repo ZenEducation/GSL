@@ -12,7 +12,7 @@
 
                                 </h6>
                                 <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
-                                    End-User Agreement
+                                    
                                 </h2>
 
                                 <p class="my-2 text-justify">This end user agreement ("Agreement") is a legally binding

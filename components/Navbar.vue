@@ -17,9 +17,9 @@ const toggledark = ()=>{
             <div
                 class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="header-wrapper  flex flex-wrap justify-between items-center">
-                    <div class="w-[170px]">
+                    <div class="w-[100px]">
                         <NuxtLink to="/" class="inline-block">
-                            <img src="@/assets/frontend/images/logo/logo.png" alt="logo" class="max-w-full" />
+                            <img src="@/assets/frontend/images/logo/logo1.png" alt="logo" class="max-w-full" />
                         </NuxtLink>
                     </div>
                     <div class=" lg:hidden">

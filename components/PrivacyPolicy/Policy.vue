@@ -11,7 +11,6 @@
 
                                 </h6>
                                 <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
-                                    Privacy Policy
                                 </h2>
                                 <p class="my-2 text-justify">Effective date: [Insert Date]</p>
                                 <p class="my-2 text-justify">At Get Set Love, we understand that the privacy and security of

@@ -14,16 +14,31 @@
                                     Start Flirting
                                 </h2>
                                 <p class="text-left">
-                                    In our modern day and age dating apps have become an integral part of our lives. They
-                                    allow you to check the profile of singles living near you, to chat with them, to meet
-                                    them and maybe to fall in love.
+                                    Meeting new people and flirting can be exciting and fun, and dating apps can be a great
+                                    way to connect with others who share your
+                                    interests and goals. If you're looking to
+                                    start
+                                    flirting on a dating app, there are a few things to keep in mind.
                                 </p>
                                 <br>
                                 <p class="text-left">
-                                    If you’re searching for a simple dating app with free features allowing to meet singles,
-                                    you’re in good hands with Pairko. With Pairko you get all you need from a mobile dating
-                                    app, which presents you thousands of users through your smartphone in a very
-                                    pleasant experience.
+                                    First, make sure you create a profile that accurately represents you and what you're
+                                    looking for. Choose a few flattering photos that show off your personality and
+                                    interests,
+                                    and write a bio that gives others a sense of who you are.
+                                </p>
+                                <br>
+                                <p  class="text-left">
+                                    When you start browsing profiles, take the time to read through them and look for
+                                    people who share your interests or seem like a good match. When you find someone
+                                    you're interested in, don't be afraid to send them a message and start a conversation.
+                                </p>
+                                <br>
+                                <p  class="text-left">
+                                    As you start chatting and getting to know each other, keep things light and playful.
+                                    Make
+                                    jokes, ask questions, and find common ground. Be respectful of their boundaries and
+                                    don't push too hard if they don't seem interested.
                                 </p>
                             </div>
 
@@ -34,8 +49,8 @@
                     </div>
                     <div class="lg:w-1/2 pr-4 pl-4 self-center">
                         <div class="text-center relative px-[30px] py-0">
-                            <img class="w-full absolute top-[-10%] z-[-1] animate-[scaleAni_5s_linear_infinite] left-[0%]"
-                                src="@/assets/frontend/images/flirting/circle.png" alt="">
+                            <!-- <img class="w-full absolute top-[-10%] z-[-1] animate-[scaleAni_5s_linear_infinite] left-[0%]"
+                                src="@/assets/frontend/images/flirting/circle.png" alt=""> -->
                             <img class="w-full" src="@/assets/frontend/images/flirting/illutration.png" alt="">
                         </div>
                     </div>
@@ -49,4 +64,22 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style  scoped>
+.scaleAni{
+    animation: scaleAni 5s linear infinite;
+}
+@keyframes scaleAni {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+</style>

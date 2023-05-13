@@ -1,7 +1,12 @@
 <script setup>
+import { useStyleStore } from '~~/stores/style';
 const menuOpen = ref(false);
 const changeMenuOpen = ()=>{
     menuOpen.value = !menuOpen.value;
+}
+const styleStore = useStyleStore();
+const toggledark = ()=>{
+    styleStore.setDarkMode();
 }
 
 </script>
@@ -42,6 +47,11 @@ const changeMenuOpen = ()=>{
                         <li>
                             <div class="serch-icon">
                                 <i class="fas fa-search"></i>
+                            </div>
+                        </li>
+                        <li @click="toggledark">
+                            <div class="serch-icon">
+                                <i class="fas fa-moon"></i>
                             </div>
                         </li>
                         <li>
@@ -114,6 +124,12 @@ const changeMenuOpen = ()=>{
                         <li>
                             <div class="serch-icon min-[992px]:cursor-pointer min-[992px]:text-white">
                                 <i class="fas fa-search min-[992px]:text-white min-[992px]:text-base"></i>
+                            </div>
+                        </li>
+                        <li @click="toggledark">
+                            <div class="serch-icon min-[992px]:cursor-pointer min-[992px]:text-white">
+                                <i class="fas fa-moon min-[992px]:text-white min-[992px]:text-base"></i>
+
                             </div>
                         </li>
                         <li>

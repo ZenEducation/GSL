@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class=" dark:text-[white] dark:bg-[#202342]">
+
         <Navbar/>
         <breadcrumb title="Profile"/>
         <profile/>

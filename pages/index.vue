@@ -1,15 +1,18 @@
 <template>
-  <Navbar/>
-  <IndexBanner/>
-  <IndexFeature/>
-  <IndexFlirting/>
-  <IndexHowItWorks/>
-  <IndexStatistics/>
-  <IndexJoinNow/>
-  <IndexFeatures/>
-  <IndexLatestRegistered/>
-  <IndexSuccessStories/>
-  <NewsLatter/>
+  <div class=" dark:text-[white] dark:bg-[#202342]">
+
+    <Navbar/>
+    <IndexBanner/>
+    <IndexFeature/>
+    <IndexFlirting/>
+    <IndexHowItWorks/>
+    <IndexStatistics/>
+    <IndexJoinNow/>
+    <IndexFeatures/>
+    <IndexLatestRegistered/>
+    <IndexSuccessStories/>
+    <NewsLatter/>
+  </div>
 </template>
 
 <script>

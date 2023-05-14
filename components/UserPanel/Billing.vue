@@ -72,8 +72,8 @@
         </div>
         <div>
             <div class="select-payment flex gap-8 p-4 rounded-lg flex-wrap mb-8">
-                <div class="option w-24 h-20 flex text-xs  p-2 rounded-lg  text-gray-600 dark:text-white hover:border-[#4441e7] flex-col justify-between items-center cursor-pointer relative border-[#a6a6cb] border-solid border">
-                    <i class="fa fas-check-circle absolute text-indigo-700 text-xl invisible"></i>
+                <div class="option w-24 h-20 flex text-xs  p-2 rounded-lg  text-gray-600 dark:text-white border-[#4441e7] flex-col justify-between items-center cursor-pointer relative border-solid border">
+                    <i class="fas fa-check-circle absolute text-indigo-700 top-0 left-0 text-xl invisible group-hover:visible"></i>
                     <img src="@/assets/frontend/images/card1.png" alt="">
                     Credit Card
                 </div>

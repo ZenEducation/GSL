@@ -12,15 +12,246 @@
             </h4>
         </div>
         <div class="flex flex-col ">
-            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md "  v-for="index in 7" key="index">
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
 
                 <div class="">
                     <div class="flex ">
-                        <div class="w-[40px] h-[40px] bg-slate-500 rounded-[50%] flex justify-center align-middle mr-6">
-                            <i class="fas fa-cogs mt-2"></i>
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
                         </div>
                         <div>
                             <h6 class="mt-1 dark:text-white" >Subscriptions</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Recommended</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Comments</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Reply to My comments</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Tags</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Friend Requests</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Groups</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >Events</h6>
                         </div>
 
                     </div>
@@ -58,15 +289,49 @@
             </h4>
         </div>
         <div class="flex flex-col ">
-            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md "  v-for="index in 2" key="index">
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
 
                 <div class="">
                     <div class="flex ">
-                        <div class="w-[40px] h-[40px] bg-slate-500 rounded-[50%] flex justify-center align-middle mr-6">
-                            <i class="fas fa-cogs mt-2"></i>
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
                         </div>
                         <div>
-                            <h6 class="mt-1 dark:text-white" >Subscriptions</h6>
+                            <h6 class="mt-1 dark:text-white" >Send me Emails about peyamba</h6>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>
+                            Notify me about activity from the profiles I'm subscribed to
+                        </p>
+                    </div>
+
+                </div>
+                <div class="w-[70px] flex align-middle">
+                    <div class="mt-5">
+                        <label class="relative inline-flex sm:ml-6 items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                          </label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="mx-2 my-6 p-5 flex bg-slate-100 dark:bg-[#202342] rounded-md " >
+
+                <div class="">
+                    <div class="flex ">
+                        <div class="w-10 h-10  bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] leading-10 text-center text-base mr-5 rounded-[50%]">
+                            <i class="far fa-closed-captioning text-[#f6e9f9]  bg-transparent"></i>
+                        </div>
+                        <div>
+                            <h6 class="mt-1 dark:text-white" >
+                                Promotional and helpful Recommendations</h6>
                         </div>
 
                     </div>

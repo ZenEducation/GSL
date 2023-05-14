@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="bg-no-repeat bg-bottom bg-cover relative overflow-hidden pt-[189px] pb-[120px] px-0">
-            <img class="absolute leftRight right-[10%] max-lg:h-16 max-lg:top-[120px] max-lg:left-[40%] "
+            <img class="absolute leftRight right-[10%] lg:w-1/2 max-lg:h-16 max-lg:top-[120px] max-lg:left-[40%] "
                 src="@/assets/frontend/images/banner/aimg1.png" alt="">
             <img class="absolute upDown right-[17%] bottom-[20%]  h-16"
                 src="@/assets/frontend/images/banner/aimg2.png" alt="">

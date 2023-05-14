@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class=" py-[116px]">
+        <section class="py-[20px]" >
             <div
                 class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
@@ -8,9 +8,7 @@
                     <div class="pr-4 pl-4">
                         <div>
                             <div class="mb-0">
-                                <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
 
-                                </h6>
                                 <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
                                     Report Abuse
                                 </h2>
@@ -106,10 +104,10 @@
                             </div>
 
                         </div>
-                        <div class=" justify-center items-center h-auto lg:px-40 py-10">
+                        <div class=" justify-center items-center h-auto lg:px-40 py-10 ">
                             <form action="" method="post"
-                                class="w-full flex justify-center p-7 flex-col items-center rounded-2xl">
-                                <h1 class="text-black dark:text-white text-2xl ">Report About Abuser</h1>
+                                class="w-full bg-[url('../images/banner/bc-about.jpg')] bg-cover bg-bottom bg-no-repeat flex justify-center p-7 flex-col items-center rounded-2xl">
+                                <h1 class="text-white text-2xl ">Report About Abuser</h1>
                                 <input type="text" placeholder="Enter Your Username:" class="lg:w-2/3 rounded-lg my-2">
                                 <input type="email" placeholder="Enter Your Email:" class="lg:w-2/3 rounded-lg my-2">
                                 <input type="text" placeholder="Enter Your Abuser Username:" class="lg:w-2/3 rounded-lg my-2">

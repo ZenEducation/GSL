@@ -4,7 +4,7 @@
             <div
                 class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-1/2 pr-4 pl-4">
+                    <div class="lg:w-2/5 pr-4 pl-4">
                         <div class="text-left">
                             <div class="text-left mb-[59px]">
                                 <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px] text-left">
@@ -47,8 +47,8 @@
                                 Seek Your Partner</NuxtLink>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 pr-4 pl-4 self-center">
-                        <div class="text-center relative px-[30px] py-0">
+                    <div class="lg:w-3/5 max-lg:px-4 self-center">
+                        <div class="text-center relative max-lg:px-[30px] py-0">
                             <!-- <img class="w-full absolute top-[-10%] z-[-1] animate-[scaleAni_5s_linear_infinite] left-[0%]"
                                 src="@/assets/frontend/images/flirting/circle.png" alt=""> -->
                             <img class="w-full" src="@/assets/frontend/images/flirting/illutration.png" alt="">

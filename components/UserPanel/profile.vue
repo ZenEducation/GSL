@@ -25,16 +25,16 @@
                                     <div  class="mx-4 my-5">
                                         <ul type="disc" class="ml-4">
                                             <li>
-                                                <div @click = "()=>{ changePage(0) }" :class="{'text-red-500': page == 0}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]  font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-setting.html">Profile Info</div>
+                                                <div @click = "()=>{ changePage(0) }" :class="{'text-red-500 dark:text-red-500': page == 0}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]  font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-setting.html">Profile Info</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(1) }" :class="{'text-red-500': page == 1}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]  font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-notification.html">Notifications</div>
+                                                <div @click = "()=>{ changePage(1) }" :class="{'text-red-500 dark:text-red-500': page == 1}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]  font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-notification.html">Notifications</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(2) }" :class="{'text-red-500': page == 2}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]   font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-friend-request.html">Friend Requests</div>
+                                                <div @click = "()=>{ changePage(2) }" :class="{'text-red-500 dark:text-red-500': page == 2}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]   font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-friend-request.html">Friend Requests</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(3) }" :class="{'text-red-500': page == 3}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]   font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-badges.html">Badges</div>
+                                                <div @click = "()=>{ changePage(3) }" :class="{'text-red-500 dark:text-red-500': page == 3}"  class="cursor-pointer text-sm  dark:hover:text-[#ff3366] dark:text-[white] text-[#3e3f5e]   font-bold transition-all duration-[ease] delay-[0.3s]  hover:text-[#ff3366]" to="user-badges.html">Badges</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -61,19 +61,19 @@
                                     <div class="mx-4 my-5">
                                         <ul>
                                             <li>
-                                                <div @click = "()=>{ changePage(4) }" :class="{'text-red-500': page == 4}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-account-info.html">Account Info</div>
+                                                <div @click = "()=>{ changePage(4) }" :class="{'text-red-500 dark:text-red-500': page == 4}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-account-info.html">Account Info</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(5) }" :class="{'text-red-500': page == 5}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-change-pass.html">Change Password</div>
+                                                <div @click = "()=>{ changePage(5) }" :class="{'text-red-500 dark:text-red-500': page == 5}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-change-pass.html">Change Password</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(6) }" :class="{'text-red-500': page == 6}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-privicy-setting.html">Privacy Settings</div>
+                                                <div @click = "()=>{ changePage(6) }" :class="{'text-red-500 dark:text-red-500': page == 6}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-privicy-setting.html">Privacy Settings</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(7) }" :class="{'text-red-500': page == 7}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-verify-account.html">Verified account</div>
+                                                <div @click = "()=>{ changePage(7) }" :class="{'text-red-500 dark:text-red-500': page == 7}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-verify-account.html">Verified account</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(8) }" :class="{'text-red-500': page == 8}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-close-account.html">Close Account</div>
+                                                <div @click = "()=>{ changePage(8) }" :class="{'text-red-500 dark:text-red-500': page == 8}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-close-account.html">Close Account</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -99,13 +99,13 @@
                                     <div class="mx-4 my-5">
                                         <ul>
                                             <li>
-                                                <div @click = "()=>{ changePage(9) }" :class="{'text-red-500': page == 9}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-billing.html" >Billing & Payout</div>
+                                                <div @click = "()=>{ changePage(9) }" :class="{'text-red-500 dark:text-red-500': page == 9}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-billing.html" >Billing & Payout</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(10) }" :class="{'text-red-500': page == 10}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-plan.html">Upgrade Membership Plan</div>
+                                                <div @click = "()=>{ changePage(10) }" :class="{'text-red-500 dark:text-red-500': page == 10}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-plan.html">Upgrade Membership Plan</div>
                                             </li>
                                             <li>
-                                                <div @click = "()=>{ changePage(11) }" :class="{'text-red-500': page == 11}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-purchase.html">View Purchase History</div>
+                                                <div @click = "()=>{ changePage(11) }" :class="{'text-red-500 dark:text-red-500': page == 11}"  class="cursor-pointer text-sm text-[#3e3f5e]  dark:hover:text-[#ff3366]  hover:text-[#ff3366]  dark:text-[white] font-bold transition-all duration-[ease] delay-[0.3s]" to="user-purchase.html">View Purchase History</div>
                                             </li>
                                         </ul>
                                     </div>

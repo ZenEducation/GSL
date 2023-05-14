@@ -4,7 +4,7 @@
     </div>
 
     <div class="lg:flex lg:flex-wrap ">
-        <div class="lg:w-1/2 pr-4 pl-4">
+        <div class="lg:w-1/2  pr-4 pl-4">
             <div class="bg-white   dark:bg-[#262950] shadow-[0px_10px_5px_0px_rgba(119,123,146,0.02)] transition-all duration-[ease] delay-[0.3s] rounded-[10px]">
                 <div class="h-40 bg-[url('@/assets/frontend/images/profile/profile-box-bg.png')] bg-no-repeat bg-[bottom_center] bg-contain"></div>
                 <div class="relative text-center pt-[55px] pb-[30px] px-[30px]">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="lg:w-1/2 pr-4 pl-4">
+        <div class="lg:w-1/2  pr-4 pl-4">
             <div class="mb-30 bg-white  dark:bg-[#262950] shadow-[0px_0px_40px_0px_rgba(94,92,154,0.12)] relative pl-[90px] pr-[30px] py-[30px] rounded-[5px]">
                 <div class="absolute -translate-y-2/4 w-10 h-10 leading-10 text-center bg-[#f7e9f8] mr-5 rounded-[50%] left-[30px] top-2/4">
                     <i class="fas fa-user bg-clip-text bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] fill-transparent"></i>
@@ -53,15 +53,15 @@
         </div>
         <div>
             <div class="flex flex-wrap ">
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Profile Name</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Profile Name</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="text" placeholder="Profile Name">
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Public Email</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Public Email</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="text" placeholder="Public Email">
                     </div>
                 </div>
@@ -71,39 +71,39 @@
                             placeholder="Write a little description about you..."></textarea>
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Country</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Country</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent  h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="" disabled selected>Select Country</option>
                             <option value="">United State</option>
                         </select>
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">City</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">City</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="" disabled selected>Select City</option>
                             <option value="">New Work</option>
                         </select>
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Birthday</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Birthday</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="date">
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Occupation</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Occupation</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="text" placeholder="Occupation">
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Status</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Status</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="">In a Relationship</option>
                             <option value="">Single</option>
@@ -111,9 +111,9 @@
                         </select>
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Birthplace</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Birthplace</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="text" placeholder="Birthplace">
                     </div>
                 </div>
@@ -131,31 +131,31 @@
             <div class="flex flex-wrap ">
                 <div class="w-full pr-4 pl-4">
                     <div class="mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Favourite TV Shows</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Favourite TV Shows</label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" placeholder="Favourite TV Shows"></textarea>
                     </div>
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Favourite Music Bands / Artists</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Favourite Music Bands / Artists</label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" placeholder="Favourite Music Bands / Artists"></textarea>
                     </div>
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Favourite Movies</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Favourite Movies</label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" placeholder="Favourite Movies"></textarea>
                     </div>
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Favourite Games </label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Favourite Games </label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" placeholder="Favourite Games "></textarea>
                     </div>
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Favourite Games </label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Favourite Games </label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" placeholder="Favourite Games"></textarea>
                     </div>
                 </div>
@@ -172,21 +172,21 @@
             <div class="flex flex-wrap ">
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Title or Place</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Title or Place</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="text" placeholder="Title or Place">
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Year Started</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Year Started</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="">2014</option>
                         </select>
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Year End</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Year End</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="">2017</option>
                         </select>
@@ -194,27 +194,27 @@
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Description</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Description</label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" id="" placeholder="Description"></textarea>
                     </div>
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Title or Place</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Title or Place</label>
                         <input class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" type="text" placeholder="Title or Place">
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Year Started</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Year Started</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="">2014</option>
                         </select>
                     </div>
                 </div>
-                <div class="w-1/2 pr-4 pl-4">
+                <div class="max-lg:w-full w-1/2  pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Year End</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Year End</label>
                         <select class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent h-[60px] border px-5 py-0 border-solid border-[rgba(0,0,0,0.1)]" name="" id="">
                             <option value="">2017</option>
                         </select>
@@ -222,7 +222,7 @@
                 </div>
                 <div class="w-full pr-4 pl-4">
                     <div class=" mb-[30px]">
-                        <label for="" class="text-sm text-[#505386] font-semibold mb-0">Description</label>
+                        <label for="" class="dark:text-white text-sm text-[#505386] font-semibold mb-0">Description</label>
                         <textarea class="dark:border-[rgba(256,256,256,0.1)] dark:text-white bg-transparent border h-[120px] border-solid border-[rgba(0,0,0,0.1)]" name="" id="" placeholder="Description"></textarea>
                     </div>
                 </div>
@@ -230,7 +230,7 @@
         </div>
     </div>
     <div class="buttons  mt-30">
-        <button type="submit" class="inline-block w-auto bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white cursor-pointer h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Save Changes</button>
-        <button class="inline-block font-semibold w-auto h-auto ml-5 px-[35px] py-[11px] rounded-[50px] border-2 border-solid border-[rgba(0,0,0,0.1)] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-white cursor-pointer  hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Discard All</button>
+        <button type="submit" class="inline-block w-auto max-sm:px-4 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white cursor-pointer h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Save Changes</button>
+        <button class="inline-block font-semibold w-auto h-auto ml-5 px-[35px] max-sm:px-4 py-[11px] rounded-[50px] border-2 border-solid border-[rgba(0,0,0,0.1)] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-white cursor-pointer  hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Discard All</button>
     </div>
 </template>

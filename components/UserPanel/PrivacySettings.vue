@@ -1,6 +1,6 @@
 <template>
     <div class="dark:bg-[#262950] shadow-[0px_0px_40px_0px_rgba(94,92,154,0.12)] text-2xl leading-[34px] font-bold bg-white flex justify-between mb-[30px] p-[30px] rounded-[5px]">
-        Account Info
+        Privacy Settings
     </div>
 
     <div class="mt-30 dark:bg-[#262950] bg-white p-6 rounded-md">

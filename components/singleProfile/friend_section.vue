@@ -2,7 +2,8 @@
     <div>
         <div class="profile-main-content">
             <div v-for="index in 8" key="index">
-                <div class="flex border mt-[30px] p-5 rounded-[15px] border-solid dark:border-[white]  border-[rgba(0,0,0,0.1)]">
+                <div
+                    class="flex border mt-[30px] p-5 rounded-[15px] border-solid dark:border-[white]  border-[rgba(0,0,0,0.1)]">
                     <img src="@/assets/frontend/images/profile/friend1.png" class="max-w-[80px] mr-5" alt="">
                     <div class="flex-[1] self-center relative pr-[150px]">
                         <NuxtLink to="#" class="text-xl leading-[30px] font-bold text-[#333333] dark:text-gray-50">
@@ -21,10 +22,11 @@
                         </NuxtLink>
                     </div>
                 </div>
-        </div>
+            </div>
 
+        </div>
     </div>
-</div></template>
+</template>
 
 <script setup>
 

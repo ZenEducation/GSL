@@ -1,7 +1,21 @@
 <template>
-    <div
-        class="dark:bg-[#262950] shadow-[0px_0px_40px_0px_rgba(94,92,154,0.12)] text-2xl leading-[34px] font-bold bg-white flex justify-between mb-[30px] p-[30px] rounded-[5px]">
-        Friend Request
+    <div 
+        class="dark:bg-[#262950] shadow-[0px_0px_40px_0px_rgba(94,92,154,0.12)]  bg-white flex justify-between mb-[30px] p-[30px] rounded-[5px]">
+        <div class=" text-2xl leading-[34px] font-bold" >
+            Friend Requests
+        </div>
+        <div  class="flex align-middle self-end relative max-lg:mt-6">
+            <NuxtLink @click="()=>{showModal = true}" to="#"
+                class="mx-3 text-[#333] dark:text-gray-50 px-5 py-1.5  right-0 top-2/4 ">
+                Find Friend
+            </NuxtLink>
+            <NuxtLink @click="()=>{showSetting = true}" to="#"
+                class="mx-3 flex-[16px] text-[#333] dark:text-gray-50 px-5 py-1.5  right-0 top-2/4 ">
+                Settings
+            </NuxtLink>
+        </div>
+
+        
     </div>
 
     <div class="mt-30 bg-transparent dark:bg-transparent border-solid border-1 border-blue-950 p-6 rounded-md">
@@ -54,6 +68,8 @@
             class="inline-block font-semibold w-auto h-auto ml-5 px-[35px] max-sm:px-4 py-[11px] rounded-[50px] border-2 border-solid border-[rgba(0,0,0,0.1)] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-white cursor-pointer  hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Discard
             All</button>
     </div>
+    <UserPanelFindFriendPopup @close-modal="showModal = false" v-show="showModal" />
+    <UserPanelSettingsPopup @close-modal="showSetting = false" v-show="showSetting"/>
 </template>
 <style scoped>
 i {
@@ -62,3 +78,11 @@ i {
     background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
     background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
 }</style>
+<script setup>
+const showModal = ref(false)
+
+const showSetting = ref(false)
+
+
+
+</script>

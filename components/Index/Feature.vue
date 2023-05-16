@@ -10,7 +10,7 @@
                             <div class="flex justify-center items-center">
                                 <img src="@/assets/frontend/images/feature/icon01.png" class="h-[90px] mb-[30px]" alt="">
                             </div>
-                            <h4 class="text-2xl leading-[34px] font-semibold">
+                            <h4 class=" dark:text-[white]  text-2xl leading-[34px] font-semibold">
                                 100% Verified
                             </h4>
                         </div>

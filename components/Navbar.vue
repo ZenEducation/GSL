@@ -69,7 +69,7 @@ const toggledark = ()=>{
                             </a>
                             <ul class="submenu" style="display: block;"  >
                                 <li>
-                                    <a href="#">Profile</a>
+                                    <a href="/singleprofile">Profile</a>
                                 </li>
                                 <li>
                                     <a href="#">Logout</a>
@@ -148,7 +148,7 @@ const toggledark = ()=>{
                             <ul
                                 class="submenu min-[992px]:left-auto min-[992px]:right-0 min-[992px]:before:left-auto min-[992px]:before:right-[15px]">
                                 <li>
-                                    <a href="#">Profile</a>
+                                    <a href="/singleprofile">Profile</a>
                                 </li>
                                 <li>
                                     <a href="#">Logout</a>

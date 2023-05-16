@@ -10,7 +10,7 @@
                         </div>
                         <div class="lg:w-3/5 max-lg:mt-10 pr-4 pl-4 ">
                             <div class="block text-left px-0 py-[15px]">
-                                <img src="@/assets/frontend/images/logo2.png" class="inline-block" alt="logo">
+                                <img src="@/assets/frontend/images/logo/logo1.png" class="inline-block" alt="logo">
                             </div>
                         </div>
                     </div>

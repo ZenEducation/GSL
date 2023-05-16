@@ -44,7 +44,7 @@
                             </h4>
                             <ul>
                                 <li>
-                                    <a href="/aboutus" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <a href="/about" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> About Us
                                     </a>
                                 </li>

@@ -114,7 +114,7 @@
                         </div>
 
                     </div>
-                    <div class="xl:w-2/3  md:w-3/5 pr-4 pl-4 ">
+                    <div class="xl:w-2/3  md:w-3/5 pr-4 pl-4 w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] ">
 
                         <UserPanelProfileInfo v-if="page == 0"/>
                         <LazyUserPanelNotification v-if="page == 1"/>

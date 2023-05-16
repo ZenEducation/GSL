@@ -87,6 +87,15 @@ const toggledark = ()=>{
                                     <a href="/singleprofile">Profile</a>
                                 </li>
                                 <li>
+                                    <a href="/UserPanel">User Panel</a>
+                                </li>
+                                <li>
+                                    <a href="/login">Login</a>
+                                </li>
+                                <li>
+                                    <a href="/register">Register</a>
+                                </li>
+                                <li>
                                     <a href="#">Logout</a>
                                 </li>
                             </ul>
@@ -173,6 +182,9 @@ const toggledark = ()=>{
                                 class="submenu min-[992px]:left-auto min-[992px]:right-0 min-[992px]:before:left-auto min-[992px]:before:right-[15px]">
                                 <li>
                                     <a href="/singleprofile">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="/UserPanel">User Panel</a>
                                 </li>
                                 <li>
                                     <a href="/login">Login</a>

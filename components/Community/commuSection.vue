@@ -53,7 +53,7 @@
                                     <p class="mb-2">
                                         6 days ago
                                     </p>
-                                    <NuxtLink to="/peyamba/communitysingle"
+                                    <NuxtLink to="/communitysingle"
                                         class="text-2xl leading-[34px] font-bold block dark:text-gray-50  text-[#333333]  mb-[18px]">
                                         Philosophy of love
                                     </NuxtLink>

@@ -2,7 +2,7 @@
     <div class=" dark:text-[white] dark:bg-[#202342]">
 
         <Navbar />
-        <Breadcrumb title="Cookie"/>
+        <Breadcrumb title="Cookie Policy"/>
         <CookiePolicy/>
         <NewsLatter />
     </div>

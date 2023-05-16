@@ -9,9 +9,7 @@
                         <div>
                             <div class="mb-0">
 
-                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
-                                    Report Abuse
-                                </h2>
+
 
                                 <p class="my-2 text-justify">GSL is committed to providing a safe and
                                     respectful environment for

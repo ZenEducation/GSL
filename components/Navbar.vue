@@ -25,36 +25,36 @@ const toggledark = ()=>{
                     <div class=" lg:hidden">
                     <ul class="menu active overflow-hidden"  v-if="menuOpen" >
                         <li >
-                            <a href="/" class="active">Home</a>
+                            <NuxtLink href="/" class="active">Home</NuxtLink>
                         </li>
                         <li>
-                            <a href="community">Community</a>
+                            <NuxtLink href="community">Community</NuxtLink>
                             <ul class="submenu" style="display: block;"  >
                                 <li>
-                                    <a href="/communitySingle">Community Single</a>
+                                    <NuxtLink href="/communitySingle">Community Single</NuxtLink>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="membership">Membership</a>
+                            <NuxtLink href="membership">Membership</NuxtLink>
                         </li>
 
 
                         <li>
-                            <a href="#">blog</a>
+                            <NuxtLink href="#">blog</NuxtLink>
                             <ul class="submenu">
                                 <li>
-                                    <a href="blog">Blog</a>
+                                    <NuxtLink href="blog">Blog</NuxtLink>
                                 </li>
                             </ul>
                         </li>
                         <li >
-                            <a href="/blogsingle">Blog Single</a>
+                            <NuxtLink href="/blogsingle">Blog Single</NuxtLink>
 
                             <ul class="submenu" style="display: block;"  >
 
                                 <li>
-                                    <a href="/blog">Blog</a>
+                                    <NuxtLink href="/blog">Blog</NuxtLink>
                                 </li>
                             </ul>
                         </li>
@@ -79,24 +79,24 @@ const toggledark = ()=>{
                             </div>
                         </li>
                         <li class="user-profile">
-                            <a href="#">
+                            <NuxtLink href="#">
                                 User 
-                            </a>
+                            </NuxtLink>
                             <ul class="submenu" style="display: block;"  >
                                 <li>
-                                    <a href="/singleprofile">Profile</a>
+                                    <NuxtLink href="/singleprofile">Profile</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="/UserPanel">User Panel</a>
+                                    <NuxtLink href="/UserPanel">User Panel</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="/login">Login</a>
+                                    <NuxtLink href="/login">Login</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="/register">Register</a>
+                                    <NuxtLink href="/register">Register</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="#">Logout</a>
+                                    <NuxtLink href="#">Logout</NuxtLink>
                                 </li>
                             </ul>
                         </li>
@@ -135,8 +135,8 @@ const toggledark = ()=>{
                         </li>
                         <li
                             class="min-[992px]:relative min-[992px]:px-3 py-[5px] min-[992px]:hover:opacity-100 min-[992px]:hover:visible min-[992px]:hover:translate-y-0 min-[992px]:hover:block">
-                            <a href="#"
-                                class=" py-[5px] no-underline min-[992px]:text-[#e9eeff] min-[992px]:text-base min-[992px]:font-bold min-[992px]:uppercase min-[992px]:relative min-[992px]:before:w-[calc(100%_-_10px)] min-[992px]:before:h-0.5 min-[992px]:before:bg-white min-[992px]:before:absolute min-[992px]:before:content-[''] min-[992px]:before:transition-all min-[992px]:before:duration-[ease] min-[992px]:before:delay-[0.3s] min-[992px]:before:origin-left min-[992px]:before:scale-x-0 min-[992px]:before:top-[calc(100%_+_18px)] min-[992px]:hover:scale-x-100">blog</a>
+                            <NuxtLink href="#"
+                                class=" py-[5px] no-underline min-[992px]:text-[#e9eeff] min-[992px]:text-base min-[992px]:font-bold min-[992px]:uppercase min-[992px]:relative min-[992px]:before:w-[calc(100%_-_10px)] min-[992px]:before:h-0.5 min-[992px]:before:bg-white min-[992px]:before:absolute min-[992px]:before:content-[''] min-[992px]:before:transition-all min-[992px]:before:duration-[ease] min-[992px]:before:delay-[0.3s] min-[992px]:before:origin-left min-[992px]:before:scale-x-0 min-[992px]:before:top-[calc(100%_+_18px)] min-[992px]:hover:scale-x-100">blog</NuxtLink>
                             <ul
                                 class="submenu min-[992px]:absolute min-[992px]:bg-white min-[992px]:min-w-[240px] min-[992px]:shadow-[0px_0px_11.7px_1.3px_rgba(0,0,0,0.08)] min-[992px]:opacity-0 min-[992px]:invisible min-[992px]:transition-all min-[992px]:duration-[ease] min-[992px]:delay-[0.3s] min-[992px]:translate-y-[15px] min-[992px]:px-0 min-[992px]:py-5 min-[992px]:left-1.5 min-[992px]:top-full min-[992px]:before:absolute min-[992px]:before:content-['s'] min-[992px]:before:-translate-y-full min-[992px]:before:w-0 min-[992px]:before:h-0 min-[992px]:before:border-t-transparent min-[992px]:before:border-b-[15px] min-[992px]:before:border-x-transparent min-[992px]:before:border-[10px] min-[992px]:before:border-solid min-[992px]:before:border-white min-[992px]:before:left-[15px] min-[992px]:before:top-0">
                                 <li class="min-[992px]:px-5 min-[992px]:py-0 min-[992px]:hover:translate-x-0">
@@ -175,25 +175,25 @@ const toggledark = ()=>{
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="min-[992px]:flex min-[992px]:items-center">
+                            <NuxtLink href="#" class="min-[992px]:flex min-[992px]:items-center">
                                 <img src="@/assets/frontend/images/user-demo.png" alt="" />
-                            </a>
+                            </NuxtLink>
                             <ul
                                 class="submenu min-[992px]:left-auto min-[992px]:right-0 min-[992px]:before:left-auto min-[992px]:before:right-[15px]">
                                 <li>
-                                    <a href="/singleprofile">Profile</a>
+                                    <NuxtLink href="/singleprofile">Profile</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="/UserPanel">User Panel</a>
+                                    <NuxtLink href="/UserPanel">User Panel</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="/login">Login</a>
+                                    <NuxtLink href="/login">Login</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="/register">Register</a>
+                                    <NuxtLink href="/register">Register</NuxtLink>
                                 </li>
                                 <li>
-                                    <a href="#">Logout</a>
+                                    <NuxtLink href="#">Logout</NuxtLink>
                                 </li>
                             </ul>
                         </li>

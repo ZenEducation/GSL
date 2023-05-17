@@ -1,7 +1,7 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
-        <Navbar/>
-        <breadcrumb title="blog"/>
+        <Navbar />
+        <breadcrumb title="blog" />
         <div>
             <section class="px-0 py-[120px]">
                 <div
@@ -10,7 +10,7 @@
                         <div class="lg:w-2/3 pr-4 pl-4">
                             <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px] rounded-[20px]">
                                 <div>
-                                    <img src="@/assets/frontend/images/blog/blog1.png" class="w-full" alt="">
+                                    <img :src="img" class="w-full" alt="">
                                 </div>
                                 <div class="content flex pt-[30px] pb-[19px] px-[30px]">
                                     <div class="w-10 mr-[30px]">
@@ -52,7 +52,8 @@
                                                 {{ data?.blockquote }}
                                             </blockquote>
                                             <div v-for="item in  data.content" class="mb-7">
-                                                <h4 class="text-[22px] dark:text-[white] leading-[38px] font-bold mb-[13px]">
+                                                <h4
+                                                    class="text-[22px] dark:text-[white] leading-[38px] font-bold mb-[13px]">
                                                     {{ item?.heading }}
                                                 </h4>
                                                 <p class="my-[18px]">
@@ -64,7 +65,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-    
+
                                             <p class="my-[18px]">
                                                 {{ data?.conclusion }}
                                             </p>
@@ -77,10 +78,12 @@
                                                 </span>
                                                 <div>
                                                     <NuxtLink to="#"
-                                                        class="text-[#333333]  dark:text-[white] after:content-[',']"> Tickets
+                                                        class="text-[#333333]  dark:text-[white] after:content-[',']">
+                                                        Tickets
                                                     </NuxtLink>
                                                     <NuxtLink to="#"
-                                                        class="text-[#333333]  dark:text-[white] after:content-[',']"> Coming
+                                                        class="text-[#333333]  dark:text-[white] after:content-[',']">
+                                                        Coming
                                                         Soon </NuxtLink>
                                                     <NuxtLink to="#" class="text-[#333333]"> Movies </NuxtLink>
                                                 </div>
@@ -120,7 +123,8 @@
                                 <div
                                     class="min-w-[100px] w-[100px] h-[100px] border p-[5px] rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
                                     <NuxtLink to="#" class="block overflow-hidden rounded-[50%]">
-                                        <img src="@/assets/frontend/images/blog/blog-admin-big.png" class="w-full" alt="blog">
+                                        <img src="@/assets/frontend/images/blog/blog-admin-big.png" class="w-full"
+                                            alt="blog">
                                     </NuxtLink>
                                 </div>
                                 <div class=" pl-[30px]">
@@ -130,25 +134,27 @@
                                         </NuxtLink>
                                     </h5>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt
+                                        ut
                                         labore et dolore magna aliqua.Quis ipsum suspendisse .
                                     </p>
                                 </div>
                             </div>
                             <div class="mt-10 md:mt-[50px] min-[992px]:mt-20">
-                                <h5 class="uppercase   dark:text-[white] text-[22px] pb-[15px] min-[576px]:test-[28px]">comments
+                                <h5 class="uppercase   dark:text-[white] text-[22px] pb-[15px] min-[576px]:test-[28px]">
+                                    comments
                                 </h5>
                                 <ul>
                                     <li class="px-0 py-[21px]  dark:border-t-[rgba(256,256,256,0.155)]  border-t-[rgba(0,0,0,0.1)] border-t border-solid sm:flex"
                                         v-for="index in 3" key="index">
                                         <div class=" sm:min-w-min">
-    
+
                                             <div
                                                 class="ml-[30px] w-[65px] h-[65px] border p-[5px] flex justify-center rounded-[50%] border-solid border-[rgba(0,0,0,0.15)] ">
                                                 <div>
                                                     <NuxtLink to="#" class="block overflow-hidden rounded-[50%]">
-                                                        <img src="@/assets/frontend/images/blog/comment-1.png" class="w-full"
-                                                            alt="blog">
+                                                        <img src="@/assets/frontend/images/blog/comment-1.png"
+                                                            class="w-full" alt="blog">
                                                     </NuxtLink>
                                                 </div>
                                             </div>
@@ -161,15 +167,18 @@
                                         </div>
                                         <div class="w-full sm:w-[calc(100%_-_215px)] pl-[30px]">
                                             <p class="m-0">
-                                                Maecenas at velit eu erat egestas vestibulum id ut tellus. Sed et semper mauris.
-                                                Quisque eu lorem libero. Donec finibus metus tellus, eget rutrum est mattis non.
+                                                Maecenas at velit eu erat egestas vestibulum id ut tellus. Sed et semper
+                                                mauris.
+                                                Quisque eu lorem libero. Donec finibus metus tellus, eget rutrum est mattis
+                                                non.
                                             </p>
                                         </div>
                                     </li>
-    
+
                                 </ul>
                                 <div class="mt-5 md:mt-[35px] min-[992px]:mt-[55px]">
-                                    <h5 class="uppercase  dark:text-[white] text-[22px] pb-[15px] min-[576px]:text-[28px]">leave
+                                    <h5 class="uppercase  dark:text-[white] text-[22px] pb-[15px] min-[576px]:text-[28px]">
+                                        leave
                                         comment</h5>
                                     <form>
                                         <div class="mb-4">
@@ -199,7 +208,7 @@
                         <div class="lg:w-1/3 pr-4 pl-4">
                             <div
                                 class=" mb-8 pt-8 pb-[30px] px-[30px] bg-white dark:bg-[#262950] shadow-[0px_5px_20px_0px_rgba(78,64,128,0.1)] py-[30px] rounded-[20px]">
-    
+
                                 <h5 class=" dark:text-[white] title">search</h5>
                                 <form class="search-form mt-5">
                                     <input type="text" placeholder="Enter your Search Content"
@@ -285,7 +294,8 @@
                                         <div>
                                             <h6 class="text-lg dark:text-[white] mb-[7px]">
                                                 <NuxtLink to="#"
-                                                    class="overflow-hidden dark:text-[white]  text-ellipsis no-underline">How to
+                                                    class="overflow-hidden dark:text-[white]  text-ellipsis no-underline">
+                                                    How to
                                                     Start, Plan, and Keep a
                                                     Date Night</NuxtLink>
                                             </h6>
@@ -349,11 +359,13 @@
                 </div>
             </section>
         </div>
-        <NewsLatter/>
+        <NewsLatter />
     </div>
 </template>
 
 <script setup>
+import img from '@/assets/frontend/images/blog/blogs/03.jpg'
+
 const data = {
     "intro": "First dates can be nerve-wracking, but they can also be exciting and full of potential. To make a good impression and increase your chances of a second date, it's important to follow some basic first date etiquette. In this blog post, we'll share some do's and don'ts of first date etiquette.",
     "title": "The Do's and Don'ts of First Date Etiquette",
@@ -387,11 +399,9 @@ const data = {
 
 </script>
 
-<style scoped>
-i {
+<style scoped>i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
     background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
-}
-</style>
+}</style>

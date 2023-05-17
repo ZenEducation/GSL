@@ -83,7 +83,7 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="#" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/safety" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Safety Tips
                                     </NuxtLink>
                                 </li>
@@ -93,7 +93,7 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/safety" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="#" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Safety & Security
                                     </NuxtLink>
                                 </li>

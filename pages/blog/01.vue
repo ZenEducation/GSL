@@ -11,7 +11,7 @@
                         <div class="lg:w-2/3 pr-4 pl-4">
                             <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px] rounded-[20px]">
                                 <div>
-                                    <img src="@/assets/frontend/images/blog/blog1.png" class="w-full" alt="">
+                                    <img :src="img" class="w-full" alt="">
                                 </div>
                                 <div class="content flex pt-[30px] pb-[19px] px-[30px]">
                                     <div class="w-10 mr-[30px]">
@@ -355,6 +355,7 @@
 </template>
 
 <script setup>
+import img from '@/assets/frontend/images/blog/blogs/01.jpg'
 const data = {
     "intro": "When it comes to online dating, your dating profile is your first impression. It's what potential matches use to decide if they want to get to know you better. Therefore, it's crucial to create a winning dating profile that showcases your best qualities and attracts the right kind of matches. In this blog post, we'll share 5 tips for creating a winning dating profile.",
     "title": "5 Tips for Creating a Winning Dating Profile",

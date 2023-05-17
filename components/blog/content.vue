@@ -253,56 +253,63 @@
 </template>
 
 <script setup>
-import img from '@/assets/frontend/images/blog/blog1.png'
+import img1 from '@/assets/frontend/images/blog/blogs/01.jpg'
+import img2 from '@/assets/frontend/images/blog/blogs/02.jpg'
+import img3 from '@/assets/frontend/images/blog/blogs/03.jpg'
+import img4 from '@/assets/frontend/images/blog/blogs/04.jpg'
+import img5 from '@/assets/frontend/images/blog/blogs/05.jpg'
+import img6 from '@/assets/frontend/images/blog/blogs/06.jpg'
+import img7 from '@/assets/frontend/images/blog/blogs/07.jpg'
+
 const data = [
     {
         id: 1,
         link: "01",
         title: '5 Tips for Creating a Winning Dating Profile',
         para: "When it comes to online dating, your dating profile is your first impression. It's what potential matches use to decide if they want to get to know you better. Therefore, it's crucial to create a winning dating profile that showcases your best qualities and attracts the right kind of matches. In this blog post, we'll share 5 tips for creating a winning dating profile.",
-        image: img,
+        image: img1,
     },
     {
         id: 2,
         link: "02",
         title: 'How to Navigate the World of Online Dating',
         para: "Online dating has become a popular way to meet new people and find potential partners. However, navigating the world of online dating can be overwhelming and challenging, especially if you're new to the scene. In this blog post, we'll share some tips on how to navigate the world of online dating",
-        image: img,
+        image: img2,
     },
     {
         id: 3,
         link: "03",
         title: "The Do's and Don'ts of First Date Etiquette",
         para: "First dates can be nerve-wracking, but they can also be exciting and full of potential. To make a good impression and increase your chances of a second date, it's important to follow some basic first date etiquette. In this blog post, we'll share some do's and don'ts of first date etiquette",
-        image: img,
+        image: img3,
     },
     {
         id: 4,
         link: "04",
         title: 'The Benefits of Dating Someone with Similar Interests',
         para: "When it comes to dating, many people believe that opposites attract. While there is some truth to this, dating someone with similar interests can also have many benefits. In this blog post, we'll explore some of the advantages of dating someone with similar interests.",
-        image: img,
+        image: img4,
     },
     {
         id: 5,
         link: "05",
         title: "The Importance of Communication in a Successful Relationship",
         para: "Communication is a fundamental aspect of any relationship, and it plays a crucial role in building a successful and healthy relationship. In this blog post, we'll explore the importance of communication in a successful relationship.",
-        image: img,
+        image: img5,
     },
     {
         id: 6,
         link: "06",
         title: "How to Spot Red Flags in a Potential Partner",
         para: "When it comes to dating, it's important to be aware of potential red flags in a potential partner. These red flags can signal potential issues or problems down the road, and being able to spot them early on can save you a lot of time and heartache. In this blog post, we'll explore some common red flags to look out for in a potential partner.",
-        image: img,
+        image: img6,
     },
     {
         id: 7,
         link: "07",
         title: "The Art of Flirting: Tips and Tricks",
         para: "Flirting is a subtle art that can help you connect with others and build romantic relationships. But for some people, it can be difficult to know where to start. In this blog post, we'll explore some tips and tricks for mastering the art of flirting.",
-        image: img,
+        image: img7,
     },
 
 

@@ -8,6 +8,7 @@
 </template>
 
 <script setup>
+
 import Breadcrumb from '~~/components/Breadcrumb.vue';
 import content from '~~/components/blog/content.vue';
 

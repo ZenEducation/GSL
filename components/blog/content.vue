@@ -5,8 +5,9 @@
                 class="w-full mx-auto px-[15px] sm:max-w-[540px] sm:px-4 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]">
                 <div class="flex flex-wrap ">
                     <div class="lg:w-2/3">
-                        <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px]  rounded-[20px]" v-for="blog in data" :key=blog.id >
-                            <NuxtLink :to="'/blog/'+blog.link "  class="w-full">
+                        <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px]  rounded-[20px]"
+                            v-for="blog in data" :key=blog.id>
+                            <NuxtLink :to="'/blog/' + blog.link" class="w-full">
                                 <img :src="blog.image" class="w-full" alt="">
                             </NuxtLink>
                             <div class="content flex pt-[30px] pb-[19px] px-[30px]">
@@ -38,11 +39,14 @@
                                         December 19, 2021
                                     </p>
                                     <div>
-                                        <h4 class=" dark:text-[white] text-[28px] leading-[38px] font-bold mb-[13px] pt-3">
-                                            {{blog.title}}
-                                        </h4>
+                                        <NuxtLink :to="'/blog/' + blog.link">
+                                            <h4
+                                                class=" dark:text-[white] text-[28px] leading-[38px] font-bold mb-[13px] pt-3">
+                                                {{ blog.title }}
+                                            </h4>
+                                        </NuxtLink>
                                         <p>
-                                            {{blog.para}}
+                                            {{ blog.para }}
                                         </p>
 
 

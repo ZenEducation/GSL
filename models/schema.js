@@ -619,6 +619,268 @@ export const schema = {
                 }
             ]
         },
+        "UserFemale": {
+            "name": "UserFemale",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "firstName": {
+                    "name": "firstName",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "middleName": {
+                    "name": "middleName",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "lastName": {
+                    "name": "lastName",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "email": {
+                    "name": "email",
+                    "isArray": false,
+                    "type": "AWSEmail",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "altEmails": {
+                    "name": "altEmails",
+                    "isArray": false,
+                    "type": "AWSEmail",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "phoneNum": {
+                    "name": "phoneNum",
+                    "isArray": false,
+                    "type": "AWSPhone",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "altPhoneNums": {
+                    "name": "altPhoneNums",
+                    "isArray": false,
+                    "type": "AWSPhone",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "userFemaleTextEmployee": {
+                    "name": "userFemaleTextEmployee",
+                    "isArray": true,
+                    "type": {
+                        "model": "UserFemaleTextEmployee"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "userFemale"
+                        ]
+                    }
+                },
+                "userFemaleDelightEmployee": {
+                    "name": "userFemaleDelightEmployee",
+                    "isArray": true,
+                    "type": {
+                        "model": "UserFemaleDelightEmployee"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "userFemale"
+                        ]
+                    }
+                }
+            },
+            "syncable": true,
+            "pluralName": "UserFemales",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "UserMisc": {
+            "name": "UserMisc",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "firstName": {
+                    "name": "firstName",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "middleName": {
+                    "name": "middleName",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "lastName": {
+                    "name": "lastName",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "email": {
+                    "name": "email",
+                    "isArray": false,
+                    "type": "AWSEmail",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "altEmails": {
+                    "name": "altEmails",
+                    "isArray": false,
+                    "type": "AWSEmail",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "phoneNum": {
+                    "name": "phoneNum",
+                    "isArray": false,
+                    "type": "AWSPhone",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "altPhoneNums": {
+                    "name": "altPhoneNums",
+                    "isArray": false,
+                    "type": "AWSPhone",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "userMiscTextEmployee": {
+                    "name": "userMiscTextEmployee",
+                    "isArray": true,
+                    "type": {
+                        "model": "UserMiscTextEmployee"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "userMisc"
+                        ]
+                    }
+                },
+                "userMiscDelightEmployee": {
+                    "name": "userMiscDelightEmployee",
+                    "isArray": true,
+                    "type": {
+                        "model": "UserMiscDelightEmployee"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": [
+                            "userMisc"
+                        ]
+                    }
+                }
+            },
+            "syncable": true,
+            "pluralName": "UserMiscs",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
         "TextEmployee": {
             "name": "TextEmployee",
             "fields": {
@@ -766,137 +1028,6 @@ export const schema = {
                 }
             ]
         },
-        "UserFemale": {
-            "name": "UserFemale",
-            "fields": {
-                "id": {
-                    "name": "id",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "firstName": {
-                    "name": "firstName",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "middleName": {
-                    "name": "middleName",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "lastName": {
-                    "name": "lastName",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "email": {
-                    "name": "email",
-                    "isArray": false,
-                    "type": "AWSEmail",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "altEmails": {
-                    "name": "altEmails",
-                    "isArray": false,
-                    "type": "AWSEmail",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "phoneNum": {
-                    "name": "phoneNum",
-                    "isArray": false,
-                    "type": "AWSPhone",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "altPhoneNums": {
-                    "name": "altPhoneNums",
-                    "isArray": false,
-                    "type": "AWSPhone",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "userFemaleTextEmployee": {
-                    "name": "userFemaleTextEmployee",
-                    "isArray": true,
-                    "type": {
-                        "model": "UserFemaleTextEmployee"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "userFemale"
-                        ]
-                    }
-                },
-                "userFemaleDelightEmployee": {
-                    "name": "userFemaleDelightEmployee",
-                    "isArray": true,
-                    "type": {
-                        "model": "UserFemaleDelightEmployee"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "userFemale"
-                        ]
-                    }
-                }
-            },
-            "syncable": true,
-            "pluralName": "UserFemales",
-            "attributes": [
-                {
-                    "type": "model",
-                    "properties": {}
-                },
-                {
-                    "type": "auth",
-                    "properties": {
-                        "rules": [
-                            {
-                                "allow": "public",
-                                "operations": [
-                                    "create",
-                                    "update",
-                                    "delete",
-                                    "read"
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
         "DelightEmployee": {
             "name": "DelightEmployee",
             "fields": {
@@ -1021,137 +1152,6 @@ export const schema = {
             },
             "syncable": true,
             "pluralName": "DelightEmployees",
-            "attributes": [
-                {
-                    "type": "model",
-                    "properties": {}
-                },
-                {
-                    "type": "auth",
-                    "properties": {
-                        "rules": [
-                            {
-                                "allow": "public",
-                                "operations": [
-                                    "create",
-                                    "update",
-                                    "delete",
-                                    "read"
-                                ]
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        "UserMisc": {
-            "name": "UserMisc",
-            "fields": {
-                "id": {
-                    "name": "id",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "firstName": {
-                    "name": "firstName",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "middleName": {
-                    "name": "middleName",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "lastName": {
-                    "name": "lastName",
-                    "isArray": false,
-                    "type": "String",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "email": {
-                    "name": "email",
-                    "isArray": false,
-                    "type": "AWSEmail",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "altEmails": {
-                    "name": "altEmails",
-                    "isArray": false,
-                    "type": "AWSEmail",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "phoneNum": {
-                    "name": "phoneNum",
-                    "isArray": false,
-                    "type": "AWSPhone",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "altPhoneNums": {
-                    "name": "altPhoneNums",
-                    "isArray": false,
-                    "type": "AWSPhone",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "userMiscTextEmployee": {
-                    "name": "userMiscTextEmployee",
-                    "isArray": true,
-                    "type": {
-                        "model": "UserMiscTextEmployee"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "userMisc"
-                        ]
-                    }
-                },
-                "userMiscDelightEmployee": {
-                    "name": "userMiscDelightEmployee",
-                    "isArray": true,
-                    "type": {
-                        "model": "UserMiscDelightEmployee"
-                    },
-                    "isRequired": false,
-                    "attributes": [],
-                    "isArrayNullable": true,
-                    "association": {
-                        "connectionType": "HAS_MANY",
-                        "associatedWith": [
-                            "userMisc"
-                        ]
-                    }
-                }
-            },
-            "syncable": true,
-            "pluralName": "UserMiscs",
             "attributes": [
                 {
                     "type": "model",
@@ -1975,13 +1975,6 @@ export const schema = {
                     "isRequired": true,
                     "attributes": []
                 },
-                "textEmployeeId": {
-                    "name": "textEmployeeId",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": false,
-                    "attributes": []
-                },
                 "userFemaleId": {
                     "name": "userFemaleId",
                     "isArray": false,
@@ -1989,20 +1982,12 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "textEmployee": {
-                    "name": "textEmployee",
+                "textEmployeeId": {
+                    "name": "textEmployeeId",
                     "isArray": false,
-                    "type": {
-                        "model": "TextEmployee"
-                    },
-                    "isRequired": true,
-                    "attributes": [],
-                    "association": {
-                        "connectionType": "BELONGS_TO",
-                        "targetNames": [
-                            "textEmployeeId"
-                        ]
-                    }
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
                 },
                 "userFemale": {
                     "name": "userFemale",
@@ -2016,6 +2001,21 @@ export const schema = {
                         "connectionType": "BELONGS_TO",
                         "targetNames": [
                             "userFemaleId"
+                        ]
+                    }
+                },
+                "textEmployee": {
+                    "name": "textEmployee",
+                    "isArray": false,
+                    "type": {
+                        "model": "TextEmployee"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "textEmployeeId"
                         ]
                     }
                 },
@@ -2046,100 +2046,11 @@ export const schema = {
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byTextEmployee",
-                        "fields": [
-                            "textEmployeeId"
-                        ]
-                    }
-                },
-                {
-                    "type": "key",
-                    "properties": {
                         "name": "byUserFemale",
                         "fields": [
                             "userFemaleId"
                         ]
                     }
-                }
-            ]
-        },
-        "UserMiscTextEmployee": {
-            "name": "UserMiscTextEmployee",
-            "fields": {
-                "id": {
-                    "name": "id",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": true,
-                    "attributes": []
-                },
-                "textEmployeeId": {
-                    "name": "textEmployeeId",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "userMiscId": {
-                    "name": "userMiscId",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": false,
-                    "attributes": []
-                },
-                "textEmployee": {
-                    "name": "textEmployee",
-                    "isArray": false,
-                    "type": {
-                        "model": "TextEmployee"
-                    },
-                    "isRequired": true,
-                    "attributes": [],
-                    "association": {
-                        "connectionType": "BELONGS_TO",
-                        "targetNames": [
-                            "textEmployeeId"
-                        ]
-                    }
-                },
-                "userMisc": {
-                    "name": "userMisc",
-                    "isArray": false,
-                    "type": {
-                        "model": "UserMisc"
-                    },
-                    "isRequired": true,
-                    "attributes": [],
-                    "association": {
-                        "connectionType": "BELONGS_TO",
-                        "targetNames": [
-                            "userMiscId"
-                        ]
-                    }
-                },
-                "createdAt": {
-                    "name": "createdAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                },
-                "updatedAt": {
-                    "name": "updatedAt",
-                    "isArray": false,
-                    "type": "AWSDateTime",
-                    "isRequired": false,
-                    "attributes": [],
-                    "isReadOnly": true
-                }
-            },
-            "syncable": true,
-            "pluralName": "UserMiscTextEmployees",
-            "attributes": [
-                {
-                    "type": "model",
-                    "properties": {}
                 },
                 {
                     "type": "key",
@@ -2147,15 +2058,6 @@ export const schema = {
                         "name": "byTextEmployee",
                         "fields": [
                             "textEmployeeId"
-                        ]
-                    }
-                },
-                {
-                    "type": "key",
-                    "properties": {
-                        "name": "byUserMisc",
-                        "fields": [
-                            "userMiscId"
                         ]
                     }
                 }
@@ -2259,21 +2161,14 @@ export const schema = {
                 }
             ]
         },
-        "UserMiscDelightEmployee": {
-            "name": "UserMiscDelightEmployee",
+        "UserMiscTextEmployee": {
+            "name": "UserMiscTextEmployee",
             "fields": {
                 "id": {
                     "name": "id",
                     "isArray": false,
                     "type": "ID",
                     "isRequired": true,
-                    "attributes": []
-                },
-                "delightEmployeeId": {
-                    "name": "delightEmployeeId",
-                    "isArray": false,
-                    "type": "ID",
-                    "isRequired": false,
                     "attributes": []
                 },
                 "userMiscId": {
@@ -2283,20 +2178,12 @@ export const schema = {
                     "isRequired": false,
                     "attributes": []
                 },
-                "delightEmployee": {
-                    "name": "delightEmployee",
+                "textEmployeeId": {
+                    "name": "textEmployeeId",
                     "isArray": false,
-                    "type": {
-                        "model": "DelightEmployee"
-                    },
-                    "isRequired": true,
-                    "attributes": [],
-                    "association": {
-                        "connectionType": "BELONGS_TO",
-                        "targetNames": [
-                            "delightEmployeeId"
-                        ]
-                    }
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
                 },
                 "userMisc": {
                     "name": "userMisc",
@@ -2310,6 +2197,119 @@ export const schema = {
                         "connectionType": "BELONGS_TO",
                         "targetNames": [
                             "userMiscId"
+                        ]
+                    }
+                },
+                "textEmployee": {
+                    "name": "textEmployee",
+                    "isArray": false,
+                    "type": {
+                        "model": "TextEmployee"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "textEmployeeId"
+                        ]
+                    }
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "UserMiscTextEmployees",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byUserMisc",
+                        "fields": [
+                            "userMiscId"
+                        ]
+                    }
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byTextEmployee",
+                        "fields": [
+                            "textEmployeeId"
+                        ]
+                    }
+                }
+            ]
+        },
+        "UserMiscDelightEmployee": {
+            "name": "UserMiscDelightEmployee",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "userMiscId": {
+                    "name": "userMiscId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "delightEmployeeId": {
+                    "name": "delightEmployeeId",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "userMisc": {
+                    "name": "userMisc",
+                    "isArray": false,
+                    "type": {
+                        "model": "UserMisc"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "userMiscId"
+                        ]
+                    }
+                },
+                "delightEmployee": {
+                    "name": "delightEmployee",
+                    "isArray": false,
+                    "type": {
+                        "model": "DelightEmployee"
+                    },
+                    "isRequired": true,
+                    "attributes": [],
+                    "association": {
+                        "connectionType": "BELONGS_TO",
+                        "targetNames": [
+                            "delightEmployeeId"
                         ]
                     }
                 },
@@ -2340,18 +2340,18 @@ export const schema = {
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byDelightEmployee",
+                        "name": "byUserMisc",
                         "fields": [
-                            "delightEmployeeId"
+                            "userMiscId"
                         ]
                     }
                 },
                 {
                     "type": "key",
                     "properties": {
-                        "name": "byUserMisc",
+                        "name": "byDelightEmployee",
                         "fields": [
-                            "userMiscId"
+                            "delightEmployeeId"
                         ]
                     }
                 }
@@ -2360,6 +2360,6 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "codegenVersion": "3.3.5",
+    "codegenVersion": "3.4.3",
     "version": "1dd9885d5ec07b35f68b59955a5fb581"
 };

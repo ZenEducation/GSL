@@ -7,7 +7,8 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   return {
     provide: {
-      //   auth: Auth,
+        auth: Auth,
     },
   };
 });
+//export default null;

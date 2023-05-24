@@ -1,20 +1,15 @@
 {
-  "dev": {
+  "multipleui": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-gsl-dev-113424-authRole",
-      "UnauthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-dev-113424-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-dev-113424-authRole",
-      "Region": "ap-south-1",
-      "DeploymentBucketName": "amplify-gsl-dev-113424-deployment",
-      "UnauthRoleName": "amplify-gsl-dev-113424-unauthRole",
-      "StackName": "amplify-gsl-dev-113424",
-      "StackId": "arn:aws:cloudformation:ap-south-1:317786172055:stack/amplify-gsl-dev-113424/c7513e50-a451-11ed-b993-06ca1beddde6",
-      "AmplifyAppId": "dbwywa3d9v9jy"
-    },
-    "categories": {
-      "api": {
-        "GSL": {}
-      }
+      "AuthRoleName": "amplify-gsl-multipleui-105505-authRole",
+      "UnauthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-multipleui-105505-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-multipleui-105505-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-gsl-multipleui-105505-deployment",
+      "UnauthRoleName": "amplify-gsl-multipleui-105505-unauthRole",
+      "StackName": "amplify-gsl-multipleui-105505",
+      "StackId": "arn:aws:cloudformation:us-east-1:317786172055:stack/amplify-gsl-multipleui-105505/71780830-fa21-11ed-8109-12db59606bad",
+      "AmplifyAppId": "dxao6ghfxuy0r"
     }
   }
 }

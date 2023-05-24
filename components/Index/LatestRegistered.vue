@@ -6,8 +6,8 @@
                 src="@/assets/frontend/images/registered/shape.png" alt="">
             <div class="container max-w-full mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
-                    <div class="xl:w-1/2 pr-4 pl-4">
-                        <div class="relative z-[3] pl-[36%] pr-[200px]">
+                    <div class="xl:w-1/2 max-xl:w-full pr-4 pl-4">
+                        <div class="relative z-[3] pl-[36%] max-xl:pl-6  pr-[200px] max-xl:pr-10 ">
                             <div class="text-left mb-[36px]">
                                 <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]">
                                     Latest Registered
@@ -25,11 +25,11 @@
                                 Join Now !</NuxtLink>
                         </div>
                     </div>
-                    <div class="xl:w-1/2 pr-4 pl-4 ">
+                    <div class="xl:w-1/2 max-xl:w-full pr-4 pl-4 ">
                         
                         <div class=" h-[250px] m-auto overflow-hidden relative w-auto">
-                            <div class="animate-[scroll_40s_linear_infinite] flex w-[calc(250px_*_14)] ">
-                                <div class=" owl-carousel flex gap-5 ">
+                            <div class="animate-[scroll_50s_linear_infinite]  w-[calc(250px_*_14)] mt-20 flex ">
+                                <div style="display: flex;" class=" owl-carousel flex gap-5 ">
                                     <div class="text-center">
                                         <div class="relative mb-[30px]">
                                             <img src="@/assets/frontend/images/registered/p1.png"

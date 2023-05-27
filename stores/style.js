@@ -47,7 +47,7 @@ export const useStyleStore = defineStore("style", {
 
       if (typeof document !== "undefined") {
         document.body.classList[this.darkMode ? "add" : "remove"](
-          "dark-scrollbars"
+          "dark"
         );
 
         document.documentElement.classList[this.darkMode ? "add" : "remove"](

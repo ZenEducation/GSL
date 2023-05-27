@@ -1,4 +1,5 @@
 {
+
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-gsl-staging-102355-authRole",
@@ -9,6 +10,7 @@
       "UnauthRoleName": "amplify-gsl-staging-102355-unauthRole",
       "StackName": "amplify-gsl-staging-102355",
       "StackId": "arn:aws:cloudformation:us-east-1:317786172055:stack/amplify-gsl-staging-102355/16b9bbe0-fa1d-11ed-b305-0acf0a830499",
+
       "AmplifyAppId": "dxao6ghfxuy0r"
     }
   }

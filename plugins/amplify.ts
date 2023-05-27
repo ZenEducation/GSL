@@ -6,9 +6,11 @@ export default defineNuxtPlugin((nuxtApp) => {
   Amplify.configure(awsExports);
 
   return {
-     provide: {
-      auth: Auth,
-     },
-   };
+
+    provide: {
+        auth: Auth,
+    },
+  };
+
 });
 //export default null;

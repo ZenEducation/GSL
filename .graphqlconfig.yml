@@ -1,0 +1,12 @@
+projects:
+  GSL:
+    schemaPath: 'd:/zenverse/gsl_9/graphql/schema.json'
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql

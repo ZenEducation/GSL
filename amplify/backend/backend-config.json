@@ -21,5 +21,33 @@
       "providerPlugin": "awscloudformation",
       "service": "AppSync"
     }
+  },
+  "auth": {
+    "gsl9b24d498": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
   }
 }

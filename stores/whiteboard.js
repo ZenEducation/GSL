@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-import tools from "@/components/Whiteboard/tools/tool/tools";
+import tools from "@/components/PublicUI/Whiteboard/tools/tool/tools";
 
 const state = () => ({
   tool: null,

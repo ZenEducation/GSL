@@ -1,10 +1,10 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
 
-        <Navbar/>
-        <Breadcrumb title="Report Abuse"/>
-        <ReportAbuse/>
-        <NewsLatter/>
+        <PublicUINavbar />
+        <Breadcrumb title="Report Abuse" />
+        <ReportAbuse />
+        <NewsLatter />
     </div>
 </template>
 

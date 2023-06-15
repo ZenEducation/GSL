@@ -33,7 +33,7 @@
 <template>
   <div>
     <NuxtLayout>
-      <PremSectionFormScreen v-slot="{ cardClass }" bg="purplePink" has-promo>
+      <PremSectionFormScreen v-slot="cardClass" bg="purplePink" has-promo>
         <CardBox
           :class="[cardClass, cardClassAddon]"
           is-form

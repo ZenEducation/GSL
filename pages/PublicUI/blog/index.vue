@@ -1,9 +1,9 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
-        <Navbar/>
-        <breadcrumb title="blog"/>
-        <content/>
-        <NewsLatter/>
+        <PublicUINavbar />
+        <breadcrumb title="blog" />
+        <content />
+        <NewsLatter />
     </div>
 </template>
 
@@ -16,6 +16,4 @@ import content from '~~/components/PublicUI/blog/content.vue';
 </script>
 
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

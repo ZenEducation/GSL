@@ -1,11 +1,11 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
-        <Navbar/>
-        <breadcrumb title="Membership"/>
-        <member/>
-        <faq/>
-        <NewsLatter/>
-        
+        <PublicUINavbar />
+        <breadcrumb title="Membership" />
+        <member />
+        <faq />
+        <NewsLatter />
+
     </div>
 </template>
 
@@ -17,6 +17,4 @@
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

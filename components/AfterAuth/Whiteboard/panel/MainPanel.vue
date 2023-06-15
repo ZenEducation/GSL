@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="mainPanel">
     <!-- Actions panel -->
     <div class="actionsPanel">

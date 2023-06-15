@@ -2,9 +2,9 @@
     <div class=" dark:text-[white] dark:bg-[#202342]">
 
         <PublicUINavbar />
-        <breadcrumb title="Profile" />
+        <Breadcrumb title="Profile" />
         <profile />
-        <NewsLatter />
+        <PublicUINewsLatter />
     </div>
 </template>
 

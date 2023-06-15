@@ -1,9 +1,9 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
         <PublicUINavbar />
-        <breadcrumb title="Community" />
+        <Breadcrumb title="Community" />
         <commusection />
-        <NewsLatter />
+        <PublicUINewsLatter />
 
     </div>
 </template>

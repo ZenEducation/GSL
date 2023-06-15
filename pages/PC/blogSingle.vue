@@ -3,7 +3,7 @@
         <PublicUINavbar />
         <breadcrumb title="Blog" />
         <content />
-        <NewsLatter />
+        <PublicUINewsLatter />
     </div>
 </template>
 

@@ -116,19 +116,18 @@
                     </div>
                     <div class="xl:w-2/3  md:w-3/5 pr-4 pl-4 w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] ">
 
-                        <UserPanelProfileInfo v-if="page == 0"/>
-                        <LazyUserPanelNotification v-if="page == 1"/>
-                        <UserPanelFriendRequests v-if="page == 2"/>
-                        <UserPanelBadges  v-if="page == 3" />
-                        <UserPanelAccountInfo  v-if="page == 4"/>
-                        <UserPanelChangePassword  v-if="page == 5"/>
-                        <UserPanelPrivacySettings v-if="page == 6"/>
-                        <UserPanelVerifiedAccount v-if="page == 7"/>
-                        <UserPanelCloseAccount  v-if="page == 8"/>
-                        <UserPanelBilling  v-if="page == 9"/>
-                        <UserPanelUpgradeMembership  v-if="page == 10"/>
-                        <UserPanelViewPurchase  v-if="page == 11"/>
-
+                        <PublicUIUserPanelProfileInfo v-if="page == 0"/>
+                        <PublicUIUserPanelNotification v-if="page == 1"/>
+                        <PublicUIUserPanelFriendRequests v-if="page == 2"/>
+                        <PublicUIUserPanelBadges  v-if="page == 3" />
+                        <PublicUIUserPanelAccountInfo  v-if="page == 4"/>
+                        <PublicUIUserPanelChangePassword  v-if="page == 5"/>
+                        <PublicUIUserPanelPrivacySettings v-if="page == 6"/>
+                        <PublicUIUserPanelVerifiedAccount v-if="page == 7"/>
+                        <PublicUIUserPanelCloseAccount  v-if="page == 8"/>
+                        <PublicUIUserPanelBilling  v-if="page == 9"/>
+                        <PublicUIUserPanelUpgradeMembership  v-if="page == 10"/>
+                        <PublicUIUserPanelViewPurchase  v-if="page == 11"/>
 
                     </div>
                 </div>

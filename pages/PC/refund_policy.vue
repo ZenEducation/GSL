@@ -1,10 +1,10 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
 
-        <Navbar />
+        <PublicUINavbar />
         <Breadcrumb title="Refund Policy"/>
         <Content/>
-        <NewsLatter />
+        <PublicUINewsLatter />
     </div>
 </template>
 <script setup>

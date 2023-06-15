@@ -44,12 +44,12 @@
                             </h4>
                             <ul>
                                 <li>
-                                    <NuxtLink href="/PublicUI/about" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/about" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> About Us
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/contact" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/contact" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Contact Us
                                     </NuxtLink>
                                 </li>
@@ -78,12 +78,12 @@
                             </h4>
                             <ul>
                                 <li>
-                                    <NuxtLink href="/PublicUI/userPanel" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/userPanel" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px] "></i> Manage Account
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/safety" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/safety" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Safety Tips
                                     </NuxtLink>
                                 </li>
@@ -98,7 +98,7 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/membership" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/membership" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Membership Level
                                     </NuxtLink>
                                 </li>
@@ -112,17 +112,17 @@
                             </h4>
                             <ul>
                                 <li>
-                                    <NuxtLink href="/PublicUI/contact" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/contact" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Help centre
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/faqs" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/faqs" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> FAQ
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/quick_start" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/quick_start" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i>Quick Start Guide
                                     </NuxtLink>
                                 </li>
@@ -146,27 +146,27 @@
                             </h4>
                             <ul>
                                 <li>
-                                    <NuxtLink href="/PublicUI/privacy_policy" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/privacy_policy" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Privacy policy
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/end_user" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/end_user" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> End User Agreements
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/refund_policy" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/refund_policy" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Refund Policy
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/cookie_policy" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/cookie_policy" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Cookie policy
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink href="/PublicUI/report" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
+                                    <NuxtLink href="/PC/report" class="text-white transition-all duration-[ease] delay-[0.3s] hover:text-[#eb1436] hover:pl-2.5 no-underline">
                                         <i class="fas fa-angle-double-right text-base mr-[5px]"></i> Report abuse
                                     </NuxtLink>
                                 </li>

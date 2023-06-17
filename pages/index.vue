@@ -1,10 +1,22 @@
 <template>
-  <div class="bg-gray-900 text-white flex justify-center">
-    <h1>Index Page</h1>
+  <div class=" dark:text-[white] dark:bg-[#202342]">
+
+    <PublicUINavbar/>
+    <PublicUIIndexBanner/>
+    <PublicUIIndexFeature/>
+    <PublicUIIndexFlirting/>
+    <PublicUIIndexHowItWorks/>
+    <PublicUIIndexStatistics/>
+    <PublicUIIndexJoinNow/>
+    <PublicUIIndexFeatures/>
+    <PublicUIIndexLatestRegistered/>
+    <PublicUIIndexSuccessStories/>
+    <PublicUINewsLatter/>
   </div>
 </template>
 
 <script>
+import Breadcrumb from '~~/components/PublicUI/Breadcrumb.vue';
 import { reactive, toRefs } from "vue";
 
 export default {

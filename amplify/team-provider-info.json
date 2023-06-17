@@ -1,3 +1,4 @@
+
 {
   "mainprod": {
     "awscloudformation": {
@@ -12,4 +13,5 @@
       "AmplifyAppId": "dxao6ghfxuy0r"
     }
   }
+
 }

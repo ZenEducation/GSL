@@ -1,3 +1,4 @@
+
 [
   {
     "Key": "user:Stack",
@@ -7,4 +8,5 @@
     "Key": "user:Application",
     "Value": "{project-name}"
   }
+
 ]

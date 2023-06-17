@@ -1,3 +1,4 @@
+
 export type AmplifyDependentResourcesAttributes = {
   "api": {
     "GSL": {
@@ -7,3 +8,4 @@ export type AmplifyDependentResourcesAttributes = {
     }
   }
 }
+

@@ -1,9 +1,9 @@
 <template>
     <div>
-        <Navbar/>
-        <slot/>
+        <PublicUINavbar />
+        <slot />
 
-        <NewsLatter/>
+        <PublicUINewsLatter />
 
         <!-- <newslatter/> -->
     </div>
@@ -13,6 +13,4 @@
    
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

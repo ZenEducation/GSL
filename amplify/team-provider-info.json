@@ -11,5 +11,26 @@
       "StackId": "arn:aws:cloudformation:us-east-1:317786172055:stack/amplify-gsl-multipleui-105505/71780830-fa21-11ed-8109-12db59606bad",
       "AmplifyAppId": "dxao6ghfxuy0r"
     }
+  },
+  "auth": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gsl-auth-162657-authRole",
+      "UnauthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-auth-162657-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-auth-162657-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-gsl-auth-162657-deployment",
+      "UnauthRoleName": "amplify-gsl-auth-162657-unauthRole",
+      "StackName": "amplify-gsl-auth-162657",
+      "StackId": "arn:aws:cloudformation:us-east-1:317786172055:stack/amplify-gsl-auth-162657/30176690-0f59-11ee-aa75-0ae44596ee03",
+      "AmplifyAppId": "dxao6ghfxuy0r"
+    },
+    "categories": {
+      "auth": {
+        "gsl6fb48fa3": {}
+      },
+      "api": {
+        "GSL": {}
+      }
+    }
   }
 }

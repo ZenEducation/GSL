@@ -20,16 +20,40 @@ export const actions = {
     }
   },
 
-  async register({ email, password }) {
+  async register({
+    name,
+    email,
+    password,
+    birthdate,
+    gender,
+    city,
+    role,
+    maratialStatus,
+    lookingFor,
+  }) {
     const user = await Auth.signUp({
       username: email,
       password,
+      attributes: {
+        name,
+        birthdate,
+        gender,
+        email,
+        "custom:city": city,
+        "custom:role": role,
+        "custom:maratialStatus": maratialStatus,
+        "custom:lookingFor": lookingFor,
+      },
     });
     return user;
   },
 
   async confirmRegistration({ email, code }) {
     return await Auth.confirmSignUp(email, code);
+  },
+
+  async resendConfirmationCode({ email }) {
+    await Auth.resendSignUp(email);
   },
 
   async login({ email, password }) {
@@ -45,8 +69,34 @@ export const actions = {
       this.isAuthenticated = false;
     }
     this.user = null;
-    if (!user) {
+    if (!this.user) {
       console.log("User successfully logged out");
+    }
+  },
+
+  async forgetPassword({ email }) {
+    const forgetInfo = await Auth.forgotPassword(email)
+      .then((data) => {
+        return data;
+      })
+      .catch((err) => {
+        return err;
+      });
+    return forgetInfo;
+  },
+
+  async forgotPasswordSubmit({ email, code, new_password }) {
+    try {
+      const newPasswordInfo = await Auth.forgotPasswordSubmit(
+        email,
+        code,
+        new_password
+      );
+      console.log(newPasswordInfo);
+      return newPasswordInfo;
+    } catch (err) {
+      console.log(err);
+      return err;
     }
   },
 };

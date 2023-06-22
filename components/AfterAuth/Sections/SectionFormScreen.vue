@@ -66,7 +66,7 @@
     :class="colorClass"
   >
     <div v-if="hasPromo" class="space-y-12 px-12">
-      <div class="hidden lg:block">
+      <!-- <div class="hidden lg:block">
         <Basebuttons type="justify-center" glue>
           <BaseButton
             v-for="(routeLabel, index) in routes"
@@ -78,7 +78,7 @@
             color="whiteDark"
           />
         </Basebuttons>
-      </div>
+      </div> -->
 
       <div class="text-center text-white py-12 md:py-0">
         <h1 class="text-5xl lg:text-6xl font-black">All instances</h1>

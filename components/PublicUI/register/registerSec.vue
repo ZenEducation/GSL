@@ -95,9 +95,9 @@
                                             class="border bg-[rgb(234,242,252)] dark:text-white dark:bg-[#262950]   shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] flex flex-wrap items-center h-[60px] justify-center rounded-[5px] border-solid border-[rgba(59,54,140,0.1)]">
                                             <div class="mr-3">
 
-                                                <label for="males1" class=" ml-2" v-for="ele in gender" :key="gender">{{
+                                                <label for="gender" class=" ml-2" v-for="ele in gender" :key="ele">{{
                                                     ele }}
-                                                    <input type="radio" name="gender1" id="males1" :value="ele"
+                                                    <input type="radio" name="gender1" id="gender" :value="ele"
                                                         v-model="form.gender"
                                                         class="w-5 h-5 border rounded-[50%] border-solid border-[#5650ce] hover:shadow-[0_0_5px_0px_#5650ce_inset] before:content-[''] before:block before:w-3/5 before:h-3/5 before:mx-auto before:my-[20%] before:rounded-[50%] checked:before:bg-[#5650ce] checked:bg-[#5650ce]">
                                                 </label>
@@ -112,9 +112,9 @@
                                             class="border bg-[rgb(234,242,252)] dark:text-white dark:bg-[#262950]   shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] flex flex-wrap items-center h-[60px] justify-center rounded-[5px] border-solid border-[rgba(59,54,140,0.1)]">
                                             <div class="mr-3">
 
-                                                <label for="males1" class=" ml-2" v-for="ele in roles" :key="ele">{{
+                                                <label for="roles" class=" ml-2" v-for="ele in roles" :key="ele">{{
                                                     ele }}
-                                                    <input type="radio" name="gender1" id="males1" :value="ele"
+                                                    <input type="radio" name="role" id="roles" :value="ele"
                                                         @click="setRole(ele)" v-model="form.role"
                                                         class="w-5 h-5 border rounded-[50%] border-solid border-[#5650ce] hover:shadow-[0_0_5px_0px_#5650ce_inset] before:content-[''] before:block before:w-3/5 before:h-3/5 before:mx-auto before:my-[20%] before:rounded-[50%] checked:before:bg-[#5650ce] checked:bg-[#5650ce]">
                                                 </label>

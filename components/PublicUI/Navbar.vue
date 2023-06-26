@@ -1,5 +1,7 @@
 <script setup>
 import { useStyleStore } from '~~/stores/style';
+import { useAuthStore } from '~/stores/authStore';
+const AuthStore = useAuthStore()
 const menuOpen = ref(false);
 const changeMenuOpen = () => {
     menuOpen.value = !menuOpen.value;
@@ -7,6 +9,10 @@ const changeMenuOpen = () => {
 const styleStore = useStyleStore();
 const toggledark = () => {
     styleStore.setDarkMode();
+}
+const logout = () => {
+    AuthStore.logout();
+    navigateTo("/")
 }
 
 </script>
@@ -87,7 +93,7 @@ const toggledark = () => {
                                         <NuxtLink to="/PC/singleprofile">Profile</NuxtLink>
                                     </li>
                                     <li>
-                                        <NuxtLink to="/PC/UserPanel">User Panel</NuxtLink>
+                                        <NuxtLink>User Panel</NuxtLink>
                                     </li>
                                     <li>
                                         <NuxtLink to="/PC/login">Login</NuxtLink>
@@ -96,7 +102,7 @@ const toggledark = () => {
                                         <NuxtLink to="/PC/register">Register</NuxtLink>
                                     </li>
                                     <li>
-                                        <NuxtLink to="#">Logout</NuxtLink>
+                                        <NuxtLink @click="logout">Logout</NuxtLink>
                                     </li>
                                 </ul>
                             </li>
@@ -194,7 +200,7 @@ const toggledark = () => {
                                         <NuxtLink to="/PC/register">Register</NuxtLink>
                                     </li>
                                     <li>
-                                        <NuxtLink to="#">Logout</NuxtLink>
+                                        <NuxtLink @click="logout">Logout</NuxtLink>
                                     </li>
                                 </ul>
                             </li>

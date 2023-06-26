@@ -5,6 +5,6 @@ const AuthStore = useAuthStore();
 
 export default defineNuxtRouteMiddleware((to, from) => {
   if (!localStorage.getItem('authToken')) {
-    return navigateTo("/");
+    return navigateTo("/PC/login");
   }
 });

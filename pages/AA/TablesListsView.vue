@@ -20,6 +20,9 @@
 
   import PremCardBoxProduct from '@/components/AfterAuth/Cards/CardBoxProduct.vue'
 
+  definePageMeta({
+  middleware: 'auth-check'
+})
   const mainStore = useMainStore()
 
   const clientBarItems = computed(() => mainStore.clients.slice(0, 3))

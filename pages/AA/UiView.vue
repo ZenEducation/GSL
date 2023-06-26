@@ -19,6 +19,9 @@
 
   const snackBarLifetime = ref(3000)
 
+  definePageMeta({
+  middleware: 'auth-check'
+})
   const snackBarPush = () => {
     useSnackBarStore().pushMessage(
       snackBarMessage.value,

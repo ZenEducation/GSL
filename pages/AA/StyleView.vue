@@ -15,6 +15,9 @@
     styleStore.setDarkMode(false)
   }
 
+  definePageMeta({
+  middleware: 'auth-check'
+})
   const styles = {
     white: 'white',
     basic: 'bg-gray-500 border-gray-500 hover:bg-gray-600',

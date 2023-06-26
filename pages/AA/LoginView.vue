@@ -9,6 +9,9 @@
 
   const hasTip = ref(false)
 
+  definePageMeta({
+  middleware: 'auth-check'
+})
   setTimeout(() => {
     hasTip.value = true
   }, 750)

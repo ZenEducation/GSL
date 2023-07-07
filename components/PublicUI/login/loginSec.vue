@@ -64,12 +64,11 @@
                                         <p class="inline-block mb-0 px-[15px] py-0">OR</p>
                                     </div>
                                     <div class="block text-center">
-                                        <p class="text-[#3b368c] text-base leading-[26px]">Sign up with your email</p>
-                                        <NuxtLink to="#"
-                                            class=" no-underline border bg-[rgb(234,242,252)] dark:bg-[#262950]  shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] transition-all duration-[ease] delay-[0.3s] mt-[9px] mb-[19px] px-[30px] py-2.5 rounded-[50px] border-solid border-[rgba(59,54,140,0.1)] hover:shadow-[2px_13px_16px_0px_rgba(59,54,140,0.1)]">
+                                        <button @click.prevent="() => Auth.federatedSignIn({provider: 'Google'})"
+                                            class=" no-underline border bg-[rgb(234,242,252)] dark:bg-[#262950]  shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] transition-all duration-[ease] delay-[0.3s] mt-[9px] mb-[19px] px-[30px] py-2.5 rounded-[50px] border-solid border-[rgba(59,54,140,0.1)] hover:shadow-[2px_13px_16px_0px_rgba(59,54,140,0.1)] w-2/5">
                                             <img src="" class="mr-2" alt=""> Sign Up with
                                             Google
-                                        </NuxtLink>
+                                        </button>
                                         <p class="text-base">
                                             Don't have an account? <NuxtLink
                                                 class="text-[#3b368c] font-semibold hover:underline" to="/register">
@@ -89,7 +88,7 @@
 
 <script setup>
 import { useAuthStore } from "@/stores/authStore";
-
+import { Auth } from "aws-amplify";
 const form = reactive({
     email: "",
     password: "",

@@ -63,6 +63,6 @@
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
     "authProviders": [],
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/PC/singleprofile/\",\"https://subproject-auth.dxao6ghfxuy0r.amplifyapp.com/PC/singleprofile/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"https://subproject-auth.dxao6ghfxuy0r.amplifyapp.com/\"]}"
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/PC/login/\",\"https://subproject-auth.dxao6ghfxuy0r.amplifyapp.com/PC/login/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"https://subproject-auth.dxao6ghfxuy0r.amplifyapp.com/\"]}"
   }
 }

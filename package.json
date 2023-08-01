@@ -33,6 +33,7 @@
     "@mdi/js": "^7.0.96",
     "@rollup/plugin-inject": "^5.0.2",
     "@rollup/plugin-terser": "^0.2.0",
+    "@vueup/vue-quill": "^1.2.0",
     "aws-amplify": "^5.0.5",
     "jquery": "^3.6.4",
     "numeral": "^2.0.6",

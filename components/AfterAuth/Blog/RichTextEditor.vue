@@ -1,6 +1,6 @@
-<script setup>
-import { QuillEditor } from "@vueup/vue-quill";
-import "@vueup/vue-quill/dist/vue-quill.snow.css";
+ <script setup>
+import { QuillEditor } from '@vueup/vue-quill'
+import '@vueup/vue-quill/dist/vue-quill.snow.css'
 import { ref, computed } from "vue";
 
 const props = defineProps({
@@ -58,8 +58,15 @@ console.log(props.modelValue, " : model");
 </script>
 
 <template>
-    <div>
+    <div class="">
+        <ClientOnly  placeholder="Loading...">
+
+ 
         <QuillEditor style="min-height: 30vh" theme="snow" :toolbar="toolbarOptions" content-type="html"
             v-model:content="data" ref="quillEditorRef" :style="props.styleP" />
-    </div>
+         
+
+    </ClientOnly>
+</div>
 </template>
+

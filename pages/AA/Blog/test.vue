@@ -1,9 +1,10 @@
 <template>
     <div>
         <RichTextEditor />
+       
     </div>
 </template>
 
-<script>
+<script setup>
 import RichTextEditor from "@/components/AfterAuth/Blog/RichTextEditor.vue"
 </script>

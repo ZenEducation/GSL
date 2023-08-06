@@ -45,6 +45,7 @@
     "tw-elements": "^1.0.0-beta2",
     "uuid4": "^2.0.3",
     "vue": "^3.2.33",
+    "vue-multiselect": "^3.0.0-beta.2",
     "vue-number-animation": "^1.1.2"
   }
 }

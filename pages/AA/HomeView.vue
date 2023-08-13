@@ -37,6 +37,9 @@
 
   const mainStore = useMainStore()
 
+  definePageMeta({
+  middleware: 'auth-check'
+})
   const snackBarStore = useSnackBarStore()
 
   snackBarStore.pushMessage('Welcome back. This is demo', 'contrast')

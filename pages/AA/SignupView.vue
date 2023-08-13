@@ -16,6 +16,9 @@
     pass: 'secret',
   })
 
+  definePageMeta({
+  middleware: 'auth-check'
+})
   const mainStore = useMainStore()
 
   const submit = () => {

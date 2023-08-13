@@ -46,6 +46,22 @@ useHead({
 
 <template>
   <div>
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>
+
+<script setup>
+import { Amplify, Auth } from "aws-amplify";
+import awsconfig from '@/aws-exports';
+
+if(useRequestURL().host.includes('localhost')){
+  awsconfig.oauth.redirectSignIn = 'http://localhost:3000/PC/login/'
+  awsconfig.oauth.redirectSignOut = 'http://localhost:3000/'
+}else{
+  awsconfig.oauth.redirectSignIn = 'https://subproject-auth.dxao6ghfxuy0r.amplifyapp.com/PC/login/'
+  awsconfig.oauth.redirectSignOut = 'https://subproject-auth.dxao6ghfxuy0r.amplifyapp.com/'
+}
+console.log(awsconfig)
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig)
+</script>

@@ -38,34 +38,55 @@ const toolbarOptions = [
     ["clean"],
 ];
 
-const emit = defineEmits(["update:modelValue", "update:text"]);
+// const emit = defineEmits(["update:modelValue", "update:text"]);
 
-const data = ref("");
+// const data = ref("");
+
+// watchEffect(() => {
+//     data.value = props.modelValue;
+// });
+
+// watchEffect(() => {
+//     emit("update:modelValue", data.value);
+//     if (quillEditorRef?.value?.getText()) {
+
+//         emit("update:text", quillEditorRef?.value?.getText());
+//     }
+// });
+
+// console.log(props.modelValue, " : model");
+const emit = defineEmits(['update:modelValue'])
+
+const data = ref('')
 
 watchEffect(() => {
-    data.value = props.modelValue;
-});
+    data.value = props.modelValue
+})
 
 watchEffect(() => {
-    emit("update:modelValue", data.value);
-    if (quillEditorRef?.value?.getText()) {
+    emit('update:modelValue', data.value)
+})
 
-        emit("update:text", quillEditorRef?.value?.getText());
+watchEffect(() => {
+    if (quillEditorRef.value?.getText()) {
+        emit('contentChanged', quillEditorRef.value?.getText())
     }
-});
-
-console.log(props.modelValue, " : model");
+})
 </script>
 
 <template>
     <div class="">
-        <ClientOnly placeholder="Loading...">
+        <!-- <ClientOnly placeholder="Loading...">
 
 
             <QuillEditor style="min-height: 30vh" theme="snow" :toolbar="toolbarOptions" content-type="html"
                 v-model:content="data" ref="quillEditorRef" :style="props.styleP" />
 
 
+        </ClientOnly> -->
+        <ClientOnly placeholder="Loading...">
+            <QuillEditor style="min-height: 30vh" theme="snow" :toolbar="toolbarOptions" content-type="html"
+                v-model:content="data" ref="quillEditorRef" :style="props.styleP" />
         </ClientOnly>
     </div>
 </template>

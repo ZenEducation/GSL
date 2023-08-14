@@ -8,10 +8,10 @@
   "javascript": {
     "framework": "vue",
     "config": {
-      "SourceDir": "/",
-      "DistributionDir": ".output/public",
-      "BuildCommand": "npm run generate",
-      "StartCommand": "npm run generate"
+      "SourceDir": "src",
+      "DistributionDir": "dist",
+      "BuildCommand": "npm.cmd run-script build",
+      "StartCommand": "npm.cmd run-script serve"
     }
   }
 }

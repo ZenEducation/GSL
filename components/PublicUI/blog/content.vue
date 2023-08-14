@@ -5,100 +5,7 @@
                 class="w-full mx-auto px-[15px] sm:max-w-[540px] sm:px-4 md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]">
                 <div class="flex flex-wrap ">
                     <div class="lg:w-2/3">
-                        <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px]  rounded-[20px]"
-                            v-for="blog in data" :key=blog.id>
-                            <NuxtLink :to="'/blog/' + blog.link" class="w-full">
-                                <img :src="blog.image" class="w-full" alt="">
-                            </NuxtLink>
-                            <div class="content flex pt-[30px] pb-[19px] px-[30px]">
-                                <div class="w-10 mr-[30px]">
-                                    <div class="mb-6">
-                                        <img src="@/assets/frontend/images/blog/author-avarat.png" alt="">
-                                    </div>
-                                    <ul class="text-center">
-                                        <li class="mb-3">
-                                            <NuxtLink to="#"
-                                                class="block w-[30px] h-[30px] bg-[#f8e9f7] text-center leading-[30px] text-base mx-auto my-0 rounded-[50%] no-underline">
-                                                <i
-                                                    class="far fa-comments bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]"></i>
-                                            </NuxtLink>
-                                            <span class="font-semibold">30</span>
-                                        </li>
-                                        <li class="mb-0">
-                                            <NuxtLink to="#"
-                                                class="block w-[30px] h-[30px] bg-[#f8e9f7] text-center leading-[30px] text-base mx-auto my-0 rounded-[50%] no-underline">
-                                                <i
-                                                    class="fas fa-share-alt bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)]"></i>
-                                            </NuxtLink>
-                                            <span class="font-semibold">22</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="flex-[1]">
-                                    <p class="text-base leading-[26px]">
-                                        December 19, 2021
-                                    </p>
-                                    <div>
-                                        <NuxtLink :to="'/blog/' + blog.link">
-                                            <h4
-                                                class=" dark:text-[white] text-[28px] leading-[38px] font-bold mb-[13px] pt-3">
-                                                {{ blog.title }}
-                                            </h4>
-                                        </NuxtLink>
-                                        <p>
-                                            {{ blog.para }}
-                                        </p>
-
-
-                                    </div>
-                                    <div
-                                        class="flex flex-wrap justify-between mt-[5px] border-t-[rgba(0,0,0,0.1)] border-t border-solid">
-                                        <div class="flex flex-wrap mt-[25px]">
-                                            <span class="text-lg font-semibold dark:text-[white] text-[#333]">
-                                                Tags :
-                                            </span>
-                                            <div>
-                                                <NuxtLink to="#"
-                                                    class="text-[#333333] dark:text-[white]  after:content-[',']"> Tickets
-                                                </NuxtLink>
-                                                <NuxtLink to="#"
-                                                    class="text-[#333333] dark:text-[white]  after:content-[',']"> Coming
-                                                    Soon
-                                                </NuxtLink>
-                                                <NuxtLink to="#" class="text-[#333333] dark:text-[white] "> Movies
-                                                </NuxtLink>
-                                            </div>
-                                        </div>
-                                        <ul class="mt-[13.5px] mr-[-7.5px] mb-[-7.5px] ml-[-7.5px] flex ">
-                                            <li class="p-[7.5px]">
-                                                <NuxtLink to="#"
-                                                    class="w-9 h-9 leading-9 text-center border text-[#a3a5ac] text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
-                                                    <i class="fab fa-facebook-f"></i>
-                                                </NuxtLink>
-                                            </li>
-                                            <li class="p-[7.5px]">
-                                                <NuxtLink to="#"
-                                                    class="w-9 h-9 leading-9 text-center border text-[#a3a5ac] text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
-                                                    <i class="fab fa-instagram"></i>
-                                                </NuxtLink>
-                                            </li>
-                                            <li class="p-[7.5px]">
-                                                <NuxtLink to="#"
-                                                    class="w-9 h-9 leading-9 text-center border text-[#a3a5ac] text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
-                                                    <i class="fab fa-pinterest"></i>
-                                                </NuxtLink>
-                                            </li>
-                                            <li class="p-[7.5px]">
-                                                <NuxtLink to="#"
-                                                    class="w-9 h-9 leading-9 text-center border text-[#a3a5ac] text-sm rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
-                                                    <i class="fab fa-google"></i>
-                                                </NuxtLink>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <blogContent />
 
                     </div>
                     <div class="lg:w-1/3 pr-4 pl-4">
@@ -264,6 +171,7 @@ import img4 from '@/assets/frontend/images/blog/blogs/04.jpg'
 import img5 from '@/assets/frontend/images/blog/blogs/05.jpg'
 import img6 from '@/assets/frontend/images/blog/blogs/06.jpg'
 import img7 from '@/assets/frontend/images/blog/blogs/07.jpg'
+import blogContent from "@/components/PublicUI/blog/blogContent.vue"
 
 const data = [
     {

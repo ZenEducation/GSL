@@ -5,8 +5,8 @@
         <SectionTitleLineWithButton :icon="mdiPencil" title="Create Blog" main>
           <div
             class="ml-5 lg:flex flex-col resDis lg:order-1 lg:flex-row lg:items-end lg:justify-end items-center justify-center gap-3">
-            <button class="bg-green-700 text-white w-24 h-10 rounded" @click="approveBtn">
-              Approve
+            <button class="bg-red-700 text-white w-24 h-10 rounded" @click="discardBtn">
+              Discard
             </button>
             <button class="bg-blue-600 text-white w-24 h-10 rounded" @click="publishBtn">
               Publish
@@ -14,11 +14,8 @@
             <button class="bg-blue-600 text-white w-24 h-10 rounded" @click="saveReview">
               Save
             </button>
-            <!-- <BaseButton label="Save" color="info" @click="saveReview" /> -->
           </div>
           <BaseButton label="Save" color="info" @click="saveReview" class="lg:hidden" />
-
-          <!-- <BaseButton label="Save" color="info" @click="saveReview" /> -->
         </SectionTitleLineWithButton>
         <CardBox class="mb-6 g:mb-0 lg:col-span-2 xl:col-span-3" if-from @submit.prevent="submit">
           <PremFormField label="Title" horizontal>
@@ -26,18 +23,15 @@
               <PremFormControl placeholder="Blog Title" v-model="titleText" />
             </PremFormField>
           </PremFormField>
-
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-5">
             <div class="flex gap-3 items-center w-full">
               <label class="block mb-2">Category</label>
-
-              <VueMultiselect v-model="value" :options="singleSelect" :close-on-select="true" :clear-on-select="false"
+              <VueMultiselect v-model="value" :options="categorySelect" :close-on-select="true" :clear-on-select="false"
                 placeholder="Select one" label="name" track-by="name" />
               <button v-on:click="handleCreateCategory" class="text-sm w-52">
                 Create Category
               </button>
             </div>
-
             <div class="flex gap-3 items-center w-full">
               <label class="block mb-2">Tag</label>
               <VueMultiselect v-model="taggingSelected" :options="taggingOptions" :multiple="true" :taggable="true"
@@ -45,7 +39,6 @@
                 track-by="name" />
             </div>
           </div>
-
           <div class="flex" v-if="showCreateCategory">
             <input v-model="newType" placeholder="Enter Category" class="border border-gray-300 p-2 w-4/5" type="text" />
             <button @click="addNewType" class="bg-blue-500 text-white px-4 py-2 ml-2 w-1/6">
@@ -59,19 +52,25 @@
           </PremFormField>
           <PremFormField label="Add Image" horizontal>
             <div class="flex border border-black rounded-md p-4 justify-center items-center gap-4">
+              <!-- <div v-if="uploadedFile">
+                <img width="500" :src="uploadedFile.url" alt="Image" />
+              </div> -->
               <div v-if="uploadedFile">
-                <img v-if="uploadedFile.type.startsWith('image/')" width="500" :src="uploadedFile.url" alt="Image" />
+                <img v-if="uploadedFile.file.type.startsWith('image/')" width="500" :src="uploadedFile.file.url"
+                  alt="Image" />
               </div>
+
               <img v-else src="../../../assets/images/download.png" alt="Image" />
-              <form @submit="uploadFile">
+              <form>
                 <input type="file" @change="handleFileChange" accept=".jpg, .jpeg, .png" />
+
               </form>
             </div>
           </PremFormField>
-
           <PremFormField label="Content" horizontal>
             <div class="rounded-md flex flex-col">
-              <RichTextEditor v-model:modelValue="editorContent" @update:text="onEditorTextChanged" />
+              <RichTextEditor v-model:modelValue="editorContent" @contentChanged="handleContentChanged" />
+
             </div>
           </PremFormField>
         </CardBox>
@@ -85,7 +84,7 @@
 </template>
 
 <script setup>
-import { ref, reactive, computed, watch } from "vue";
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -94,92 +93,198 @@ import { mdiPencil } from "@mdi/js";
 import PremFormField from "~~/components/AfterAuth/Forms/FormField.vue";
 import PremFormControl from "~~/components/AfterAuth/Forms/FormControl.vue";
 import RichTextEditor from "@/components/AfterAuth/Blog/RichTextEditor.vue";
+import { Storage } from "aws-amplify"
+import awsconfig from "@/src/aws-exports.js"
+import { DataStore } from "@aws-amplify/datastore"
+import { BlogYash } from "@/src/models/index.js"
+
+Storage.configure({
+  region: awsconfig.aws_user_files_s3_bucket_region,
+  bucket: awsconfig.aws_user_files_s3_bucket
+})
 
 const uploadedFile = ref(null);
-
 const allowedExtensions = ["jpg", "jpeg", "png"];
 
 const handleFileChange = (event) => {
   const file = event.target.files[0];
   if (file) {
     const fileExtension = file.name.split(".").pop().toLowerCase();
-
     if (allowedExtensions.includes(fileExtension)) {
+      const fileKey = `images/${Date.now()}-${file.name}`;
       file.url = URL.createObjectURL(file);
-      uploadedFile.value = file;
+      uploadedFile.value = { file, key: fileKey }; // Save the file and its key
     } else {
       alert("Invalid file format. Please select an image file only");
-
       event.target.value = "";
     }
   }
 };
-const uploadFile = (event) => {
-  event.preventDefault();
-};
-</script>
 
-<script>
+
+const editorContent = ref(' ');
+
+const handleContentChanged = (content) => {
+  editorContent.value = content;
+};
+
 import VueMultiselect from "vue-multiselect";
 
-export default {
-  components: { VueMultiselect },
-  data() {
-    return {
-      titleText: "",
-      value: [],
-      taggingSelected: [],
-      publishDate: "",
-      editorContent: "",
-      showCreateCategory: false,
-      newType: "",
-      taggingOptions: [
-        { name: "Vue.js", language: "JavaScript" },
-        { name: "Adonis", language: "JavaScript" },
-        { name: "Rails", language: "Ruby" },
-        { name: "Sinatra", language: "Ruby" },
-        { name: "Laravel", language: "PHP" },
-        { name: "Phoenix", language: "Elixir" },
-      ],
-      singleSelect: [
-        { name: "Vue.js", language: "JavaScript" },
-        { name: "Adonis", language: "JavaScript" },
-        { name: "Rails", language: "Ruby" },
-        { name: "Sinatra", language: "Ruby" },
-        { name: "Laravel", language: "PHP" },
-        { name: "Phoenix", language: "Elixir" },
-      ],
-    };
-  },
-  methods: {
-    addTag(newTag) {
+const value = ref('');
+const taggingSelected = ref([]);
+const titleText = ref('');
+const publishDate = ref('');
+
+const showCreateCategory = ref(false);
+const newType = ref('');
+
+const taggingOptions = [
+  { name: "Adventure", value: "adventure" },
+  { name: "Explore", value: "explore" },
+  { name: "Learning", value: "learning" },
+  { name: "Education", value: "education" },
+  { name: "Self Improvement", value: "self_improvement" },
+  { name: "Success", value: "success" },
+  { name: "Fashion", value: "fashion" }
+];
+
+const categorySelect = ref([
+  { name: "Travel Blog", value: "travel_blog" },
+  { name: "Educational Blog", value: "edu_blog" },
+  { name: "Fashion Blog", value: "fashion_blog" },
+  { name: "Food Blog", value: "food_blog" },
+  { name: "Personal Development", value: "personal_development" },
+  { name: "Technology Blog", value: "technology_blog" }
+
+]);
+
+
+const addTag = (newTags) => {
+  const tagsToAdd = newTags.split(',').map(tag => tag.trim());
+  tagsToAdd.forEach(newTag => {
+    if (newTag) {
       const tag = {
         name: newTag,
         code: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
       };
-      this.taggingOptions.push(tag);
-
-      this.taggingSelected.push(JSON.parse(JSON.stringify(tag)));
-    },
-    addNewType() {
-      if (this.newType.trim()) {
-        this.singleSelect.push({
-          name: this.newType.trim().toLowerCase(),
-          language: this.newType,
-        });
-
-        this.newType = "";
-        this.showCreateCategory = false;
-      }
-    },
-    handleCreateCategory() {
-      this.showCreateCategory = !this.showCreateCategory;
-    },
-    // onEditorTextChanged(text) {
-    //   this.editorContent = text;
-    // },
-  },
+      taggingOptions.push(tag);
+      taggingSelected.value.push(JSON.parse(JSON.stringify(tag)));
+    }
+  });
 };
+
+const addNewType = () => {
+  if (newType.value.trim()) {
+    const newCategory = {
+      name: newType.value,
+      value: newType.value.trim().toLowerCase(),
+    };
+
+    categorySelect.value.push(newCategory); // Use .value to access ref value
+
+
+    newType.value = '';
+    showCreateCategory.value = false;
+  }
+};
+
+const handleCreateCategory = () => {
+  showCreateCategory.value = !showCreateCategory.value;
+};
+
+const saveReview = () => {
+  const selectedTagsArray = taggingSelected.value.map(tag => tag.name);
+  console.log("Selected Tags Array:", selectedTagsArray);
+
+  console.log("Other Data:");
+  console.log(titleText.value);
+  console.log("Value:", JSON.parse(JSON.stringify(value.value)).name);
+
+  console.log(publishDate.value);
+  console.log(uploadedFile.value.url)
+};
+
+//Publish Button Without storing image in S3 storage
+
+const publishBtn = async (e) => {
+  e.preventDefault();
+  try {
+    const fileKey = uploadedFile.value.key;
+    const selectedTagNames = taggingSelected.value.map(tag => tag.name); // Extract tag names as an array of strings
+    await DataStore.save(
+      new BlogYash({
+        "title": titleText.value,
+        "category": JSON.parse(JSON.stringify(value.value)).name,
+        "tags": selectedTagNames, // Use the array of tag names
+        "publishDate": publishDate.value,
+        "content": editorContent.value,
+        "profilePicPath": fileKey
+      })
+    );
+    window.alert("Success");
+    titleText.value = "";
+    value.value = "";
+    taggingSelected.value = [];
+    publishDate.value = "";
+    editorContent.value = " ";
+    uploadedFile.value = null;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
+// Publish Button With storing image in S3 storage
+
+// const publishBtn = async (e) => {
+//   e.preventDefault();
+//   try {
+//     if (uploadedFile.value && uploadedFile.value.file) {
+//       const fileKey = uploadedFile.value.key;
+//       await Storage.put(fileKey, uploadedFile.value.file, {
+//         contentType: uploadedFile.value.file.type,
+//       });
+
+//       const selectedTagNames = taggingSelected.value.map(tag => tag.name); // Extract tag names as an array of strings
+//       await DataStore.save(
+//         new BlogYash({
+//           "title": titleText.value,
+//           "category": JSON.parse(JSON.stringify(value.value)).name,
+//           "tags": selectedTagNames, // Use the array of tag names
+//           "publishDate": publishDate.value,
+//           "content": editorContent.value,
+//           "profilePicPath": fileKey // Use the generated S3 key
+//         })
+//       );
+//       window.alert("Success");
+//       titleText.value = "";
+//       value.value = "";
+//       taggingSelected.value = [];
+//       publishDate.value = "";
+//       editorContent.value = " ";
+//       uploadedFile.value = null;
+//     } else {
+//       window.alert("No valid file selected for upload");
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+
+
+
+
+const discardBtn = () => {
+  titleText.value = "";
+  value.value = "";
+  taggingSelected.value = [];
+  publishDate.value = "";
+  editorContent.value = " ";
+  uploadedFile.value = null;
+
+};
+
 </script>
 
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>

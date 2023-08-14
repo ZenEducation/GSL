@@ -24,6 +24,7 @@
     "tailwindcss": "^3.3.1"
   },
   "dependencies": {
+    "@aws-amplify/cli": "^12.2.3",
     "@aws-amplify/ui-vue": "^3.0.4",
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -34,7 +35,7 @@
     "@rollup/plugin-inject": "^5.0.2",
     "@rollup/plugin-terser": "^0.2.0",
     "@vueup/vue-quill": "^1.2.0",
-    "aws-amplify": "^5.0.5",
+    "aws-amplify": "^5.3.7",
     "jquery": "^3.6.4",
     "numeral": "^2.0.6",
     "owl.carousel": "^2.3.4",

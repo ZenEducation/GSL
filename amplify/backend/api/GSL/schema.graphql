@@ -1,3 +1,13 @@
+type BlogYash @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  title: String!
+  category: String!
+  tags: [String!]!
+  publishDate: AWSDate!
+  content: String!
+  profilePicPath: String!
+}
+
 type Blog @model @auth(rules: [{ allow: public }]) {
   id: ID!
   name: String!
@@ -30,14 +40,14 @@ type ChatGroup @model @auth(rules: [{ allow: public }]) {
 }
 
 type AuthInfo @model @auth(rules: [{ allow: public }]) {
-   id: ID!
-   firstName: String
-   middleName: String
-   lastName: String
-   email: AWSEmail
-   phoneNum: AWSPhone
-   createdAt: AWSDateTime
-   updatedAt: AWSDateTime
+  id: ID!
+  firstName: String
+  middleName: String
+  lastName: String
+  email: AWSEmail
+  phoneNum: AWSPhone
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
 }
 
 type UserMale @model @auth(rules: [{ allow: public }]) {
@@ -51,9 +61,11 @@ type UserMale @model @auth(rules: [{ allow: public }]) {
   altPhoneNums: AWSPhone
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
-  userMaleTextEmployee: [TextEmployee] @manyToMany(relationName: "UserMaleTextEmployee")
-  userMaleDelightEmployee: [DelightEmployee] @manyToMany(relationName: "UserMaleDelightEmployee")
- }
+  userMaleTextEmployee: [TextEmployee]
+    @manyToMany(relationName: "UserMaleTextEmployee")
+  userMaleDelightEmployee: [DelightEmployee]
+    @manyToMany(relationName: "UserMaleDelightEmployee")
+}
 
 type UserFemale @model @auth(rules: [{ allow: public }]) {
   id: ID!
@@ -66,8 +78,10 @@ type UserFemale @model @auth(rules: [{ allow: public }]) {
   altPhoneNums: AWSPhone
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
-  userFemaleTextEmployee: [TextEmployee] @manyToMany(relationName: "UserFemaleTextEmployee")
-  userFemaleDelightEmployee: [DelightEmployee] @manyToMany(relationName: "UserFemaleDelightEmployee")
+  userFemaleTextEmployee: [TextEmployee]
+    @manyToMany(relationName: "UserFemaleTextEmployee")
+  userFemaleDelightEmployee: [DelightEmployee]
+    @manyToMany(relationName: "UserFemaleDelightEmployee")
 }
 
 type UserMisc @model @auth(rules: [{ allow: public }]) {
@@ -81,8 +95,10 @@ type UserMisc @model @auth(rules: [{ allow: public }]) {
   altPhoneNums: AWSPhone
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
-  userMiscTextEmployee: [TextEmployee] @manyToMany(relationName: "UserMiscTextEmployee")
-  userMiscDelightEmployee: [DelightEmployee] @manyToMany(relationName: "UserMiscDelightEmployee")
+  userMiscTextEmployee: [TextEmployee]
+    @manyToMany(relationName: "UserMiscTextEmployee")
+  userMiscDelightEmployee: [DelightEmployee]
+    @manyToMany(relationName: "UserMiscDelightEmployee")
 }
 
 type TextEmployee @model @auth(rules: [{ allow: public }]) {
@@ -96,9 +112,12 @@ type TextEmployee @model @auth(rules: [{ allow: public }]) {
   altPhoneNums: AWSPhone
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
-  userMaleTextEmployee: [UserMale] @manyToMany(relationName: "UserMaleTextEmployee")
-  userFemaleTextEmployee: [UserFemale] @manyToMany(relationName: "UserFemaleTextEmployee")
-  userMiscTextEmployee: [UserMisc] @manyToMany(relationName: "UserMiscTextEmployee")
+  userMaleTextEmployee: [UserMale]
+    @manyToMany(relationName: "UserMaleTextEmployee")
+  userFemaleTextEmployee: [UserFemale]
+    @manyToMany(relationName: "UserFemaleTextEmployee")
+  userMiscTextEmployee: [UserMisc]
+    @manyToMany(relationName: "UserMiscTextEmployee")
 }
 
 type DelightEmployee @model @auth(rules: [{ allow: public }]) {
@@ -112,9 +131,12 @@ type DelightEmployee @model @auth(rules: [{ allow: public }]) {
   altPhoneNums: AWSPhone
   createdAt: AWSDateTime
   updatedAt: AWSDateTime
-  userMaleDelightEmployee: [UserMale] @manyToMany(relationName: "UserMaleDelightEmployee")
-  userFemaleDelightEmployee: [UserFemale] @manyToMany(relationName: "UserFemaleDelightEmployee")
-  userMiscDelightEmployee: [UserMisc] @manyToMany(relationName: "UserMiscDelightEmployee")
+  userMaleDelightEmployee: [UserMale]
+    @manyToMany(relationName: "UserMaleDelightEmployee")
+  userFemaleDelightEmployee: [UserFemale]
+    @manyToMany(relationName: "UserFemaleDelightEmployee")
+  userMiscDelightEmployee: [UserMisc]
+    @manyToMany(relationName: "UserMiscDelightEmployee")
 }
 
 type InternApplicant @model @auth(rules: [{ allow: public }]) {

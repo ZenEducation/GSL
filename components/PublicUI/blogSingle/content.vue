@@ -7,7 +7,7 @@
                     <div class="lg:w-2/3 pr-4 pl-4">
                         <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px] rounded-[20px]">
                             <div>
-                                <img src="@/assets/frontend/images/blog/blog1.png" class="w-full" alt="">
+                                <img :src="singleBlogImg" class="w-full" alt="">
                             </div>
                             <div class="content flex pt-[30px] pb-[19px] px-[30px]">
                                 <div class="w-10 mr-[30px]">
@@ -328,6 +328,7 @@
 import { DataStore } from "@aws-amplify/datastore"
 import { BlogYash } from "@/src/models/index.js"
 import { onMounted, ref } from "vue"
+import { Storage } from "aws-amplify"
 const props = defineProps({
     blogid: {
         type: String,
@@ -335,6 +336,7 @@ const props = defineProps({
     }
 })
 const singleBlog = ref([])
+const singleBlogImg = ref("")
 
 onMounted(() => {
     handleGetData(props.blogid)
@@ -343,9 +345,12 @@ onMounted(() => {
 const handleGetData = async (id) => {
     try {
         const blogs = await DataStore.query(BlogYash, id);
-        // console.log(JSON.stringify(blogs));
+
         singleBlog.value = blogs
-        console.log(singleBlog.value);
+        console.log(singleBlog.value.profilePicPath);
+
+        singleBlogImg.value = await Storage.get(singleBlog.value.profilePicPath)
+        console.log(singleBlogImg.value);
     } catch (err) {
         console.error(err);
     }

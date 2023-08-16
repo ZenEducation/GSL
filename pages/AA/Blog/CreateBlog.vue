@@ -5,6 +5,10 @@
         <SectionTitleLineWithButton :icon="mdiPencil" title="Create Blog" main>
           <div
             class="ml-5 lg:flex flex-col resDis lg:order-1 lg:flex-row lg:items-end lg:justify-end items-center justify-center gap-3">
+            <div v-if="uploadingFile">
+              Uploading data...
+            </div>
+
             <button class="bg-red-700 text-white w-24 h-10 rounded" @click="discardBtn">
               Discard
             </button>
@@ -138,6 +142,10 @@ const publishDate = ref('');
 const showCreateCategory = ref(false);
 const newType = ref('');
 
+const uploadingFile = ref(false);
+const uploadSuccess = ref(false);
+
+
 const taggingOptions = [
   { name: "Adventure", value: "adventure" },
   { name: "Explore", value: "explore" },
@@ -204,36 +212,6 @@ const saveReview = () => {
   console.log(uploadedFile.value.url)
 };
 
-//Publish Button Without storing image in S3 storage
-
-const publishBtn = async (e) => {
-  e.preventDefault();
-  try {
-    const fileKey = uploadedFile.value.key;
-    const selectedTagNames = taggingSelected.value.map(tag => tag.name); // Extract tag names as an array of strings
-    await DataStore.save(
-      new BlogYash({
-        "title": titleText.value,
-        "category": JSON.parse(JSON.stringify(value.value)).name,
-        "tags": selectedTagNames, // Use the array of tag names
-        "publishDate": publishDate.value,
-        "content": editorContent.value,
-        "profilePicPath": fileKey
-      })
-    );
-    window.alert("Success");
-    titleText.value = "";
-    value.value = "";
-    taggingSelected.value = [];
-    publishDate.value = "";
-    editorContent.value = " ";
-    uploadedFile.value = null;
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-
 // Publish Button With storing image in S3 storage
 
 // const publishBtn = async (e) => {
@@ -270,7 +248,51 @@ const publishBtn = async (e) => {
 //     console.log(error);
 //   }
 // };
+const publishBtn = async (e) => {
+  e.preventDefault();
+  try {
+    if (uploadedFile.value && uploadedFile.value.file) {
+      // Show uploading indicator
+      uploadingFile.value = true;
 
+      const fileKey = uploadedFile.value.key;
+      await Storage.put(fileKey, uploadedFile.value.file, {
+        contentType: uploadedFile.value.file.type,
+      });
+
+      const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+      await DataStore.save(
+        new BlogYash({
+          "title": titleText.value,
+          "category": JSON.parse(JSON.stringify(value.value)).name,
+          "tags": selectedTagNames, // Use the array of tag names
+          "publishDate": publishDate.value,
+          "content": editorContent.value,
+          "profilePicPath": fileKey // Use the generated S3 key
+        })
+      );
+
+      // Show success message
+      window.alert("success")
+
+      titleText.value = "";
+      value.value = "";
+      taggingSelected.value = [];
+      publishDate.value = "";
+      editorContent.value = " ";
+      uploadedFile.value = null;
+
+    } else {
+      window.alert("No valid file selected for upload");
+    }
+  } catch (error) {
+    console.log(error);
+  } finally {
+    // Clear uploading and success indicators after upload attempt
+    uploadingFile.value = false;
+
+  }
+};
 
 
 

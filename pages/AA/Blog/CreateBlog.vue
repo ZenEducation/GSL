@@ -56,12 +56,9 @@
           </PremFormField>
           <PremFormField label="Add Image" horizontal>
             <div class="flex border border-black rounded-md p-4 justify-center items-center gap-4">
-              <!-- <div v-if="uploadedFile">
-                <img width="500" :src="uploadedFile.url" alt="Image" />
-              </div> -->
+
               <div v-if="uploadedFile">
-                <img v-if="uploadedFile.file.type.startsWith('image/')" width="500" :src="uploadedFile.file.url"
-                  alt="Image" />
+                <img v-if="uploadedFile.file" width="500" :src="uploadedFile.file.url" alt="Image" />
               </div>
 
               <img v-else src="../../../assets/images/download.png" alt="Image" />
@@ -88,7 +85,8 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, onMounted } from 'vue';
+import { useBlogStore } from '@/stores/blogStore.js';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -106,6 +104,8 @@ Storage.configure({
   region: awsconfig.aws_user_files_s3_bucket_region,
   bucket: awsconfig.aws_user_files_s3_bucket
 })
+
+const store = useBlogStore();
 
 const uploadedFile = ref(null);
 const allowedExtensions = ["jpg", "jpeg", "png"];
@@ -143,7 +143,7 @@ const showCreateCategory = ref(false);
 const newType = ref('');
 
 const uploadingFile = ref(false);
-const uploadSuccess = ref(false);
+
 
 
 const taggingOptions = [
@@ -188,7 +188,7 @@ const addNewType = () => {
       value: newType.value.trim().toLowerCase(),
     };
 
-    categorySelect.value.push(newCategory); // Use .value to access ref value
+    categorySelect.value.push(newCategory);
 
 
     newType.value = '';
@@ -200,59 +200,10 @@ const handleCreateCategory = () => {
   showCreateCategory.value = !showCreateCategory.value;
 };
 
-const saveReview = () => {
-  const selectedTagsArray = taggingSelected.value.map(tag => tag.name);
-  console.log("Selected Tags Array:", selectedTagsArray);
-
-  console.log("Other Data:");
-  console.log(titleText.value);
-  console.log("Value:", JSON.parse(JSON.stringify(value.value)).name);
-
-  console.log(publishDate.value);
-  console.log(uploadedFile.value.url)
-};
-
-// Publish Button With storing image in S3 storage
-
-// const publishBtn = async (e) => {
-//   e.preventDefault();
-//   try {
-//     if (uploadedFile.value && uploadedFile.value.file) {
-//       const fileKey = uploadedFile.value.key;
-//       await Storage.put(fileKey, uploadedFile.value.file, {
-//         contentType: uploadedFile.value.file.type,
-//       });
-
-//       const selectedTagNames = taggingSelected.value.map(tag => tag.name); // Extract tag names as an array of strings
-//       await DataStore.save(
-//         new BlogYash({
-//           "title": titleText.value,
-//           "category": JSON.parse(JSON.stringify(value.value)).name,
-//           "tags": selectedTagNames, // Use the array of tag names
-//           "publishDate": publishDate.value,
-//           "content": editorContent.value,
-//           "profilePicPath": fileKey // Use the generated S3 key
-//         })
-//       );
-//       window.alert("Success");
-//       titleText.value = "";
-//       value.value = "";
-//       taggingSelected.value = [];
-//       publishDate.value = "";
-//       editorContent.value = " ";
-//       uploadedFile.value = null;
-//     } else {
-//       window.alert("No valid file selected for upload");
-//     }
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
 const publishBtn = async (e) => {
   e.preventDefault();
   try {
     if (uploadedFile.value && uploadedFile.value.file) {
-      // Show uploading indicator
       uploadingFile.value = true;
 
       const fileKey = uploadedFile.value.key;
@@ -265,14 +216,14 @@ const publishBtn = async (e) => {
         new BlogYash({
           "title": titleText.value,
           "category": JSON.parse(JSON.stringify(value.value)).name,
-          "tags": selectedTagNames, // Use the array of tag names
+          "tags": selectedTagNames,
           "publishDate": publishDate.value,
           "content": editorContent.value,
-          "profilePicPath": fileKey // Use the generated S3 key
+          "profilePicPath": fileKey
         })
       );
 
-      // Show success message
+
       window.alert("success")
 
       titleText.value = "";
@@ -288,14 +239,40 @@ const publishBtn = async (e) => {
   } catch (error) {
     console.log(error);
   } finally {
-    // Clear uploading and success indicators after upload attempt
+
     uploadingFile.value = false;
 
   }
 };
 
 
+onMounted(() => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    titleText.value = formData.titleText;
+    value.value = formData.value;
+    taggingSelected.value = formData.taggingSelected.map(tagName => {
+      const tag = taggingOptions.find(option => option.name === tagName);
+      return tag || { name: tagName, value: tagName };
+    });
+    publishDate.value = formData.publishDate;
+    editorContent.value = formData.editorContent;
+    uploadedFile.value = formData.uploadedFile;
+  }
+});
+const saveReview = () => {
+  const formData = {
+    titleText: titleText.value,
+    value: value.value,
+    taggingSelected: taggingSelected.value.map(tag => tag.name),
+    publishDate: publishDate.value,
+    editorContent: editorContent.value,
+    uploadedFile: uploadedFile.value,
+  };
 
+  store.saveFormData(formData);
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
 
 const discardBtn = () => {
   titleText.value = "";
@@ -305,7 +282,11 @@ const discardBtn = () => {
   editorContent.value = " ";
   uploadedFile.value = null;
 
+  // Clear data from local storage
+  localStorage.removeItem('formData');
+  store.clearFormData();
 };
+
 
 </script>
 

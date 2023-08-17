@@ -87,7 +87,7 @@
   
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useBlogStore } from '@/stores/blogStore.js';
+// import { useBlogStore } from '@/stores/blogStore.js';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -106,7 +106,7 @@ Storage.configure({
     bucket: awsconfig.aws_user_files_s3_bucket
 })
 
-const store = useBlogStore();
+// const store = useBlogStore();
 
 const uploadedFile = ref(null);
 const allowedExtensions = ["jpg", "jpeg", "png"];
@@ -247,20 +247,20 @@ const publishBtn = async (e) => {
 };
 
 
-// onMounted(() => {
-//     const formData = JSON.parse(localStorage.getItem('formData'));
-//     if (formData) {
-//         titleText.value = formData.titleText;
-//         value.value = formData.value;
-//         taggingSelected.value = formData.taggingSelected.map(tagName => {
-//             const tag = taggingOptions.find(option => option.name === tagName);
-//             return tag || { name: tagName, value: tagName };
-//         });
-//         publishDate.value = formData.publishDate;
-//         editorContent.value = formData.editorContent;
-//         uploadedFile.value = formData.uploadedFile;
-//     }
-// });
+onMounted(() => {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    if (formData) {
+        titleText.value = formData.titleText;
+        value.value = formData.value;
+        taggingSelected.value = formData.taggingSelected.map(tagName => {
+            const tag = taggingOptions.find(option => option.name === tagName);
+            return tag || { name: tagName, value: tagName };
+        });
+        publishDate.value = formData.publishDate;
+        editorContent.value = formData.editorContent;
+        uploadedFile.value = formData.uploadedFile;
+    }
+});
 const saveReview = () => {
     const formData = {
         titleText: titleText.value,
@@ -271,7 +271,7 @@ const saveReview = () => {
         uploadedFile: uploadedFile.value,
     };
 
-    store.saveFormData(formData);
+    // store.saveFormData(formData);
     localStorage.setItem('formData', JSON.stringify(formData));
 };
 
@@ -285,7 +285,7 @@ const discardBtn = () => {
 
     // Clear data from local storage
     localStorage.removeItem('formData');
-    store.clearFormData();
+    // store.clearFormData();
 };
 
 

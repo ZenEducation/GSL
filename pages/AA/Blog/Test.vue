@@ -87,7 +87,6 @@
   
 <script setup>
 import { ref, onMounted } from 'vue';
-// import { useBlogStore } from '@/stores/blogStore.js';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -106,7 +105,6 @@ Storage.configure({
     bucket: awsconfig.aws_user_files_s3_bucket
 })
 
-// const store = useBlogStore();
 
 const uploadedFile = ref(null);
 const allowedExtensions = ["jpg", "jpeg", "png"];
@@ -188,30 +186,23 @@ const addNewType = () => {
             name: newType.value,
             value: newType.value.trim().toLowerCase(),
         };
-
         categorySelect.value.push(newCategory);
-
-
         newType.value = '';
         showCreateCategory.value = false;
     }
 };
-
 const handleCreateCategory = () => {
     showCreateCategory.value = !showCreateCategory.value;
 };
-
 const publishBtn = async (e) => {
     e.preventDefault();
     try {
         if (uploadedFile.value && uploadedFile.value.file) {
             uploadingFile.value = true;
-
             const fileKey = uploadedFile.value.key;
             await Storage.put(fileKey, uploadedFile.value.file, {
                 contentType: uploadedFile.value.file.type,
             });
-
             const selectedTagNames = taggingSelected.value.map(tag => tag.name);
             await DataStore.save(
                 new BlogYash({
@@ -223,29 +214,22 @@ const publishBtn = async (e) => {
                     "profilePicPath": fileKey
                 })
             );
-
-
             window.alert("success")
-
             titleText.value = "";
             value.value = "";
             taggingSelected.value = [];
             publishDate.value = "";
             editorContent.value = " ";
             uploadedFile.value = null;
-
         } else {
             window.alert("No valid file selected for upload");
         }
     } catch (error) {
         console.log(error);
     } finally {
-
         uploadingFile.value = false;
-
     }
 };
-
 
 onMounted(() => {
     const formData = JSON.parse(localStorage.getItem('formData'));
@@ -271,7 +255,6 @@ const saveReview = () => {
         uploadedFile: uploadedFile.value,
     };
 
-    // store.saveFormData(formData);
     localStorage.setItem('formData', JSON.stringify(formData));
 };
 
@@ -283,9 +266,7 @@ const discardBtn = () => {
     editorContent.value = " ";
     uploadedFile.value = null;
 
-    // Clear data from local storage
     localStorage.removeItem('formData');
-    // store.clearFormData();
 };
 
 

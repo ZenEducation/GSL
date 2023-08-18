@@ -100,29 +100,29 @@ import awsconfig from "@/src/aws-exports.js"
 import { DataStore } from "@aws-amplify/datastore"
 import { BlogYash } from "@/src/models/index.js"
 
-// Storage.configure({
-//     region: awsconfig.aws_user_files_s3_bucket_region,
-//     bucket: awsconfig.aws_user_files_s3_bucket
-// })
+Storage.configure({
+    region: awsconfig.aws_user_files_s3_bucket_region,
+    bucket: awsconfig.aws_user_files_s3_bucket
+})
 
 
 const uploadedFile = ref(null);
-// const allowedExtensions = ["jpg", "jpeg", "png"];
+const allowedExtensions = ["jpg", "jpeg", "png"];
 
-// const handleFileChange = (event) => {
-//     const file = event.target.files[0];
-//     if (file) {
-//         const fileExtension = file.name.split(".").pop().toLowerCase();
-//         if (allowedExtensions.includes(fileExtension)) {
-//             const fileKey = `images/${Date.now()}-${file.name}`;
-//             file.url = URL.createObjectURL(file);
-//             uploadedFile.value = { file, key: fileKey }; // Save the file and its key
-//         } else {
-//             alert("Invalid file format. Please select an image file only");
-//             event.target.value = "";
-//         }
-//     }
-// };
+const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+        const fileExtension = file.name.split(".").pop().toLowerCase();
+        if (allowedExtensions.includes(fileExtension)) {
+            const fileKey = `images/${Date.now()}-${file.name}`;
+            file.url = URL.createObjectURL(file);
+            uploadedFile.value = { file, key: fileKey }; // Save the file and its key
+        } else {
+            alert("Invalid file format. Please select an image file only");
+            event.target.value = "";
+        }
+    }
+};
 
 
 const editorContent = ref(' ');

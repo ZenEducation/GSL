@@ -200,9 +200,9 @@ const publishBtn = async (e) => {
         if (uploadedFile.value && uploadedFile.value.file) {
             uploadingFile.value = true;
             const fileKey = uploadedFile.value.key;
-            await Storage.put(fileKey, uploadedFile.value.file, {
-                contentType: uploadedFile.value.file.type,
-            });
+            // await Storage.put(fileKey, uploadedFile.value.file, {
+            //     contentType: uploadedFile.value.file.type,
+            // });
             const selectedTagNames = taggingSelected.value.map(tag => tag.name);
             await DataStore.save(
                 new BlogYash({
@@ -231,43 +231,43 @@ const publishBtn = async (e) => {
     }
 };
 
-// onMounted(() => {
-//     const formData = JSON.parse(localStorage.getItem('formData'));
-//     if (formData) {
-//         titleText.value = formData.titleText;
-//         value.value = formData.value;
-//         taggingSelected.value = formData.taggingSelected.map(tagName => {
-//             const tag = taggingOptions.find(option => option.name === tagName);
-//             return tag || { name: tagName, value: tagName };
-//         });
-//         publishDate.value = formData.publishDate;
-//         editorContent.value = formData.editorContent;
-//         uploadedFile.value = formData.uploadedFile;
-//     }
-// });
-// const saveReview = () => {
-//     const formData = {
-//         titleText: titleText.value,
-//         value: value.value,
-//         taggingSelected: taggingSelected.value.map(tag => tag.name),
-//         publishDate: publishDate.value,
-//         editorContent: editorContent.value,
-//         uploadedFile: uploadedFile.value,
-//     };
+onMounted(() => {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    if (formData) {
+        titleText.value = formData.titleText;
+        value.value = formData.value;
+        taggingSelected.value = formData.taggingSelected.map(tagName => {
+            const tag = taggingOptions.find(option => option.name === tagName);
+            return tag || { name: tagName, value: tagName };
+        });
+        publishDate.value = formData.publishDate;
+        editorContent.value = formData.editorContent;
+        uploadedFile.value = formData.uploadedFile;
+    }
+});
+const saveReview = () => {
+    const formData = {
+        titleText: titleText.value,
+        value: value.value,
+        taggingSelected: taggingSelected.value.map(tag => tag.name),
+        publishDate: publishDate.value,
+        editorContent: editorContent.value,
+        uploadedFile: uploadedFile.value,
+    };
 
-//     localStorage.setItem('formData', JSON.stringify(formData));
-// };
+    localStorage.setItem('formData', JSON.stringify(formData));
+};
 
-// const discardBtn = () => {
-//     titleText.value = "";
-//     value.value = "";
-//     taggingSelected.value = [];
-//     publishDate.value = "";
-//     editorContent.value = " ";
-//     uploadedFile.value = null;
+const discardBtn = () => {
+    titleText.value = "";
+    value.value = "";
+    taggingSelected.value = [];
+    publishDate.value = "";
+    editorContent.value = " ";
+    uploadedFile.value = null;
 
-//     localStorage.removeItem('formData');
-// };
+    localStorage.removeItem('formData');
+};
 
 
 </script>

@@ -127,9 +127,9 @@ const handleFileChange = (event) => {
 
 const editorContent = ref(' ');
 
-// const handleContentChanged = (content) => {
-//     editorContent.value = content;
-// };
+const handleContentChanged = (content) => {
+    editorContent.value = content;
+};
 
 import VueMultiselect from "vue-multiselect";
 
@@ -145,91 +145,91 @@ const uploadingFile = ref(false);
 
 
 
-// const taggingOptions = [
-//     { name: "Adventure", value: "adventure" },
-//     { name: "Explore", value: "explore" },
-//     { name: "Learning", value: "learning" },
-//     { name: "Education", value: "education" },
-//     { name: "Self Improvement", value: "self_improvement" },
-//     { name: "Success", value: "success" },
-//     { name: "Fashion", value: "fashion" }
-// ];
+const taggingOptions = [
+    { name: "Adventure", value: "adventure" },
+    { name: "Explore", value: "explore" },
+    { name: "Learning", value: "learning" },
+    { name: "Education", value: "education" },
+    { name: "Self Improvement", value: "self_improvement" },
+    { name: "Success", value: "success" },
+    { name: "Fashion", value: "fashion" }
+];
 
-// const categorySelect = ref([
-//     { name: "Travel Blog", value: "travel_blog" },
-//     { name: "Educational Blog", value: "edu_blog" },
-//     { name: "Fashion Blog", value: "fashion_blog" },
-//     { name: "Food Blog", value: "food_blog" },
-//     { name: "Personal Development", value: "personal_development" },
-//     { name: "Technology Blog", value: "technology_blog" }
+const categorySelect = ref([
+    { name: "Travel Blog", value: "travel_blog" },
+    { name: "Educational Blog", value: "edu_blog" },
+    { name: "Fashion Blog", value: "fashion_blog" },
+    { name: "Food Blog", value: "food_blog" },
+    { name: "Personal Development", value: "personal_development" },
+    { name: "Technology Blog", value: "technology_blog" }
 
-// ]);
+]);
 
 
-// const addTag = (newTags) => {
-//     const tagsToAdd = newTags.split(',').map(tag => tag.trim());
-//     tagsToAdd.forEach(newTag => {
-//         if (newTag) {
-//             const tag = {
-//                 name: newTag,
-//                 code: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
-//             };
-//             taggingOptions.push(tag);
-//             taggingSelected.value.push(JSON.parse(JSON.stringify(tag)));
-//         }
-//     });
-// };
+const addTag = (newTags) => {
+    const tagsToAdd = newTags.split(',').map(tag => tag.trim());
+    tagsToAdd.forEach(newTag => {
+        if (newTag) {
+            const tag = {
+                name: newTag,
+                code: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
+            };
+            taggingOptions.push(tag);
+            taggingSelected.value.push(JSON.parse(JSON.stringify(tag)));
+        }
+    });
+};
 
-// const addNewType = () => {
-//     if (newType.value.trim()) {
-//         const newCategory = {
-//             name: newType.value,
-//             value: newType.value.trim().toLowerCase(),
-//         };
-//         categorySelect.value.push(newCategory);
-//         newType.value = '';
-//         showCreateCategory.value = false;
-//     }
-// };
-// const handleCreateCategory = () => {
-//     showCreateCategory.value = !showCreateCategory.value;
-// };
-// const publishBtn = async (e) => {
-//     e.preventDefault();
-//     try {
-//         if (uploadedFile.value && uploadedFile.value.file) {
-//             uploadingFile.value = true;
-//             const fileKey = uploadedFile.value.key;
-//             await Storage.put(fileKey, uploadedFile.value.file, {
-//                 contentType: uploadedFile.value.file.type,
-//             });
-//             const selectedTagNames = taggingSelected.value.map(tag => tag.name);
-//             await DataStore.save(
-//                 new BlogYash({
-//                     "title": titleText.value,
-//                     "category": JSON.parse(JSON.stringify(value.value)).name,
-//                     "tags": selectedTagNames,
-//                     "publishDate": publishDate.value,
-//                     "content": editorContent.value,
-//                     "profilePicPath": fileKey
-//                 })
-//             );
-//             window.alert("success")
-//             titleText.value = "";
-//             value.value = "";
-//             taggingSelected.value = [];
-//             publishDate.value = "";
-//             editorContent.value = " ";
-//             uploadedFile.value = null;
-//         } else {
-//             window.alert("No valid file selected for upload");
-//         }
-//     } catch (error) {
-//         console.log(error);
-//     } finally {
-//         uploadingFile.value = false;
-//     }
-// };
+const addNewType = () => {
+    if (newType.value.trim()) {
+        const newCategory = {
+            name: newType.value,
+            value: newType.value.trim().toLowerCase(),
+        };
+        categorySelect.value.push(newCategory);
+        newType.value = '';
+        showCreateCategory.value = false;
+    }
+};
+const handleCreateCategory = () => {
+    showCreateCategory.value = !showCreateCategory.value;
+};
+const publishBtn = async (e) => {
+    e.preventDefault();
+    try {
+        if (uploadedFile.value && uploadedFile.value.file) {
+            uploadingFile.value = true;
+            const fileKey = uploadedFile.value.key;
+            await Storage.put(fileKey, uploadedFile.value.file, {
+                contentType: uploadedFile.value.file.type,
+            });
+            const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+            await DataStore.save(
+                new BlogYash({
+                    "title": titleText.value,
+                    "category": JSON.parse(JSON.stringify(value.value)).name,
+                    "tags": selectedTagNames,
+                    "publishDate": publishDate.value,
+                    "content": editorContent.value,
+                    "profilePicPath": fileKey
+                })
+            );
+            window.alert("success")
+            titleText.value = "";
+            value.value = "";
+            taggingSelected.value = [];
+            publishDate.value = "";
+            editorContent.value = " ";
+            uploadedFile.value = null;
+        } else {
+            window.alert("No valid file selected for upload");
+        }
+    } catch (error) {
+        console.log(error);
+    } finally {
+        uploadingFile.value = false;
+    }
+};
 
 // onMounted(() => {
 //     const formData = JSON.parse(localStorage.getItem('formData'));

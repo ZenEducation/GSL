@@ -86,7 +86,6 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useBlogStore } from '@/stores/blogStore.js';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -105,7 +104,7 @@ Storage.configure({
   bucket: awsconfig.aws_user_files_s3_bucket
 })
 
-const store = useBlogStore();
+
 
 const uploadedFile = ref(null);
 const allowedExtensions = ["jpg", "jpeg", "png"];
@@ -138,13 +137,9 @@ const value = ref('');
 const taggingSelected = ref([]);
 const titleText = ref('');
 const publishDate = ref('');
-
 const showCreateCategory = ref(false);
 const newType = ref('');
-
 const uploadingFile = ref(false);
-
-
 
 const taggingOptions = [
   { name: "Adventure", value: "adventure" },
@@ -165,7 +160,6 @@ const categorySelect = ref([
   { name: "Technology Blog", value: "technology_blog" }
 
 ]);
-
 
 const addTag = (newTags) => {
   const tagsToAdd = newTags.split(',').map(tag => tag.trim());
@@ -189,8 +183,6 @@ const addNewType = () => {
     };
 
     categorySelect.value.push(newCategory);
-
-
     newType.value = '';
     showCreateCategory.value = false;
   }
@@ -232,19 +224,15 @@ const publishBtn = async (e) => {
       publishDate.value = "";
       editorContent.value = " ";
       uploadedFile.value = null;
-
     } else {
       window.alert("No valid file selected for upload");
     }
   } catch (error) {
     console.log(error);
   } finally {
-
     uploadingFile.value = false;
-
   }
 };
-
 
 onMounted(() => {
   const formData = JSON.parse(localStorage.getItem('formData'));
@@ -270,7 +258,7 @@ const saveReview = () => {
     uploadedFile: uploadedFile.value,
   };
 
-  store.saveFormData(formData);
+
   localStorage.setItem('formData', JSON.stringify(formData));
 };
 
@@ -281,10 +269,8 @@ const discardBtn = () => {
   publishDate.value = "";
   editorContent.value = " ";
   uploadedFile.value = null;
-
-  // Clear data from local storage
   localStorage.removeItem('formData');
-  store.clearFormData();
+
 };
 
 

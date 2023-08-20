@@ -220,43 +220,45 @@ const handleCreateCategory = () => {
 
 const publishBtn = async (e) => {
   e.preventDefault();
-  try {
-    if (uploadedFile.value && uploadedFile.value.file) {
-      uploadingFile.value = true;
+  if (confirm("Do You Want to Publish This Blog") == true) {
+    try {
+      if (uploadedFile.value && uploadedFile.value.file) {
+        uploadingFile.value = true;
 
-      const fileKey = uploadedFile.value.key;
-      await Storage.put(fileKey, uploadedFile.value.file, {
-        contentType: uploadedFile.value.file.type,
-      });
+        const fileKey = uploadedFile.value.key;
+        await Storage.put(fileKey, uploadedFile.value.file, {
+          contentType: uploadedFile.value.file.type,
+        });
 
-      const selectedTagNames = taggingSelected.value.map(tag => tag.name);
-      await DataStore.save(
-        new BlogYash({
-          "title": titleText.value,
-          "category": JSON.parse(JSON.stringify(value.value)).name,
-          "tags": selectedTagNames,
-          "publishDate": publishDate.value,
-          "content": editorContent.value,
-          "profilePicPath": fileKey
-        })
-      );
+        const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+        await DataStore.save(
+          new BlogYash({
+            "title": titleText.value,
+            "category": JSON.parse(JSON.stringify(value.value)).name,
+            "tags": selectedTagNames,
+            "publishDate": publishDate.value,
+            "content": editorContent.value,
+            "profilePicPath": fileKey
+          })
+        );
 
 
-      window.alert("success")
+        window.alert("success")
 
-      titleText.value = "";
-      value.value = "";
-      taggingSelected.value = [];
-      publishDate.value = "";
-      editorContent.value = " ";
-      uploadedFile.value = null;
-    } else {
-      window.alert("No valid file selected for upload");
+        titleText.value = "";
+        value.value = "";
+        taggingSelected.value = [];
+        publishDate.value = "";
+        editorContent.value = " ";
+        uploadedFile.value = null;
+      } else {
+        window.alert("No valid file selected for upload");
+      }
+    } catch (error) {
+      console.log(error);
+    } finally {
+      uploadingFile.value = false;
     }
-  } catch (error) {
-    console.log(error);
-  } finally {
-    uploadingFile.value = false;
   }
 };
 
@@ -275,27 +277,31 @@ onMounted(() => {
   }
 });
 const saveReview = () => {
-  const formData = {
-    titleText: titleText.value,
-    value: value.value,
-    taggingSelected: taggingSelected.value.map(tag => tag.name),
-    publishDate: publishDate.value,
-    editorContent: editorContent.value,
-    uploadedFile: uploadedFile.value,
-  };
+  if (confirm("Do You Want to Save This Blog") == true) {
+    const formData = {
+      titleText: titleText.value,
+      value: value.value,
+      taggingSelected: taggingSelected.value.map(tag => tag.name),
+      publishDate: publishDate.value,
+      editorContent: editorContent.value,
+      uploadedFile: uploadedFile.value,
+    };
 
 
-  localStorage.setItem('formData', JSON.stringify(formData));
+    localStorage.setItem('formData', JSON.stringify(formData));
+  }
 };
 
 const discardBtn = () => {
-  titleText.value = "";
-  value.value = "";
-  taggingSelected.value = [];
-  publishDate.value = "";
-  editorContent.value = " ";
-  uploadedFile.value = null;
-  localStorage.removeItem('formData');
+  if (confirm("Do You Want to Discard This Blog") == true) {
+    titleText.value = "";
+    value.value = "";
+    taggingSelected.value = [];
+    publishDate.value = "";
+    editorContent.value = " ";
+    uploadedFile.value = null;
+    localStorage.removeItem('formData');
+  }
 
 };
 

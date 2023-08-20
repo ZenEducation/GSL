@@ -76,14 +76,7 @@ watchEffect(() => {
 
 <template>
     <div class="">
-        <!-- <ClientOnly placeholder="Loading...">
 
-
-            <QuillEditor style="min-height: 30vh" theme="snow" :toolbar="toolbarOptions" content-type="html"
-                v-model:content="data" ref="quillEditorRef" :style="props.styleP" />
-
-
-        </ClientOnly> -->
         <ClientOnly placeholder="Loading...">
             <QuillEditor style="min-height: 30vh" theme="snow" :toolbar="toolbarOptions" content-type="html"
                 v-model:content="data" ref="quillEditorRef" :style="props.styleP" />

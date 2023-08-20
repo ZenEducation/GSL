@@ -71,7 +71,16 @@
                     </PremFormField>
                     <PremFormField label="Content" horizontal>
                         <div class="rounded-md flex flex-col">
-                            <RichTextEditor v-model:modelValue="editorContent" @contentChanged="handleContentChanged" />
+                            <div class="">
+                                <ClientOnly placeholder="Loading...">
+                                    <QuillEditor style="min-height: 30vh" theme="snow" :toolbar="toolbarOptions"
+                                        content-type="html" v-model:content="editorContent" ref="quillEditorRef"
+                                        @contentChanged="handleContentChanged" />
+
+                                </ClientOnly>
+
+                                <div v-html="editorContent"></div>
+                            </div>
 
                         </div>
                     </PremFormField>
@@ -127,10 +136,28 @@ const handleFileChange = (event) => {
 
 
 const editorContent = ref(' ');
+const quillEditorRef = ref(null);
+const toolbarOptions = [
+    [{ direction: "rtl" }],
+    [{ size: ["small", false, "large", "huge"] }],
+    [{ header: [1, 2, 3, 4, 5, 6, false] }],
+    [{ font: [] }],
+    [{ header: 1 }, { header: 2 }],
+    [{ color: [] }, { background: [] }],
+    ["bold", "italic", "underline", "strike"],
+    [{ script: "sub" }, { script: "super" }],
+    [{ list: "ordered" }, { list: "bullet" }],
+    [{ align: [] }],
+    [{ indent: "-1" }, { indent: "+1" }],
+    ["blockquote"],
+    ["image", "video", "link"],
+    ["code-block"],
+    ["clean"],
+];
 
-const handleContentChanged = (content) => {
-    editorContent.value = content;
-};
+const handleContentChanged = () => {
+    editorContent.value = quillEditorRef.value?.getText();
+}
 
 import VueMultiselect from "vue-multiselect";
 
@@ -162,19 +189,19 @@ const categorySelect = ref([
 
 ]);
 
-//   const addTag = (newTags) => {
-//     const tagsToAdd = newTags.split(',').map(tag => tag.trim());
-//     tagsToAdd.forEach(newTag => {
-//       if (newTag) {
-//         const tag = {
-//           name: newTag,
-//           code: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
-//         };
-//         taggingOptions.push(tag);
-//         taggingSelected.value.push(JSON.parse(JSON.stringify(tag)));
-//       }
-//     });
-//   };
+const addTag = (newTags) => {
+    const tagsToAdd = newTags.split(',').map(tag => tag.trim());
+    tagsToAdd.forEach(newTag => {
+        if (newTag) {
+            const tag = {
+                name: newTag,
+                code: newTag.substring(0, 2) + Math.floor(Math.random() * 10000000),
+            };
+            taggingOptions.push(tag);
+            taggingSelected.value.push(JSON.parse(JSON.stringify(tag)));
+        }
+    });
+};
 
 const addNewType = () => {
     if (newType.value.trim()) {

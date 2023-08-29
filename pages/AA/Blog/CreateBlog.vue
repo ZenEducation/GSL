@@ -6,7 +6,7 @@
           <div
             class="ml-5 lg:flex flex-col resDis lg:order-1 lg:flex-row lg:items-end lg:justify-end items-center justify-center gap-3">
             <div v-if="uploadingFile">
-              Uploading data...
+              {{ status }}
             </div>
 
             <button class="bg-red-700 text-white w-24 h-10 rounded" @click="discardBtn">
@@ -166,6 +166,8 @@ const publishDate = ref('');
 const showCreateCategory = ref(false);
 const newType = ref('');
 const uploadingFile = ref(false);
+const status = ref("Uploading Data...")
+const savedBlog = ref()
 
 const taggingOptions = [
   { name: "Adventure", value: "adventure" },
@@ -201,7 +203,7 @@ const addTag = (newTags) => {
   });
 };
 
-const addNewType = () => {
+const addNewType = async () => {
   if (newType.value.trim()) {
     const newCategory = {
       name: newType.value,
@@ -218,9 +220,15 @@ const handleCreateCategory = () => {
   showCreateCategory.value = !showCreateCategory.value;
 };
 
+
 const publishBtn = async (e) => {
   e.preventDefault();
   if (confirm("Do You Want to Publish This Blog") == true) {
+    if (savedBlog.value) {
+      const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
+      DataStore.delete(modelToDelete);
+    }
+    window.alert("old model deleted")
     try {
       if (uploadedFile.value && uploadedFile.value.file) {
         uploadingFile.value = true;
@@ -231,19 +239,24 @@ const publishBtn = async (e) => {
         });
 
         const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+        const data = await DataStore.query(BlogYash);
+        const dataLength = data.length + 1;
         await DataStore.save(
           new BlogYash({
+            "blogNo": dataLength.toString(),
             "title": titleText.value,
             "category": JSON.parse(JSON.stringify(value.value)).name,
             "tags": selectedTagNames,
             "publishDate": publishDate.value,
             "content": editorContent.value,
-            "profilePicPath": fileKey
+            "profilePicPath": fileKey,
+            "isPublished": true,
           })
         );
 
 
         window.alert("success")
+
 
         titleText.value = "";
         value.value = "";
@@ -251,6 +264,9 @@ const publishBtn = async (e) => {
         publishDate.value = "";
         editorContent.value = " ";
         uploadedFile.value = null;
+        localStorage.removeItem('formData');
+
+
       } else {
         window.alert("No valid file selected for upload");
       }
@@ -264,6 +280,7 @@ const publishBtn = async (e) => {
 
 onMounted(() => {
   const formData = JSON.parse(localStorage.getItem('formData'));
+
   if (formData) {
     titleText.value = formData.titleText;
     value.value = formData.value;
@@ -275,8 +292,10 @@ onMounted(() => {
     editorContent.value = formData.editorContent;
     uploadedFile.value = formData.uploadedFile;
   }
+
 });
-const saveReview = () => {
+
+const saveReview = async () => {
   if (confirm("Do You Want to Save This Blog") == true) {
     const formData = {
       titleText: titleText.value,
@@ -286,11 +305,42 @@ const saveReview = () => {
       editorContent: editorContent.value,
       uploadedFile: uploadedFile.value,
     };
-
-
     localStorage.setItem('formData', JSON.stringify(formData));
+
+    status.value = "Saving Data..."
+    uploadingFile.value = true;
+
+    const fileKey = uploadedFile.value.key;
+    await Storage.put(fileKey, uploadedFile.value.file, {
+      contentType: uploadedFile.value.file.type,
+    });
+
+    const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+
+
+    const data = await DataStore.query(BlogYash);
+    const dataLength = data.length + 1;
+    console.log(dataLength);
+
+    const newModel = await DataStore.save(
+      new BlogYash({
+        "blogNo": dataLength.toString(),
+        "title": titleText.value,
+        "category": JSON.parse(JSON.stringify(value.value)).name,
+        "tags": selectedTagNames,
+        "publishDate": publishDate.value,
+        "content": editorContent.value,
+        "profilePicPath": fileKey,
+        "isPublished": false,
+      })
+    );
+
+    uploadingFile.value = false;
+    savedBlog.value = newModel.id;
+    console.log(savedBlog.value);
   }
 };
+
 
 const discardBtn = () => {
   if (confirm("Do You Want to Discard This Blog") == true) {

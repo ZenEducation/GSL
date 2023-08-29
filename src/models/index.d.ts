@@ -12,12 +12,14 @@ type EagerBlogYash = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
+  readonly blogNo?: string | null;
   readonly title: string;
   readonly category: string;
   readonly tags: string[];
   readonly publishDate: string;
   readonly content: string;
   readonly profilePicPath: string;
+  readonly isPublished?: boolean | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -28,12 +30,14 @@ type LazyBlogYash = {
     readOnlyFields: 'createdAt' | 'updatedAt';
   };
   readonly id: string;
+  readonly blogNo?: string | null;
   readonly title: string;
   readonly category: string;
   readonly tags: string[];
   readonly publishDate: string;
   readonly content: string;
   readonly profilePicPath: string;
+  readonly isPublished?: boolean | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

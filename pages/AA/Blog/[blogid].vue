@@ -96,7 +96,7 @@
 </template>
   
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onBeforeMount } from 'vue';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -291,7 +291,7 @@ const publishBtn = async (e) => {
     }
 };
 
-onMounted(async () => {
+onBeforeMount(async () => {
     try {
         const blogs = await DataStore.query(BlogYash, blogid);
         console.clear()

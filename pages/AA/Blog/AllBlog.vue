@@ -1,5 +1,5 @@
 <script setup>
-import { ref, reactive, computed } from 'vue';
+import { ref, reactive, computed, onMounted } from 'vue';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue"
@@ -11,7 +11,11 @@ import BaseButtons from "~~/components/AfterAuth/Buttons/BaseButtons.vue";
 import { mdiEye, mdiPen } from "@mdi/js";
 import CardBoxModal from "@/components/AfterAuth/Cards/CardBoxModal.vue";
 import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
-import DummyData from "@/DummyData/Blog.json"
+import { DataStore } from "@aws-amplify/datastore"
+import { BlogYash } from "@/src/models/index.js"
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 
 
@@ -28,7 +32,39 @@ const endDate = ref('');
 
 
 
-const items = reactive(DummyData)
+// const items = reactive(DummyData)
+// const items = reactive([])
+const items = ref([])
+const category = ref([])
+
+onMounted(() => {
+    handleGetData()
+    getCategory()
+})
+
+const handleGetData = async () => {
+    try {
+        const blogs = await DataStore.query(BlogYash);
+        items.value = blogs.sort((a, b) => a.blogNo - b.blogNo); // Sort by blogNo in increasing order
+        const uniqueCategories = [...new Set(items.value.map(item => item.category))];
+        category.value = uniqueCategories;
+        console.log(category.value);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const getCategory = async () => {
+    try {
+        items.value.map((item) => {
+            category.value.push(category.value.includes(item.category))
+        })
+        console.log(category.value);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 
 const isModalActive = ref(false);
 
@@ -68,71 +104,64 @@ const toggleDateInput = () => {
     publishedFilter.value = ""
 };
 
-// filter function
-// filter for search, status, Category, Type and Date
-const itemsPaginated = computed(() => {
+const filteredItems = computed(() => {
     const trimmedSearchQuery = searchquery.value.trim().toLowerCase();
     const trimmedCategoryFilter = categoryFilter.value.trim().toLowerCase();
     const trimmedPublishedFilter = publishedFilter.value.trim().toLowerCase();
     const trimmedDateFilter = dateFilter.value.trim().toLowerCase();
 
-    let filteredItems = items;
-
-    // Apply search query filter
-    if (trimmedSearchQuery.length > 0) {
-        filteredItems = filteredItems.filter(
-            (item) =>
-                item.id.toString().startsWith(trimmedSearchQuery) ||
-                item.title.toLowerCase().startsWith(trimmedSearchQuery) ||
-                item.created_by.toLowerCase().includes(trimmedSearchQuery)
-        );
+    const data = items.value;
+    if (trimmedSearchQuery) {
+        const filteredData = data.filter((item) => {
+            return (
+                item.blogNo.toString().includes(trimmedSearchQuery) ||
+                item.title.toLowerCase().includes(trimmedSearchQuery)
+            );
+        });
+        return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)));
+    } else if (trimmedCategoryFilter) {
+        const filteredData = data.filter((item) => {
+            return (
+                item.category.toLowerCase().includes(trimmedCategoryFilter)
+            )
+        });
+        return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)));
+    } else if (trimmedPublishedFilter) {
+        const filteredData = data.filter((item) => {
+            return (
+                item.isPublished.toString().toLowerCase().includes(trimmedPublishedFilter)
+            )
+        });
+        return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)))
+    } else if (trimmedDateFilter) {
+        if (trimmedDateFilter === "on") {
+            const filteredData = data.filter(
+                (item) =>
+                    new Date(item.publishDate).toDateString() === new Date(onDate.value).toDateString()
+            );
+            return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)))
+        } else if (trimmedDateFilter === "before") {
+            const filteredData = data.filter(
+                (item) => new Date(item.publishDate) < new Date(beforeDate.value)
+            );
+            return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)))
+        } else if (trimmedDateFilter === "after") {
+            const filteredData = data.filter(
+                (item) => new Date(item.publishDate) > new Date(afterDate.value)
+            );
+            return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)))
+        } else if (trimmedDateFilter === "between") {
+            const filteredData = data.filter(
+                (item) =>
+                    new Date(item.publishDate) >= new Date(startDate.value) &&
+                    new Date(item.publishDate) <= new Date(endDate.value)
+            );
+            return filteredData.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)))
+        }
+    } else {
+        return data.slice((perPage.value * currentPage.value), (perPage.value * (currentPage.value + 1)));
     }
-
-    // Apply category filter
-    if (trimmedCategoryFilter.length > 0) {
-        filteredItems = filteredItems.filter((item) =>
-            item.category.toLowerCase().includes(trimmedCategoryFilter)
-        );
-    }
-
-
-    // Apply Published Filter
-    if (trimmedPublishedFilter.length > 0) {
-        filteredItems = filteredItems.filter((item) =>
-            item.published.toLowerCase().includes(trimmedPublishedFilter)
-        );
-    }
-
-    // Apply date filter
-    if (trimmedDateFilter === "on") {
-        filteredItems = filteredItems.filter(
-            (item) =>
-                new Date(item.createdOn).toDateString() === new Date(onDate.value).toDateString()
-        );
-    } else if (trimmedDateFilter === "before") {
-        filteredItems = filteredItems.filter(
-            (item) => new Date(item.createdOn) < new Date(beforeDate.value)
-        );
-    } else if (trimmedDateFilter === "after") {
-        filteredItems = filteredItems.filter(
-            (item) => new Date(item.createdOn) > new Date(afterDate.value)
-        );
-    } else if (trimmedDateFilter === "between") {
-        filteredItems = filteredItems.filter(
-            (item) =>
-                new Date(item.createdOn) >= new Date(startDate.value) &&
-                new Date(item.createdOn) <= new Date(endDate.value)
-        );
-    }
-
-    // Apply pagination
-    const start = perPage.value * currentPage.value;
-    const end = perPage.value * (currentPage.value + 1);
-    return filteredItems.slice(start, end);
 });
-
-
-
 
 watch(searchquery, () => {
     currentPage.value = 0;
@@ -145,64 +174,61 @@ watch(searchquery, () => {
 const numPages = computed(() => {
     const trimmedSearchQuery = searchquery.value.trim().toLowerCase();
     const trimmedCategoryFilter = categoryFilter.value.trim().toLowerCase();
-    const trimmedPublishedFilter = publishedFilter.value.trim().toLowerCase();
+    const trimmedPublishedFilter = publishedFilter.value.toLowerCase();
     const trimmedDateFilter = dateFilter.value.trim().toLowerCase();
+    const data = items.value;
+    let filteredData = data;
 
-    let filteredItems = items;
 
-    // Apply search query filter
-    if (trimmedSearchQuery.length > 0) {
-        filteredItems = filteredItems.filter(
-            (item) =>
-                item.id.toString().includes(trimmedSearchQuery) ||
-                item.title.toLowerCase().includes(trimmedSearchQuery) ||
-                item.created_by.toLowerCase().includes(trimmedSearchQuery)
-        );
+    if (trimmedSearchQuery) {
+        filteredData = data.filter((item) => {
+            return (
+                item.blogNo.toString().includes(trimmedSearchQuery) ||
+                item.title.toLowerCase().includes(trimmedSearchQuery)
+            );
+        });
     }
+    if (trimmedCategoryFilter) {
+        filteredData = data.filter((item) => {
+            return (
 
-
-
-
-    // Apply category filter
-    if (trimmedCategoryFilter.length > 0) {
-        filteredItems = filteredItems.filter((item) =>
-            item.category.toLowerCase().includes(trimmedCategoryFilter)
-        );
+                item.category.toLowerCase().includes(trimmedCategoryFilter)
+            )
+        });
     }
+    if (trimmedPublishedFilter) {
+        filteredData = data.filter((item) => {
+            return (
+                item.isPublished.toString().toLowerCase().includes(trimmedPublishedFilter)
+            )
+        });
 
-
-
-    // Apply Published Filter
-    if (trimmedPublishedFilter.length > 0) {
-        filteredItems = filteredItems.filter((item) =>
-            item.published.toLowerCase().includes(trimmedPublishedFilter)
-        );
     }
-
-    // Apply date filter
     if (trimmedDateFilter === "on") {
-        filteredItems = filteredItems.filter(
+        filteredData = data.filter(
             (item) =>
-                new Date(item.createdOn).toDateString() === new Date(onDate.value).toDateString()
+                new Date(item.publishDate).toDateString() === new Date(onDate.value).toDateString()
         );
     } else if (trimmedDateFilter === "before") {
-        filteredItems = filteredItems.filter(
-            (item) => new Date(item.createdOn) < new Date(beforeDate.value)
+        filteredData = data.filter(
+            (item) => new Date(item.publishDate) < new Date(beforeDate.value)
         );
     } else if (trimmedDateFilter === "after") {
-        filteredItems = filteredItems.filter(
-            (item) => new Date(item.createdOn) > new Date(afterDate.value)
+        filteredData = data.filter(
+            (item) => new Date(item.publishDate) > new Date(afterDate.value)
         );
     } else if (trimmedDateFilter === "between") {
-        filteredItems = filteredItems.filter(
+        filteredData = data.filter(
             (item) =>
-                new Date(item.createdOn) >= new Date(startDate.value) &&
-                new Date(item.createdOn) <= new Date(endDate.value)
+                new Date(item.publishDate) >= new Date(startDate.value) &&
+                new Date(item.publishDate) <= new Date(endDate.value)
         );
     }
 
-    return Math.ceil(filteredItems.length / perPage.value);
+    return Math.ceil(filteredData.length / perPage.value);
+
 });
+
 
 
 const currentPageHuman = computed(() => currentPage.value + 1);
@@ -217,17 +243,16 @@ const pagesList = computed(() => {
     return pagesList;
 });
 
-const remove = (arr, cb) => {
-    const newArr = [];
+const openSingleBlog = (id) => {
 
-    arr.forEach((item) => {
-        if (!cb(item)) {
-            newArr.push(item);
-        }
-    });
+    router.push(`/PC/blog/${id} `)
+}
+const openEditor = (id) => {
 
-    return newArr;
-};
+    router.push(`/AA/blog/${id} `)
+}
+
+
 
 
 const clearResult = () => {
@@ -286,21 +311,21 @@ const clearResult = () => {
                         <!-- Category Dropdown -->
                         <div v-if="isCategoryDropdownOpen" class="mt-2 py-2 bg-white rounded shadow-lg text-center">
                             <select name="status" id="status" v-model="categoryFilter" class="w-1/2">
-                                <option value=""> Select Category </option>
-                                <option value="jee coaching">JEE Coaching</option>
-                                <option value="neet coaching">Neet Coaching</option>
-                                <option value="coursera">Coursera</option>
-
+                                <option value="">Select Category</option>
+                                <option v-for="categoryItem in category" :value="categoryItem" :key="categoryItem">
+                                    {{ categoryItem }}
+                                </option>
                             </select>
                         </div>
+
 
 
                         <!-- Published Dropdown -->
                         <div v-if="isPublishedDropdown" class="mt-2 py-2 bg-white rounded shadow-lg text-center">
                             <select name="status" id="status" v-model="publishedFilter" class="w-1/2">
                                 <option value=""> Select Type </option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
+                                <option value="true">True</option>
+                                <option value="false">False</option>
 
 
                             </select>
@@ -370,10 +395,10 @@ const clearResult = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="(client, index) in itemsPaginated" :key="client.id"
+                            <tr v-for="(client, index) in filteredItems" :key="client.id"
                                 class="border-b-0 lg:w-6 before:hidden">
                                 <td data-label="Client ID" class="border-b-0 lg:w-6 before:hidden">
-                                    {{ client.id }}
+                                    {{ client.blogNo }}
                                 </td>
                                 <td data-label="Title">
                                     {{ client.title }}
@@ -384,20 +409,21 @@ const clearResult = () => {
                                     {{ client.category }}
                                 </td>
                                 <td data-label="Created_By">
-                                    {{ client.created_by }}
+                                    Ram
                                 </td>
                                 <td data-label="Published">
-                                    {{ client.published }}
+                                    {{ client.isPublished }}
                                 </td>
 
                                 <td data-label="Submitted" class="lg:w-1 whitespace-nowrap">
                                     <small class="text-gray-500 dark:text-slate-400">{{
-                                        client.createdOn }}</small>
+                                        client.publishDate }}</small>
                                 </td>
                                 <td class="before:hidden lg:w-1 whitespace-nowrap">
                                     <BaseButtons type="justify-start lg:justify-end" no-wrap>
-                                        <BaseButton color="info" :icon="mdiEye" small @click="isModalActive = true" />
-                                        <BaseButton color="info" :icon="mdiPen" small @click="isModalDangerActive = true" />
+                                        <BaseButton color="info" :icon="mdiEye" small @click="openSingleBlog(client.id)" />
+
+                                        <BaseButton color="info" :icon="mdiPen" small @click="openEditor(client.id)" />
                                     </BaseButtons>
                                 </td>
                             </tr>

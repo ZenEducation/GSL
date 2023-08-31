@@ -8,6 +8,7 @@ import { mdiChartTimelineVariant, mdiMagnify } from "@mdi/js";
 import PremFormField from "~~/components/AfterAuth/Forms/FormField.vue";
 import PremFormControl from "~~/components/AfterAuth/Forms/FormControl.vue";
 import BaseButtons from "~~/components/AfterAuth/Buttons/BaseButtons.vue";
+import SvgIcon from "@jamescoyle/vue-icon"
 import { mdiEye, mdiPen } from "@mdi/js";
 import CardBoxModal from "@/components/AfterAuth/Cards/CardBoxModal.vue";
 import BaseLevel from "@/components/AfterAuth/Buttons/BaseLevel.vue";
@@ -420,11 +421,17 @@ const clearResult = () => {
                                         client.publishDate }}</small>
                                 </td>
                                 <td class="before:hidden lg:w-1 whitespace-nowrap">
-                                    <BaseButtons type="justify-start lg:justify-end" no-wrap>
-                                        <BaseButton color="info" :icon="mdiEye" small @click="openSingleBlog(client.id)" />
 
-                                        <BaseButton color="info" :icon="mdiPen" small @click="openEditor(client.id)" />
-                                    </BaseButtons>
+                                    <div class=" flex justify-center gap-2">
+                                        <NuxtLink :to="'/PC/blog/' + client.id"><button
+                                                class="full p-1 bg-blue-400 text-white border-0"><svg-icon type="mdi"
+                                                    :path="mdiEye"></svg-icon></button>
+                                        </NuxtLink>
+                                        <NuxtLink :to="'/AA/blog/' + client.id"><button
+                                                class="full p-1 bg-blue-400 text-white border-0"><svg-icon type="mdi"
+                                                    :path="mdiPen"></svg-icon></button>
+                                        </NuxtLink>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>

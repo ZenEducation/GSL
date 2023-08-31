@@ -106,6 +106,9 @@ import { Storage } from "aws-amplify"
 import awsconfig from "@/src/aws-exports.js"
 import { DataStore } from "@aws-amplify/datastore"
 import { BlogYash } from "@/src/models/index.js"
+import { useRouter } from 'vue-router';
+
+const router = useRouter()
 
 Storage.configure({
   region: awsconfig.aws_user_files_s3_bucket_region,
@@ -224,11 +227,12 @@ const handleCreateCategory = () => {
 const publishBtn = async (e) => {
   e.preventDefault();
   if (confirm("Do You Want to Publish This Blog") == true) {
+    status.value = "Publishing Blog..."
     if (savedBlog.value) {
       const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
       DataStore.delete(modelToDelete);
     }
-    window.alert("old model deleted")
+
     try {
       if (uploadedFile.value && uploadedFile.value.file) {
         uploadingFile.value = true;
@@ -274,6 +278,7 @@ const publishBtn = async (e) => {
       console.log(error);
     } finally {
       uploadingFile.value = false;
+      router.push("/AA/blog/allblog")
     }
   }
 };
@@ -338,6 +343,7 @@ const saveReview = async () => {
     uploadingFile.value = false;
     savedBlog.value = newModel.id;
     console.log(savedBlog.value);
+    router.push("/AA/blog/allblog")
   }
 };
 

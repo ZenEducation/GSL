@@ -287,6 +287,7 @@ onMounted(() => {
   const formData = JSON.parse(localStorage.getItem('formData'));
 
   if (formData) {
+    savedBlog.value = formData.id
     titleText.value = formData.titleText;
     value.value = formData.value;
     taggingSelected.value = formData.taggingSelected.map(tagName => {
@@ -298,19 +299,18 @@ onMounted(() => {
     uploadedFile.value = formData.uploadedFile;
   }
 
+
+
 });
 
 const saveReview = async () => {
   if (confirm("Do You Want to Save This Blog") == true) {
-    const formData = {
-      titleText: titleText.value,
-      value: value.value,
-      taggingSelected: taggingSelected.value.map(tag => tag.name),
-      publishDate: publishDate.value,
-      editorContent: editorContent.value,
-      uploadedFile: uploadedFile.value,
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
+    if (savedBlog.value) {
+
+      const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
+      DataStore.delete(modelToDelete);
+    }
+
 
     status.value = "Saving Data..."
     uploadingFile.value = true;
@@ -339,10 +339,21 @@ const saveReview = async () => {
         "isPublished": false,
       })
     );
-
-    uploadingFile.value = false;
     savedBlog.value = newModel.id;
     console.log(savedBlog.value);
+    const formData = {
+      id: savedBlog.value,
+      titleText: titleText.value,
+      value: value.value,
+      taggingSelected: taggingSelected.value.map(tag => tag.name),
+      publishDate: publishDate.value,
+      editorContent: editorContent.value,
+      uploadedFile: uploadedFile.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+    uploadingFile.value = false;
+
     router.push("/AA/blog/allblog")
   }
 };

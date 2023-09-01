@@ -96,7 +96,7 @@
 </template>
   
 <script setup>
-import { ref, onMounted, onBeforeMount } from 'vue';
+import { ref, onMounted } from 'vue';
 import SectionMain from "@/components/AfterAuth/Sections/SectionMain.vue";
 import SectionTitleLineWithButton from "@/components/AfterAuth/Sections/SectionTitleLineWithButton.vue";
 import BaseButton from "@/components/AfterAuth/Buttons/BaseButton.vue";
@@ -110,7 +110,10 @@ import awsconfig from "@/src/aws-exports.js"
 import { DataStore } from "@aws-amplify/datastore"
 import { BlogYash } from "@/src/models/index.js"
 const { blogid } = useRoute().params
+import { useRouter } from 'vue-router';
 console.log(blogid)
+
+const router = useRouter()
 
 Storage.configure({
     region: awsconfig.aws_user_files_s3_bucket_region,
@@ -127,9 +130,9 @@ const handleFileChange = (event) => {
     if (file) {
         const fileExtension = file.name.split(".").pop().toLowerCase();
         if (allowedExtensions.includes(fileExtension)) {
-            const fileKey = `images/${Date.now()}-${file.name}`;
+            const fileKey1 = `images/${Date.now()}-${file.name}`;
             file.url = URL.createObjectURL(file);
-            uploadedFile.value = { file, key: fileKey }; // Save the file and its key
+            uploadedFile.value = { file, key: fileKey1 }; // Save the file and its key
         } else {
             alert("Invalid file format. Please select an image file only");
             event.target.value = "";
@@ -175,6 +178,9 @@ const status = ref("Uploading Data...")
 const savedBlog = ref()
 const singleBlog = ref()
 const singleBlogImg = ref()
+const fileKey = ref("")
+const oldBlogID = ref("")
+
 
 const taggingOptions = [
     { name: "Adventure", value: "adventure" },
@@ -232,57 +238,54 @@ const publishBtn = async (e) => {
     e.preventDefault();
     if (confirm("Do You Want to Publish This Blog") == true) {
         if (savedBlog.value) {
+            alert("1")
             const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
             DataStore.delete(modelToDelete);
 
         } else {
-
+            alert("2")
             const modelToDelete = await DataStore.query(BlogYash, singleBlog.value.id);
             DataStore.delete(modelToDelete);
         }
 
-        window.alert("old model deleted")
-        try {
-            if (uploadedFile.value && uploadedFile.value.file) {
-                uploadingFile.value = true;
 
-                const fileKey = uploadedFile.value.key;
-                await Storage.put(fileKey, uploadedFile.value.file, {
-                    contentType: uploadedFile.value.file.type,
+        try {
+            uploadingFile.value = true;
+
+            if (uploadedFile.value) {
+                fileKey.value = uploadedFile.value.key;
+                await Storage.put(fileKey.value, uploadedFile.value.file, {
+                    contentType: "image/*",
                 });
 
-                const selectedTagNames = taggingSelected.value.map(tag => tag.name);
-                const data = await DataStore.query(BlogYash);
-                const dataLength = data.length + 1;
-                await DataStore.save(
-                    new BlogYash({
-                        "blogNo": dataLength.toString(),
-                        "title": titleText.value,
-                        "category": JSON.parse(JSON.stringify(value.value)).name,
-                        "tags": selectedTagNames,
-                        "publishDate": publishDate.value,
-                        "content": editorContent.value,
-                        "profilePicPath": fileKey,
-                        "isPublished": true,
-                    })
-                );
-
-
-                window.alert("success")
-
-
-                titleText.value = "";
-                value.value = "";
-                taggingSelected.value = [];
-                publishDate.value = "";
-                editorContent.value = " ";
-                uploadedFile.value = null;
-                localStorage.removeItem('formData');
-
-
-            } else {
-                window.alert("No valid file selected for upload");
             }
+
+            const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+
+            await DataStore.save(
+                new BlogYash({
+                    "blogNo": oldBlogID.value,
+                    "title": titleText.value,
+                    "category": JSON.parse(JSON.stringify(value.value)).name,
+                    "tags": selectedTagNames,
+                    "publishDate": publishDate.value,
+                    "content": editorContent.value,
+                    "profilePicPath": fileKey.value ?? singleBlog.value.profilePicPath,
+                    "isPublished": true,
+                })
+            );
+
+
+            window.alert("success")
+
+
+            titleText.value = "";
+            value.value = "";
+            taggingSelected.value = [];
+            publishDate.value = "";
+            editorContent.value = " ";
+            uploadedFile.value = null;
+            localStorage.removeItem('formData');
         } catch (error) {
             console.log(error);
         } finally {
@@ -291,7 +294,7 @@ const publishBtn = async (e) => {
     }
 };
 
-onBeforeMount(async () => {
+onMounted(async () => {
     try {
         const blogs = await DataStore.query(BlogYash, blogid);
         console.clear()
@@ -300,7 +303,7 @@ onBeforeMount(async () => {
 
         singleBlogImg.value = await Storage.get(singleBlog.value.profilePicPath)
         console.log(singleBlogImg.value);
-        const { title, category, tags, content } = singleBlog.value
+        const { title, category, tags, content, blogNo } = singleBlog.value
         titleText.value = title
         value.value = { name: category, value: category.toLowerCase() }
         taggingSelected.value = tags.map((tag) => {
@@ -311,6 +314,7 @@ onBeforeMount(async () => {
         publishDate.value = singleBlog.value.publishDate
         editorContent.value = content
         uploadedFile.value = singleBlogImg.value
+        oldBlogID.value = blogNo
         console.log(uploadedFile.value);
     } catch (err) {
         console.error(err);
@@ -331,40 +335,28 @@ const saveReview = async () => {
             const modelToDelete = await DataStore.query(BlogYash, singleBlog.value.id);
             DataStore.delete(modelToDelete);
         }
-        const formData = {
-            titleText: titleText.value,
-            value: value.value,
-            taggingSelected: taggingSelected.value.map(tag => tag.name),
-            publishDate: publishDate.value,
-            editorContent: editorContent.value,
-            uploadedFile: uploadedFile.value,
-        };
-        localStorage.setItem('formData', JSON.stringify(formData));
+
 
         status.value = "Saving Data..."
         uploadingFile.value = true;
+        if (uploadedFile.value) {
+            fileKey.value = uploadedFile.value.key;
+            await Storage.put(fileKey.value, uploadedFile.value.file, {
+                contentType: "image/*",
+            });
 
-        const fileKey = uploadedFile.value.key;
-        await Storage.put(fileKey, uploadedFile.value.file, {
-            contentType: uploadedFile.value.file.type,
-        });
+        }
 
         const selectedTagNames = taggingSelected.value.map(tag => tag.name);
-
-
-        const data = await DataStore.query(BlogYash);
-        const dataLength = data.length + 1;
-        console.log(dataLength);
-
         const newModel = await DataStore.save(
             new BlogYash({
-                "blogNo": dataLength.toString(),
+                "blogNo": oldBlogID.value,
                 "title": titleText.value,
                 "category": JSON.parse(JSON.stringify(value.value)).name,
                 "tags": selectedTagNames,
                 "publishDate": publishDate.value,
                 "content": editorContent.value,
-                "profilePicPath": fileKey,
+                "profilePicPath": fileKey.value ?? singleBlog.value.profilePicPath,
                 "isPublished": false,
             })
         );
@@ -372,6 +364,7 @@ const saveReview = async () => {
         uploadingFile.value = false;
         savedBlog.value = newModel.id;
         console.log(savedBlog.value);
+        router.push("/AA/blog/allblog")
     }
 };
 

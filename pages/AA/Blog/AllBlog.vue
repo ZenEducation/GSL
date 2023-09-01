@@ -49,7 +49,7 @@ const handleGetData = async () => {
         items.value = blogs.sort((a, b) => a.blogNo - b.blogNo); // Sort by blogNo in increasing order
         const uniqueCategories = [...new Set(items.value.map(item => item.category))];
         category.value = uniqueCategories;
-        console.log(category.value);
+
     } catch (err) {
         console.error(err);
     }
@@ -60,7 +60,7 @@ const getCategory = async () => {
         items.value.map((item) => {
             category.value.push(category.value.includes(item.category))
         })
-        console.log(category.value);
+
     } catch (error) {
         console.error(error);
     }

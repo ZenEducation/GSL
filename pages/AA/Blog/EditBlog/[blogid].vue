@@ -63,7 +63,7 @@
                                 <img v-else width="500" :src="singleBlogImg" alt="Image" />
                             </div>
 
-                            <img v-else src="../../../assets/images/download.png" alt="Image" />
+                            <img v-else src="../../../../assets/images/download.png" alt="Image" />
                             <form>
                                 <input type="file" @change="handleFileChange" accept=".jpg, .jpeg, .png" />
 

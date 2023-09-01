@@ -1,6 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  ssr: false,
   srcDir: "./",
   css: ["@/assets/css/main.css",
     "@/assets/frontend/css/main.css",
@@ -44,7 +45,7 @@ export default defineNuxtConfig({
   },
 
   //
-  plugins: [{ src: '~/plugins/fontawesome.js', mode: 'client' }],
+  plugins: [{ src: '~/plugins/fontawesome.js', mode: 'client' },{ src: '~/plugins/quill.ts', mode: 'client'}],
   // { src: "@/plugins/amplify.ts", mode: "client" }
   vite: {
     // temp-fix for dev, it breaks build for now (see: https://github.com/nuxt/framework/issues/4916)

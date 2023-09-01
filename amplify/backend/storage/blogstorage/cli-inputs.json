@@ -1,0 +1,17 @@
+{
+  "resourceName": "blogstorage",
+  "policyUUID": "4632b116",
+  "bucketName": "blogstorage",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "groupAccess": {}
+}

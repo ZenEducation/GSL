@@ -3,6 +3,10 @@ import { useStyleStore } from "@/stores/style.js";
 import { darkModeKey, styleKey } from "@/configs/config.js";
 import { useMainStore } from "@/stores/main.js";
 import "@/assets/css/main.css";
+import { Amplify } from "aws-amplify"
+import awsconfig from "@/src/aws-exports"
+
+Amplify.configure(awsconfig)
 
 
 
@@ -44,8 +48,16 @@ useHead({
   </div>
 </template> -->
 
+
+<script>
+import { Amplify } from "aws-amplify"
+import awsconfig from "@/src/aws-exports.js"
+
+Amplify.configure(awsconfig)
+</script>
+
 <template>
   <div>
-    <NuxtPage/>
+    <NuxtPage />
   </div>
 </template>

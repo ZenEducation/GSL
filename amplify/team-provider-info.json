@@ -1,4 +1,28 @@
 {
+  "blogyash": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gsl-blogyash-93109-authRole",
+      "UnauthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-blogyash-93109-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::317786172055:role/amplify-gsl-blogyash-93109-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-gsl-blogyash-93109-deployment",
+      "UnauthRoleName": "amplify-gsl-blogyash-93109-unauthRole",
+      "StackName": "amplify-gsl-blogyash-93109",
+      "StackId": "arn:aws:cloudformation:us-east-1:317786172055:stack/amplify-gsl-blogyash-93109/24aed410-3505-11ee-b0e1-0e0527f064a5",
+      "AmplifyAppId": "dxao6ghfxuy0r"
+    },
+    "categories": {
+      "auth": {
+        "gsl520d5a9a": {}
+      },
+      "api": {
+        "GSL": {}
+      },
+      "storage": {
+        "blogstorage": {}
+      }
+    }
+  },
   "multipleui": {
     "awscloudformation": {
       "AuthRoleName": "amplify-gsl-multipleui-105505-authRole",

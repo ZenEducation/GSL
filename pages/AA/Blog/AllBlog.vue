@@ -281,7 +281,11 @@ const clearResult = () => {
         <NuxtLayout name="zen">
             <SectionMain>
                 <SectionTitleLineWithButton :icon="mdiChartTimelineVariant" title="All Blogs" main>
-                    <BaseButton label="Create Content" small color="contrast" />
+
+                    <NuxtLink to="/AA/blog/createblog"><button
+                            class="w-36 text-sm px-1 bg-gray-800 text-white dark:bg-white dark:text-black "> Create Content
+                        </button>
+                    </NuxtLink>
 
 
                 </SectionTitleLineWithButton>
@@ -427,7 +431,7 @@ const clearResult = () => {
                                                 class="full p-1 bg-blue-400 text-white border-0"><svg-icon type="mdi"
                                                     :path="mdiEye"></svg-icon></button>
                                         </NuxtLink>
-                                        <NuxtLink :to="'/AA/blog/' + client.id"><button
+                                        <NuxtLink :to="'/AA/blog/EditBlog/' + client.id"><button
                                                 class="full p-1 bg-blue-400 text-white border-0"><svg-icon type="mdi"
                                                     :path="mdiPen"></svg-icon></button>
                                         </NuxtLink>

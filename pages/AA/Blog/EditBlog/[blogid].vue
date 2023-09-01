@@ -59,7 +59,7 @@
                         <div class="flex border border-black rounded-md p-4 justify-center items-center gap-4">
 
                             <div v-if="uploadedFile">
-                                <img v-if="uploadedFile.file" width="500" :src="uploadedFile.url" alt="Image" />
+                                <img v-if="uploadedFile.file" width="500" :src="uploadedFile.file.url" alt="Image" />
                                 <img v-else width="500" :src="singleBlogImg" alt="Image" />
                             </div>
 
@@ -130,9 +130,10 @@ const handleFileChange = (event) => {
     if (file) {
         const fileExtension = file.name.split(".").pop().toLowerCase();
         if (allowedExtensions.includes(fileExtension)) {
-            const fileKey1 = `images/${Date.now()}-${file.name}`;
+            const fileKey = `images/${Date.now()}-${file.name}`;
             file.url = URL.createObjectURL(file);
-            uploadedFile.value = { file, key: fileKey1 }; // Save the file and its key
+            uploadedFile.value = { file, key: fileKey }; // Save the file and its key
+            console.log(uploadedFile.value.file.url);
         } else {
             alert("Invalid file format. Please select an image file only");
             event.target.value = "";
@@ -238,12 +239,12 @@ const publishBtn = async (e) => {
     e.preventDefault();
     if (confirm("Do You Want to Publish This Blog") == true) {
         if (savedBlog.value) {
-            alert("1")
+
             const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
             DataStore.delete(modelToDelete);
 
         } else {
-            alert("2")
+
             const modelToDelete = await DataStore.query(BlogYash, singleBlog.value.id);
             DataStore.delete(modelToDelete);
         }
@@ -291,6 +292,7 @@ const publishBtn = async (e) => {
         } finally {
             uploadingFile.value = false;
         }
+        router.push("/AA/blog/allblog")
     }
 };
 

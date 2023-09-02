@@ -310,60 +310,56 @@ onMounted(() => {
 
 const saveReview = async () => {
   if (confirm("Do You Want to Save This Blog") == true) {
-    if (titleText.value && value.value && taggingSelected.value.length > 0 && publishDate.value && uploadedFile.value && editorContent.value) {
-      if (savedBlog.value) {
+    if (savedBlog.value) {
 
-        const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
-        DataStore.delete(modelToDelete);
-      }
-
-
-      status.value = "Saving Data..."
-      uploadingFile.value = true;
-
-      const fileKey = uploadedFile.value.key;
-      await Storage.put(fileKey, uploadedFile.value.file, {
-        contentType: uploadedFile.value.file.type,
-      });
-
-      const selectedTagNames = taggingSelected.value.map(tag => tag.name);
-
-
-      const data = await DataStore.query(BlogYash);
-      const dataLength = data.length + 1;
-      console.log(dataLength);
-
-      const newModel = await DataStore.save(
-        new BlogYash({
-          "blogNo": dataLength.toString(),
-          "title": titleText.value,
-          "category": JSON.parse(JSON.stringify(value.value)).name,
-          "tags": selectedTagNames,
-          "publishDate": publishDate.value,
-          "content": editorContent.value,
-          "profilePicPath": fileKey,
-          "isPublished": false,
-        })
-      );
-      savedBlog.value = newModel.id;
-      console.log(savedBlog.value);
-      const formData = {
-        id: savedBlog.value,
-        titleText: titleText.value,
-        value: value.value,
-        taggingSelected: taggingSelected.value.map(tag => tag.name),
-        publishDate: publishDate.value,
-        editorContent: editorContent.value,
-        uploadedFile: uploadedFile.value,
-      };
-      localStorage.setItem('formData', JSON.stringify(formData));
-
-      uploadingFile.value = false;
-
-      router.push("/AA/blog/allblog")
-    } else {
-      window.alert("Fill All Fields Properly")
+      const modelToDelete = await DataStore.query(BlogYash, savedBlog.value);
+      DataStore.delete(modelToDelete);
     }
+
+
+    status.value = "Saving Data..."
+    uploadingFile.value = true;
+
+    const fileKey = uploadedFile.value.key;
+    await Storage.put(fileKey, uploadedFile.value.file, {
+      contentType: uploadedFile.value.file.type,
+    });
+
+    const selectedTagNames = taggingSelected.value.map(tag => tag.name);
+
+
+    const data = await DataStore.query(BlogYash);
+    const dataLength = data.length + 1;
+    console.log(dataLength);
+
+    const newModel = await DataStore.save(
+      new BlogYash({
+        "blogNo": dataLength.toString(),
+        "title": titleText.value,
+        "category": JSON.parse(JSON.stringify(value.value)).name,
+        "tags": selectedTagNames,
+        "publishDate": publishDate.value,
+        "content": editorContent.value,
+        "profilePicPath": fileKey,
+        "isPublished": false,
+      })
+    );
+    savedBlog.value = newModel.id;
+    console.log(savedBlog.value);
+    const formData = {
+      id: savedBlog.value,
+      titleText: titleText.value,
+      value: value.value,
+      taggingSelected: taggingSelected.value.map(tag => tag.name),
+      publishDate: publishDate.value,
+      editorContent: editorContent.value,
+      uploadedFile: uploadedFile.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+    uploadingFile.value = false;
+
+    router.push("/AA/blog/allblog")
 
   }
 };

@@ -372,7 +372,6 @@ const saveReview = async () => {
         uploadingFile.value = false;
         savedBlog.value = newModel.id;
         console.log(savedBlog.value);
-        router.push("/AA/blog/allblog")
 
     }
 };

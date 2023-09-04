@@ -359,7 +359,7 @@ const saveReview = async () => {
 
     uploadingFile.value = false;
 
-    router.push("/AA/blog/allblog")
+  
 
   }
 };

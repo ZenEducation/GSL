@@ -9,7 +9,9 @@
                 class=" w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
                     <div class="xl:w-2/5 lg:w-1/2 pr-4 pl-4">
-                        <h1 class="text-6xl leading-[70px] font-bold uppercase text-white text-center mb-[15px]">
+                        <h1 class="text-6xl leading-[70px] font-bold uppercase text-white text-center mb-[15px]"
+                       
+                        >
                             Find Love Your Life
                         </h1>
                         <div

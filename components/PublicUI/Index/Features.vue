@@ -7,13 +7,19 @@
                     <div class="lg:w-1/2 pr-4 pl-4">
                         <div>
                             <div class="text-center mb-[39px]">
-                                <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
+                                <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6" 
+                                data-aos="fade-up" data-aos-duration="1000"
+                                >
                                     An Exhaustive List Of
                                 </h6>
-                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[21px]">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[21px]" 
+                                data-aos="fade-up" data-aos-duration="1000"
+                                >
                                     Amazing Features
                                 </h2>
-                                <p class="inline-block dark:text-[white] text-[#333333]">
+                                <p class="inline-block dark:text-[white] text-[#333333]" 
+                                data-aos="fade-up" data-aos-duration="1000"
+                                >
                                     To find meaningful connections, dates, and life partners.
                                 </p>
                             </div>
@@ -23,7 +29,7 @@
             </div>
             <div class="relative">
                 <div
-                    class="absolute w-[46%] max-lg:relative max-lg:mb-24 h-full bg-[#5650ce] bg-[url('../images/feature/left-img.jpg')] bg-no-repeat bg-cover bg-center rounded-[0px_30px_30px_0px] left-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(86,80,206,0.7)] before:rounded-[0px_30px_30px_0px] before:left-0">
+                    class="absolute w-[46%] max-lg:relative max-lg:mb-24 h-full bg-[#5650ce] bg-[url('https://images.pexels.com/photos/935789/pexels-photo-935789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center rounded-[0px_30px_30px_0px] left-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(86,80,206,0.7)] before:rounded-[0px_30px_30px_0px] before:left-0">
                     <div
                         class="absolute w-60 h-60 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-center -translate-y-2/4 right-[-120px] rounded-[50%] top-2/4 before:absolute before:content-[''] before:w-[260px] before:h-[260px] before:bg-[rgba(222,41,139,0.2)] before:z-[-1] before:rounded-[50%] before:-left-2.5 before:-top-2.5">
                         <div class="mt-[26%]">
@@ -40,10 +46,10 @@
                     <div class="flex flex-wrap  justify-end">
                         <div class="lg:w-2/5 max-lg:w-full pr-4 pl-4">
                             <div class="pt-[50px] pb-[42px] px-0">
-                                <div class="flex mb-[30px] hover:shadow-[0px_5px_10px_0px_rgba(64,36,155,0.4)]"
+                                <div class="flex mb-[30px]  card_Holder"
                                     data-wow-delay="0.1s">
                                     <div
-                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%]">
+                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i1.png" alt=""
                                             class="h-10 inline-block relative">
                                     </div>
@@ -56,10 +62,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex mb-[30px] hover:shadow-[0px_5px_10px_0px_rgba(64,36,155,0.4)]"
+                                <div class="flex mb-[30px] card_Holder"
                                     data-wow-delay="0.2s">
                                     <div
-                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%]">
+                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i2.png" alt=""
                                             class="h-10 inline-block relative">
                                     </div>
@@ -72,10 +78,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex mb-[30px] hover:shadow-[0px_5px_10px_0px_rgba(64,36,155,0.4)]"
+                                <div class="flex mb-[30px] card_Holder"
                                     data-wow-delay="0.3s">
                                     <div
-                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%]">
+                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i3.png" alt=""
                                             class="h-10 inline-block relative">
                                     </div>
@@ -88,10 +94,10 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="flex mb-0 hover:shadow-[0px_5px_10px_0px_rgba(64,36,155,0.4)]"
+                                <div class="flex mb-0 card_Holder"
                                     data-wow-delay="0.4s">
                                     <div
-                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%]">
+                                        class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i4.png" alt=""
                                             class="h-10 inline-block relative">
                                     </div>
@@ -116,4 +122,11 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card_Holder:hover .iconSec {
+
+box-shadow: 0px 5px 10px 0px rgba(64,36,155,0.4);
+}
+
+
+</style>

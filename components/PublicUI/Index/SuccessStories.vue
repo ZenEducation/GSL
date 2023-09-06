@@ -7,13 +7,13 @@
                     <div class="lg:w-1/2 pr-4 pl-4 mb-20">
                         <div>
                             <div class="text-center mb-10">
-                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6">
+                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-6"    data-aos="fade-up" data-aos-duration="1000">
                                     Love in faith
                                 </h6>
-                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]"    data-aos="fade-up" data-aos-duration="1000">
                                     Success Stories
                                 </h2>
-                                <p class="dark:text-[white] inline-block text-[#333333]">
+                                <p class="dark:text-[white] inline-block text-[#333333]"    data-aos="fade-up" data-aos-duration="1000">
                                     Aliquam a neque tortor. Donec iaculis auctor turpis. Eporttitor mattis ullamcorper urna.
                                     Cras quis elementum
                                 </p>
@@ -22,16 +22,16 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-1/3 md:w-1/2 mb-20 pr-4 pl-4">
+                    <div class="lg:w-1/3 md:w-1/2 mb-20 pr-4 pl-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="bg-white dark:bg-[#262950]  overflow-hidden transition-all duration-[ease] delay-[0.3s] rounded-[22px] hover:shadow-[0px_10px_50px_0px_rgb(176,164,226)]"
                             data-wow-delay="0.1s">
                             <div>
-                                <img src="@/assets/frontend/images/sucess/img1.jpg" class="w-full" alt="">
+                                <img src="https://pixner.net/peyamba/peyamba/assets/images/sucess/img1.jpg" class="w-full" alt="">
                             </div>
                             <div class="relative pt-[83px] pb-6 px-[30px]">
                                 <div
                                     class="absolute -translate-x-2/4 top-[-30px] w-[60px] h-[60px] z-[9] rounded-[50%] left-2/4 before:absolute before:content-[''] before:w-[70px] before:h-[70px] before:top-[-5px] before:left-[-5px] before:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:z-[-1] before:opacity-50 before:rounded-[50%] after:absolute after:content-[''] after:w-20 after:h-20 after:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:z-[-2] after:opacity-50 after:rounded-[50%] after:-left-2.5 after:-top-2.5">
-                                    <img src="@/assets/frontend/images/sucess/p1.png" alt="">
+                                    <img src="https://pixner.net/peyamba/peyamba/assets/images/sucess/p1.png" alt="">
                                     <span
                                         class="absolute w-full h-full left-0 top-0 before:absolute before:content-[''] before:w-[90px] before:h-[90px] before:top-[-15px] before:left-[-15px] before:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:z-[-1] before:opacity-20 before:rounded-[50%] after:absolute after:content-[''] after:w-[100px] after:h-[100px] after:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:z-[-2] after:opacity-20 after:rounded-[50%] after:-left-5 after:-top-5"></span>
                                 </div>
@@ -75,16 +75,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 md:w-1/2 mb-20  pr-4 pl-4">
+                    <div class="lg:w-1/3 md:w-1/2 mb-20  pr-4 pl-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="bg-white dark:bg-[#262950]  overflow-hidden transition-all duration-[ease] delay-[0.3s] rounded-[22px] hover:shadow-[0px_10px_50px_0px_rgb(176,164,226)]"
                             data-wow-delay="0.2s">
                             <div>
-                                <img src="@/assets/frontend/images/sucess/img2.png" class="w-full" alt="">
+                                <img src="https://pixner.net/peyamba/peyamba/assets/images/sucess/img2.png" class="w-full" alt="">
                             </div>
                             <div class="relative pt-[83px] pb-6 px-[30px]">
                                 <div
                                     class="absolute -translate-x-2/4 top-[-30px] w-[60px] h-[60px] z-[9] rounded-[50%] left-2/4 before:absolute before:content-[''] before:w-[70px] before:h-[70px] before:top-[-5px] before:left-[-5px] before:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:z-[-1] before:opacity-50 before:rounded-[50%] after:absolute after:content-[''] after:w-20 after:h-20 after:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:z-[-2] after:opacity-50 after:rounded-[50%] after:-left-2.5 after:-top-2.5">
-                                    <img src="@/assets/frontend/images/sucess/p2.png" alt="">
+                                    <img src="https://pixner.net/peyamba/peyamba/assets/images/sucess/p2.png" alt="">
                                     <span
                                         class="absolute w-full h-full left-0 top-0 before:absolute before:content-[''] before:w-[90px] before:h-[90px] before:top-[-15px] before:left-[-15px] before:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:z-[-1] before:opacity-20 before:rounded-[50%] after:absolute after:content-[''] after:w-[100px] after:h-[100px] after:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:z-[-2] after:opacity-20 after:rounded-[50%] after:-left-5 after:-top-5"></span>
                                 </div>
@@ -128,16 +128,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 md:w-1/2 mb-20  pr-4 pl-4">
+                    <div class="lg:w-1/3 md:w-1/2 mb-20  pr-4 pl-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="bg-white dark:bg-[#262950]  overflow-hidden transition-all duration-[ease] delay-[0.3s] rounded-[22px] hover:shadow-[0px_10px_50px_0px_rgb(176,164,226)]"
                             data-wow-delay="0.3s">
                             <div>
-                                <img src="@/assets/frontend/images/sucess/img3.png" class="w-full" alt="">
+                                <img src="https://pixner.net/peyamba/peyamba/assets/images/sucess/img3.png" class="w-full" alt="">
                             </div>
                             <div class="relative pt-[83px] pb-6 px-[30px]">
                                 <div
                                     class="absolute -translate-x-2/4 top-[-30px] w-[60px] h-[60px] z-[9] rounded-[50%] left-2/4 before:absolute before:content-[''] before:w-[70px] before:h-[70px] before:top-[-5px] before:left-[-5px] before:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:z-[-1] before:opacity-50 before:rounded-[50%] after:absolute after:content-[''] after:w-20 after:h-20 after:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:z-[-2] after:opacity-50 after:rounded-[50%] after:-left-2.5 after:-top-2.5">
-                                    <img src="@/assets/frontend/images/sucess/p3.png" alt="">
+                                    <img src="https://pixner.net/peyamba/peyamba/assets/images/sucess/p3.png" alt="">
                                     <span
                                         class="absolute w-full h-full left-0 top-0 before:absolute before:content-[''] before:w-[90px] before:h-[90px] before:top-[-15px] before:left-[-15px] before:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] before:z-[-1] before:opacity-20 before:rounded-[50%] after:absolute after:content-[''] after:w-[100px] after:h-[100px] after:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] after:z-[-2] after:opacity-20 after:rounded-[50%] after:-left-5 after:-top-5"></span>
                                 </div>

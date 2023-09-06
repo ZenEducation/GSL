@@ -7,13 +7,13 @@
                     <div class="lg:w-2/5 pr-4 pl-4">
                         <div class="text-left">
                             <div class="text-left mb-[59px]">
-                                <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px] text-left">
+                                <h6 class=" text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px] text-left" data-aos="fade-up" data-aos-duration="1000">
                                     Meet New People Today!
                                 </h6>
-                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929]  mb-[21px] text-left">
+                                <h2 class="dark:text-[white] text-[50px] leading-[60px] font-bold block text-[#292929]  mb-[21px] text-left" data-aos="fade-up" data-aos-duration="1000">
                                     Start Flirting
                                 </h2>
-                                <p class="text-left">
+                                <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
                                     Meeting new people and flirting can be exciting and fun, and dating apps can be a great
                                     way to connect with others who share your
                                     interests and goals. If you're looking to
@@ -21,20 +21,20 @@
                                     flirting on a dating app, there are a few things to keep in mind.
                                 </p>
                                 <br>
-                                <p class="text-left">
+                                <p class="text-left" data-aos="fade-up" data-aos-duration="1000">
                                     First, make sure you create a profile that accurately represents you and what you're
                                     looking for. Choose a few flattering photos that show off your personality and
                                     interests,
                                     and write a bio that gives others a sense of who you are.
                                 </p>
                                 <br>
-                                <p  class="text-left">
+                                <p  class="text-left" data-aos="fade-up" data-aos-duration="1000">
                                     When you start browsing profiles, take the time to read through them and look for
                                     people who share your interests or seem like a good match. When you find someone
                                     you're interested in, don't be afraid to send them a message and start a conversation.
                                 </p>
                                 <br>
-                                <p  class="text-left">
+                                <p  class="text-left" data-aos="fade-up" data-aos-duration="1000">
                                     As you start chatting and getting to know each other, keep things light and playful.
                                     Make
                                     jokes, ask questions, and find common ground. Be respectful of their boundaries and
@@ -42,7 +42,9 @@
                                 </p>
                             </div>
 
-                            <NuxtLink to="#"
+                            <NuxtLink
+                            data-aos="fade-up" data-aos-duration="1000"
+                            to="#"
                                 class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto no-underline px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]  mt-0">
                                 Seek Your Partner</NuxtLink>
                         </div>

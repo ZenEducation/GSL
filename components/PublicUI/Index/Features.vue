@@ -47,7 +47,9 @@
                         <div class="lg:w-2/5 max-lg:w-full pr-4 pl-4">
                             <div class="pt-[50px] pb-[42px] px-0">
                                 <div class="flex mb-[30px]  card_Holder"
-                                    data-wow-delay="0.1s">
+                                    data-wow-delay="0.1s"  
+                                    data-aos="fade-up" data-aos-duration="1000"
+                                    >
                                     <div
                                         class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i1.png" alt=""
@@ -63,7 +65,7 @@
                                     </div>
                                 </div>
                                 <div class="flex mb-[30px] card_Holder"
-                                    data-wow-delay="0.2s">
+                                    data-wow-delay="0.2s"  data-aos="fade-up" data-aos-duration="1000">
                                     <div
                                         class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i2.png" alt=""
@@ -79,7 +81,7 @@
                                     </div>
                                 </div>
                                 <div class="flex mb-[30px] card_Holder"
-                                    data-wow-delay="0.3s">
+                                    data-wow-delay="0.3s"  data-aos="fade-up" data-aos-duration="1000">
                                     <div
                                         class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i3.png" alt=""
@@ -95,7 +97,7 @@
                                     </div>
                                 </div>
                                 <div class="flex mb-0 card_Holder"
-                                    data-wow-delay="0.4s">
+                                    data-wow-delay="0.4s"  data-aos="fade-up" data-aos-duration="1000">
                                     <div
                                         class=" w-[65px] h-[65px] leading-[65px] bg-[#faeffa] text-center inline-block transition-all duration-[ease] delay-[0.3s] mr-[30px] rounded-[50%] iconSec">
                                         <img src="@/assets/frontend/images/feature/i4.png" alt=""

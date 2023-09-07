@@ -30,18 +30,33 @@ const getActive = ()=>{
 const goHome = async()=>{
     await navigateTo({ path: '/' })
 }
+
+const lang = ref('EN')
+const dropShow = ref(false)
+const selectLang=(value)=>{
+  lang.value=value
+  dropShow.value=false
+}
+const hideShow= ()=>{
+  if(dropShow.value == true ){
+    dropShow.value=false
+  } else {
+    dropShow.value=true
+
+  }
+}
 </script>
 
 <style scoped>
-select:focus {
-  outline: none !important;
-  border: none !important;
-}
-select:focus {
-  outline: none !important;
-  border: none !important;
+.language-select > select:focus {
+                 border: 1px solid rgba(0, 0, 0, 0) !important;
+                 /* box-shadow: 0 0 3pt 2pt #719ECE !important; */
 }
 
+.language-select > select option:focus {
+                 border: 1px solid rgba(0, 0, 0, 0) !important;
+                 /* box-shadow: 0 0 3pt 2pt #719ECE !important; */
+}
 a.router-link-active {
   border-bottom: 2px white solid;
 }
@@ -258,13 +273,14 @@ a.router-link-active {
               </li>
               <li>
                 <div class="language-select ml-2.5">
-                  <select
-                    class="select-bar bg-transparent border-none text-white p-0"
-                  >
-                    <option value="" class="bg-white text-black p-1">EN</option>
-                    <option value="" class="bg-white text-black p-1">IN</option>
-                    <option value="" class="bg-white text-black p-1">BN</option>
-                  </select>
+                <span class="text-white font-semibold	 cursor-pointer" @click="hideShow" > {{ lang }} </span> 
+
+                  <div class="rounded bg-white dark:bg-red-500 absolute mt-3" v-if="dropShow">
+                    <div class="cursor-pointer p-2 rounded hover:bg-gray-100 text-[1rem]"  v-for="(item,idx) in ['EN','IN','BN']" :key="idx" 
+                    :class="[item==lang?'font-bold':'']"
+                     @click="selectLang(item)"
+                    >{{ item }}</div>
+                  </div>
                 </div>
               </li>
               <li>

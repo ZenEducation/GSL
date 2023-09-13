@@ -275,8 +275,8 @@ a.router-link-active {
                 <div class="language-select ml-2.5">
                 <span class="text-white font-semibold	 cursor-pointer" @click="hideShow" > {{ lang }} </span> 
 
-                  <div class="rounded bg-white dark:bg-red-500 absolute mt-3" v-if="dropShow">
-                    <div class="cursor-pointer p-2 rounded hover:bg-gray-100 text-[1rem]"  v-for="(item,idx) in ['EN','IN','BN']" :key="idx" 
+                  <div class="rounded bg-white dark:bg-gray-900 absolute mt-3" v-if="dropShow">
+                    <div class="cursor-pointer p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 text-[1rem]"  v-for="(item,idx) in ['EN','IN','BN']" :key="idx" 
                     :class="[item==lang?'font-bold':'']"
                      @click="selectLang(item)"
                     >{{ item }}</div>

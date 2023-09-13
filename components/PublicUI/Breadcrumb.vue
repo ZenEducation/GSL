@@ -10,22 +10,18 @@
                     <li class="capitalize inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0">
                         <NuxtLink to="/" class="capitalize no-underline text-indigo-200 text-lg inline-flex items-center  after:font-semibold after:inline-block   after:font-['Font Awesome 5 Free'] max-[575px]:text-base max-[575px]:p-0">
                             Home
+                            <i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
                         </NuxtLink>
                     </li>
-                    <li class="capitalize inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0 ml-2">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-
-
-                    </li>
-                    <li class="capitalize no-underline inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0 ml-3 ">
-                        <NuxtLink to="#" class="capitalize no-underline text-indigo-200 text-lg inline-flex items-center max-[575px]:text-base max-[575px]:p-0  ">
-                            Profile
+                    
+                    <li class="capitalize no-underline inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0 ml-3 "
+                     v-for="(item,idx) in breadcrumb" :key="idx"
+                    >
+                        <NuxtLink :to="item.link" class="capitalize no-underline text-indigo-200 text-lg inline-flex items-center max-[575px]:text-base max-[575px]:p-0  ">
+                            {{ item.label }} <i class="fa fa-angle-right ml-2" aria-hidden="true"></i>
                         </NuxtLink>
                     </li>
-                    <li class="capitalize inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0 ml-2 ">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-
-                    </li>
+                  
                     <li class="capitalize no-underline inline-block text-indigo-200 text-lg max-[575px]:text-base max-[575px]:p-0 ml-3">
                         <NuxtLink to="#" class="capitalize no-underline text-indigo-200 text-lg inline-flex items-center max-[575px]:text-base max-[575px]:p-0">
                             {{ props.title}}
@@ -44,6 +40,10 @@ const props = defineProps({
     title: {
         type:String,
         default:'title'
+    },
+    breadcrumb:{
+    type:Array,
+    default:[]
     }
 })
 

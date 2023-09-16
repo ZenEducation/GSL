@@ -1,6 +1,7 @@
 <template>
     <div class=" dark:text-[white] dark:bg-[#202342]">
-        <Navbar />
+        <PublicUINavbar />
+
         <breadcrumb title="blog" />
 
         <div>
@@ -52,7 +53,7 @@
                                                 v-if="data?.blockquote">
                                                 {{ data?.blockquote }}
                                             </blockquote>
-                                            <div v-for="item in  data.content" class="mb-7">
+                                            <div v-for="(item,idx) in  data.content" :key="idx" class="mb-7">
                                                 <h4
                                                     class="text-[22px] dark:text-[white] leading-[38px] font-bold mb-[13px]">
                                                     {{ item?.heading }}
@@ -147,7 +148,7 @@
                                 </h5>
                                 <ul>
                                     <li class="px-0 py-[21px]  dark:border-t-[rgba(256,256,256,0.155)]  border-t-[rgba(0,0,0,0.1)] border-t border-solid sm:flex"
-                                        v-for="index in 3" key="index">
+                                        v-for="index in 3" :key="index">
                                         <div class=" sm:min-w-min">
 
                                             <div
@@ -366,6 +367,7 @@
 
 <script setup>
 import img from '@/assets/frontend/images/blog/blogs/02.jpg'
+import Breadcrumb from '~~/components/PublicUI/Breadcrumb.vue';
 
 const data = {
     "intro": "Online dating has become a popular way to meet new people and find potential partners. However, navigating the world of online dating can be overwhelming and challenging, especially if you're new to the scene. In this blog post, we'll share some tips on how to navigate the world of online dating.",

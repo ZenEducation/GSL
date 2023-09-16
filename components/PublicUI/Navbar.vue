@@ -45,6 +45,10 @@ const hideShow= ()=>{
 
   }
 }
+
+const goToTop=()=>{
+  window.scrollTo(0, 0);
+}
 </script>
 
 <style scoped>
@@ -62,6 +66,19 @@ a.router-link-active {
 }
 .activeLink {
   border-bottom: 2px white solid;
+ 
+}
+
+.scroll_top{
+  visibility: hidden;
+  transition-duration: 1s;
+  top: 15%;
+  right: 1.5rem;
+}
+.scrollTop_active{
+  visibility:visible;
+  bottom: 5rem;
+  top: 88%;
 }
 </style>
 
@@ -332,6 +349,16 @@ a.router-link-active {
       <form action="#">
         <input type="text" placeholder="Write what you want.." />
       </form>
+    </div>
+
+
+    <div class="w-12 h-12 fixed flex justify-center items-center bg-[#5651CF] rounded text-white cursor-pointer z-[999999] scroll_top  "
+    :class="[scrollPosition>500?'scrollTop_active  ':'']"
+    @click="goToTop"
+
+    >
+       <i class="fa fa-chevron-up mx-auto my-auto text-[16px]" aria-hidden="true"></i> 
+     
     </div>
   </div>
 </template>

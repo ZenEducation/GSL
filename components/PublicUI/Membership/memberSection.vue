@@ -3,24 +3,24 @@
         <section class="overflow-hidden px-0 py-[118px]  dark:bg-[#202342] dark:text-gray-50">
             <div class="w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]">
                 <div class="flex flex-wrap  justify-center">
-                    <div class="lg:w-1/2 pr-4 pl-4">
+                    <div class="lg:w-4/6 pr-4 pl-4">
                         <div class="content">
-                            <div class="text-center mb-10">
-                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]">
+                            <div class="text-center mb-10 ">
+                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[35px]">
                                     Upgrade Your Profile
                                 </h6>
                                 <h2
-                                    class="text-[50px] dark:text-gray-50 leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                                    class="text-[50px] dark:text-gray-50 leading-[60px] font-bold block text-[#292929] mb-[11px] ">
                                     Premium Memeber Plan
                                 </h2>
                                 <p class="inline-block text-[#333333] dark:text-gray-50">
-                                    Benefit from Peyamba at its maximum you!
+                                    Benefit from GSL at its maximum you!
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap  pb-24">
+                <div class="flex flex-wrap  pb-24 mt-12">
                     <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4">
                         <div class="text-center">
                             <div class="mb-[33px] flex justify-center">
@@ -94,18 +94,22 @@
                                     <div
                                         class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
                                         <p
-                                            class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
+                                            class="uppercase font-bold   border-b-[rgba(0,0,0,0.15)]  border-b border-solid border-b pb-4 ">
                                             1 Month
                                         </p>
-                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
+                               
+
+                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c] mt-5">
                                             <sup class="text-[28px] leading-[38px]">$</sup>4.99
                                         </h4>
-                                        <p class="uppercase text-base leading-[26px]">
+                                        <p class="uppercase text-base leading-[26px] mb-4">
                                             Per Month
                                         </p>
                                         <a href="#"
-                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline">Buy
+                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline mb-6"
+                                            >Buy
                                             Now!</a>
+
                                         <img class="absolute w-full left-0 bottom-0"
                                             src="@/assets/frontend/images/membership/plan-bg.png" alt="">
                                     </div>
@@ -114,17 +118,19 @@
                                     <div
                                         class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
                                         <p
-                                            class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
+                                            class="uppercase font-bold   border-b-[rgba(0,0,0,0.15)]  border-b border-solid border-b pb-4 ">
                                             1 Month
                                         </p>
-                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
+                               
+
+                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c] mt-5">
                                             <sup class="text-[28px] leading-[38px]">$</sup>3.99
                                         </h4>
-                                        <p class="uppercase text-base leading-[26px]">
+                                        <p class="uppercase text-base leading-[26px] mb-4">
                                             Per Month
                                         </p>
                                         <a href="#"
-                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline">Buy
+                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline mb-6">Buy
                                             Now!</a>
                                         <img class="absolute w-full left-0 bottom-0"
                                             src="@/assets/frontend/images/membership/plan-bg.png" alt="">
@@ -134,17 +140,19 @@
                                     <div
                                         class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
                                         <p
-                                            class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
+                                            class="uppercase font-bold   border-b-[rgba(0,0,0,0.15)]  border-b border-solid border-b pb-4 ">
                                             1 Month
                                         </p>
-                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
+                               
+
+                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c] mt-5">
                                             <sup class="text-[28px] leading-[38px]">$</sup>2.99
                                         </h4>
-                                        <p class="uppercase text-base leading-[26px]">
+                                        <p class="uppercase text-base leading-[26px] mb-4">
                                             Per Month
                                         </p>
                                         <a href="#"
-                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline">Buy
+                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline mb-6">Buy
                                             Now!</a>
                                         <img class="absolute w-full left-0 bottom-0"
                                             src="@/assets/frontend/images/membership/plan-bg.png" alt="">
@@ -154,17 +162,19 @@
                                     <div
                                         class="bg-white dark:bg-slate-900 text-center shadow-[0px_-11px_30px_0px_rgba(112,90,186,0.2)] relative overflow-hidden pt-8 pb-10 px-[30px] rounded-[15px]">
                                         <p
-                                            class="uppercase font-bold mb-[27px] pb-[13px] border-b-[rgba(0,0,0,0.15)] border-b-white border-b border-solid">
+                                            class="uppercase font-bold   border-b-[rgba(0,0,0,0.15)]  border-b border-solid border-b pb-4 ">
                                             1 Month
                                         </p>
-                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c]">
+                               
+
+                                        <h4 class="text-[50px] leading-[60px] font-bold text-[#ac216c] mt-5">
                                             <sup class="text-[28px] leading-[38px]">$</sup>1.99
                                         </h4>
-                                        <p class="uppercase text-base leading-[26px]">
+                                        <p class="uppercase text-base leading-[26px] mb-4">
                                             Per Month
                                         </p>
                                         <a href="#"
-                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline">Buy
+                                            class="uppercase text-base mt-1.5 px-[25px] py-[5px] bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] no-underline mb-6">Buy
                                             Now!</a>
                                         <img class="absolute w-full left-0 bottom-0"
                                             src="@/assets/frontend/images/membership/plan-bg.png" alt="">
@@ -195,6 +205,12 @@
 
 <script setup>
 
+
+
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+
+
+</style>

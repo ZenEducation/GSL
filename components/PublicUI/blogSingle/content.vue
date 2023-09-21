@@ -219,7 +219,7 @@
                     </div>
                     <div
                         class="relative mb-8 pt-[31px] pb-[21px] px-[30px] bg-white dark:bg-[#262950] shadow-[0px_5px_20px_0px_rgba(78,64,128,0.1)] py-[30px] rounded-[20px]">
-                        <div style="display: block;" class="owl-carousel owl-theme h-[20rem]">
+                        <div style="display: block;" class="owl-carousel owl-theme h-[21rem]">
                               
                               <div class="overflow-hidden mb-[25px] ">
                         <image-slider />

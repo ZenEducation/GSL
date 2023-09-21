@@ -34,7 +34,7 @@
                 <h6
                   class="dark:text-gray-50 text-xl font-bold w-[calc(100%_-_40px)] max-w-[535px] leading-normal m-0"
                 >
-                  What is GetSetLove?
+                  What is GetSetLove ?
                 </h6>
 
                 <span
@@ -65,7 +65,7 @@
                 <h6
                   class="dark:text-gray-50 text-xl font-bold w-[calc(100%_-_40px)] max-w-[535px] leading-normal m-0"
                 >
-                  Why GetSetLove?
+                  Why GetSetLove ?
                 </h6>
                 <span
                   class="w-9 h-9 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] absolute rounded-[50%] right-0 top-0 after:w-5 after:h-0.5 after:bg-white after:transition-all after:duration-[ease] after:delay-[0.3s] after:-translate-x-2/4 after:-translate-y-2/4 after:absolute after:content-[''] after:left-2/4 after:top-2/4 before:w-0.5 before:h-5 before:bg-white before:transition-all before:duration-[ease] before:delay-[0.3s] before:-translate-x-2/4 before:-translate-y-2/4 before:absolute before:content-[''] before:left-2/4 before:top-2/4"
@@ -110,7 +110,7 @@
                   class="dark:text-gray-50 text-xl font-bold w-[calc(100%_-_40px)] max-w-[535px] leading-normal m-0"
                  
                 >
-                  How It Works:
+                  How It Works ?
                 </h6>
                 <span
                   class="w-9 h-9 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] absolute rounded-[50%] right-0 top-0 after:w-5 after:h-0.5 after:bg-white after:transition-all after:duration-[ease] after:delay-[0.3s] after:-translate-x-2/4 after:-translate-y-2/4 after:absolute after:content-[''] after:left-2/4 after:top-2/4 before:w-0.5 before:h-5 before:bg-white before:transition-all before:duration-[ease] before:delay-[0.3s] before:-translate-x-2/4 before:-translate-y-2/4 before:absolute before:content-[''] before:left-2/4 before:top-2/4"

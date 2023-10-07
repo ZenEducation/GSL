@@ -1,11 +1,10 @@
 <template>
   <div class=" dark:text-[white] dark:bg-[#202342]">
-
     <PublicUINavbar/>
     <Breadcrumb title="About Us"/>
     <PublicUIAboutusFlirting/>
     <PublicUIAboutusWhyChooseUs/>
-    <PublicUIIndexFeatures/>
+    <HowItworks/>
     <PublicUIIndexJoinNow/>
     <PublicUIIndexSuccessStories/>
     <PublicUINewsLatter/>
@@ -14,7 +13,7 @@
 
 <script setup >
 import Breadcrumb from '~~/components/PublicUI/Breadcrumb.vue';
-
+import HowItworks from '~~/components/PublicUI/Aboutus/HowItWorks.vue'
 </script>
 
 <style lang="scss" scoped>

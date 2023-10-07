@@ -2,7 +2,7 @@
     <div>
         <section class=" relative w-full">
             <div>
-                <div class="w-full px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4 block">
+                <div class="w-full px-[15px]  mx-auto sm:px-4 block">
                     <div class="flex flex-wrap mx-[-15px]">
                         <div class="lg:w-2/5 pr-4 pl-4 relative w-full">
                             <NuxtLink to="/" class="absolute z-10 text-white max-lg:text-black max-lg:dark:text-white px-0 py-[15px]  hover:underline"><i
@@ -33,7 +33,7 @@
                                 </p>
                             </div>
                             <div>
-                                <form action="#">
+                                <form action="#" class="mt-[4rem]">
                                     <h4 class="text-2xl leading-[34px] text-[#3b368c]  dark:text-white font-bold mb-[25px]">Acount Details</h4>
                                     <div class="mb-4">
                                         <label for="" class="text-lg leading-7 text-[#3b368c]  dark:text-white font-semibold">Username*</label>
@@ -51,7 +51,7 @@
                                         <label for="" class="text-lg leading-7 text-[#3b368c]  dark:text-white font-semibold">Confirm Password*</label>
                                         <input type="text" class="border bg-[rgb(234,242,252)] dark:text-white dark:bg-[#262950]   shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] text-base text-[#3b368c]  dark:text-white h-[60px] px-[30px] py-0 border-solid border-[rgba(59,54,140,0.1)] placeholder-[#3b368c] dark:placeholder-white " placeholder="Enter Your Password">
                                     </div>
-                                    <h4 class="content-title dark:text-white mt-5">Profile Details</h4>
+                                    <h4 class="content-title dark:text-white mt-[3rem] text-2xl leading-[34px] text-[#3b368c]  dark:text-white font-bold mb-[25px]">Profile Details</h4>
                                     <div class="mb-4">
                                         <label for="" class="text-lg leading-7 text-[#3b368c]  dark:text-white font-semibold">Name*</label>
                                         <input type="text" class="border bg-[rgb(234,242,252)] dark:text-white dark:bg-[#262950]   shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] text-base text-[#3b368c]  dark:text-white h-[60px] px-[30px] py-0 border-solid border-[rgba(59,54,140,0.1)] placeholder-[#3b368c] dark:placeholder-white " placeholder="Enter Your Full Name">
@@ -103,7 +103,7 @@
                                         <label for="" class="text-lg leading-7 text-[#3b368c]  dark:text-white font-semibold">City*</label>
                                         <input type="text" class="border bg-[rgb(234,242,252)] dark:bg-[#262950]   shadow-[1.948px_13.864px_6px_0px_rgba(220,234,251,0.3)] text-base text-[#3b368c]  dark:text-white h-[60px] px-[30px] py-0 border-solid border-[rgba(59,54,140,0.1)] placeholder-[#3b368c] dark:placeholder-white " placeholder="Enter Your City">
                                     </div>
-                                    <button class="mt-5 px-10 py-4 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] focus:outline-0" data-toggle="modal" data-target="#email-confirm">Create
+                                    <button class="mt-5 mb-6 px-10 py-4 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] focus:outline-0" data-toggle="modal" data-target="#email-confirm">Create
                                         Your
                                         Profile</button>
                                 </form>
@@ -118,4 +118,28 @@
 
 <script setup></script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+::-webkit-scrollbar {
+width: 8px;
+background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // background-color: #00acea;
+}
+::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+       border-radius: 10px;
+    background-color: #F5F5F5;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00acea;
+    border-radius: 10px; 
+    
+}
+
+</style>

@@ -283,6 +283,8 @@
             </div>
         </div>
     </section>
+    <PublicUINewsLatter />
+
     </div>
 </template>
 

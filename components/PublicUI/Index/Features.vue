@@ -29,7 +29,7 @@
             </div>
             <div class="relative">
                 <div
-                    class="absolute w-[46%] max-lg:relative max-lg:mb-24 h-full bg-[#5650ce] bg-[url('https://images.pexels.com/photos/935789/pexels-photo-935789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center rounded-[0px_30px_30px_0px] left-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(86,80,206,0.7)] before:rounded-[0px_30px_30px_0px] before:left-0">
+                    class="absolute w-[45%] max-lg:relative max-lg:mb-24 h-[32rem] mt-[3.5rem]  bg-[#5650ce] bg-[url('https://images.pexels.com/photos/935789/pexels-photo-935789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center rounded-[0px_30px_30px_0px] left-0 before:absolute before:content-[''] before:w-full before:h-full before:bg-[rgba(86,80,206,0.7)] before:rounded-[0px_30px_30px_0px] before:left-0">
                     <div
                         class="absolute w-60 h-60 bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] text-center -translate-y-2/4 right-[-120px] rounded-[50%] top-2/4 before:absolute before:content-[''] before:w-[260px] before:h-[260px] before:bg-[rgba(222,41,139,0.2)] before:z-[-1] before:rounded-[50%] before:-left-2.5 before:-top-2.5">
                         <div class="mt-[26%]">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div
-                    class=" w-full max-lg:pt-24 mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
+                    class=" w-full max-lg:pt-24 mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4 ">
                     <div class="flex flex-wrap  justify-end">
                         <div class="lg:w-2/5 max-lg:w-full pr-4 pl-4">
                             <div class="pt-[50px] pb-[42px] px-0">

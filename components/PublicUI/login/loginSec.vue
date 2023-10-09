@@ -9,8 +9,8 @@
                             <NuxtLink to="/" class="absolute z-10  text-white max-lg:text-black max-lg:dark:text-white px-0 py-[15px] hover:underline"><i class="fas fa-chevron-left  mr-[5px]"></i> Back to GSL</NuxtLink>
                         </div>
                         <div class="lg:w-3/5  max-lg:mt-10  pr-4 pl-4 ">
-                            <div class="block text-left px-0 py-[15px]">
-                                <img src="@/assets/frontend/images/logo/logo1.png" class="inline-block h-10" alt="logo">
+                            <div class="block text-left px-0 ">
+                                <img src="@/assets/frontend/images/logo/logo-blue.png" class="inline-block  h-[3.2rem] mt-3" alt="logo">
                             </div>
                         </div>
                     </div>

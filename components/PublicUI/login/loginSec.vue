@@ -1,15 +1,16 @@
 <template>
     <div >
         <section class="relative h-screen w-full">
-            <div>
-                <div class="w-full mx-auto px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px]  sm:px-4">
-                    <div class="flex flex-wrap ">
-                        <div class="lg:w-2/5 pr-4 pl-4">
+            <div >
+                <!-- sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] -->
+                <div class="w-full mx-auto px-[15px]   sm:px-4 ">
+                    <div class="flex flex-wrap  ">
+                        <div class="lg:w-2/5 pr-4 ">
                             <NuxtLink to="/" class="absolute z-10  text-white max-lg:text-black max-lg:dark:text-white px-0 py-[15px] hover:underline"><i class="fas fa-chevron-left  mr-[5px]"></i> Back to GSL</NuxtLink>
                         </div>
                         <div class="lg:w-3/5  max-lg:mt-10  pr-4 pl-4 ">
-                            <div class="block text-left px-0 py-[15px]">
-                                <img src="@/assets/frontend/images/logo/logo1.png" class="inline-block h-10" alt="logo">
+                            <div class="block text-left px-0 ">
+                                <img src="@/assets/frontend/images/logo/logo-blue.png" class="inline-block  h-[3.2rem] mt-3" alt="logo">
                             </div>
                         </div>
                     </div>
@@ -20,8 +21,8 @@
                     <div class="bg-[url(@/assets/frontend/images/log.jpg)] max-lg:hidden bg-no-repeat bg-center bg-cover h-screen w-2/5 absolute left-0 top-0">
                     </div>
                     <div class="lg:w-3/5 max-lg:w-full pr-4 pl-4 ">
-                        <div class="h-[calc(100vh_-_72px)] overflow-y-auto pb-10">
-                            <div class="text-center mb-[30px] pt-20">
+                        <div class="h-[calc(100vh_-_72px)] overflow-y-auto pb-10 login_form pr-3">
+                            <div class="text-center mb-[30px] pt-24">
                                 <h2 class="text-[28px] dark:text-white leading-[38px] capitalize">
                                     Welcome to GSL
                                 </h2>
@@ -40,7 +41,7 @@
                                         Forgot your password? <a href="#" class="text-[#3b368c] font-semibold hover:underline">recover password</a>
                                     </p>
                                     <div class="block text-center">
-                                        <button type="submit" class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">Sign IN</button>
+                                        <button type="submit" class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)] my-8">Sign IN</button>
                                     </div>
                                     <div class="text-base font-bold text-[#3b368c] block text-center relative w-full mt-10 mb-4 before:absolute before:content-[''] before:h-px before:w-full before:bg-[#dddce7] before:-translate-y-2/4 before:z-[-1] before:left-0 before:top-2/4">
                                         <p class="inline-block mb-0 px-[15px] py-0">OR</p>
@@ -69,4 +70,28 @@
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+.login_form::-webkit-scrollbar {
+width: 8px;
+background-color: #F5F5F5;
+}
+.login_form::-webkit-scrollbar-track{
+    border-radius: 10px; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // background-color: #00acea;
+}
+.login_fo::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+       border-radius: 10px;
+    background-color: #F5F5F5;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00acea;
+    border-radius: 10px; 
+    
+}
+
+</style>

@@ -4,8 +4,8 @@
             <div
                 class=" w-full px-[15px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1170px] mx-auto sm:px-4">
                 <div class="flex flex-wrap ">
-                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8">
-                        <div class="text-center dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
+                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8 " data-aos="fade-up" data-aos-duration="1000">
+                        <div class="text-center bg-white dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
                             data-wow-delay="0.1s">
                             <div class="flex justify-center items-center">
                                 <img src="@/assets/frontend/images/feature/icon01.png" class="h-[90px] mb-[30px]" alt="">
@@ -15,8 +15,8 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8">
-                        <div class="text-center dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
+                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="text-center  bg-white dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
                             data-wow-delay="0.2s">
                             <div class="items-center flex justify-center">
                                 <img src="@/assets/frontend/images/feature/icon02.png" class="h-[90px] mb-[30px]" alt="">
@@ -26,8 +26,8 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8">
-                        <div class="text-center dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
+                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="text-center  bg-white dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
                             data-wow-delay="0.3s">
                             <div class="items-center flex justify-center">
                                 <img src="@/assets/frontend/images/feature/icon03.png" class="h-[90px] mb-[30px]" alt="">
@@ -37,8 +37,8 @@
                             </h4>
                         </div>
                     </div>
-                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8">
-                        <div class="text-center dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
+                    <div class="w-1/4 max-lg:w-full pr-4 pl-4 mb-8" data-aos="fade-up" data-aos-duration="1600">
+                        <div class="text-center  bg-white dark:bg-[#262950] transition-all duration-[ease] delay-[0.3s] pt-[30px] pb-[25px] px-5 rounded-[20px] hover:shadow-[0px_5px_30px_0px_rgba(176,171,193,0.4)]"
                             data-wow-delay="0.4s">
                             <div class="items-center flex justify-center">
                                 <img src="@/assets/frontend/images/feature/icon04.png" class="h-[90px] mb-[30px]" alt="">

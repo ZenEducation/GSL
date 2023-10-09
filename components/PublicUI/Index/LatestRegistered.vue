@@ -9,18 +9,19 @@
                     <div class="xl:w-1/2 max-xl:w-full pr-4 pl-4">
                         <div class="relative z-[3] pl-[36%] max-xl:pl-6  pr-[200px] max-xl:pr-10 ">
                             <div class="text-left mb-[36px]">
-                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]">
+                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]"  data-aos="fade-up" data-aos-duration="1000">
                                     Latest Registered
                                 </h6>
-                                <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                                <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]"  data-aos="fade-up" data-aos-duration="1000">
                                     Members
                                 </h2>
-                                <p class="inline-block text-[#333333]">
+                                <p class="inline-block text-[#333333]"  data-aos="fade-up" data-aos-duration="1000">
                                     if you have been looking for the someone special of your life for long, then your search
                                     ends here
                                 </p>
                             </div>
                             <NuxtLink to="#"
+                            data-aos="fade-up" data-aos-duration="1000"
                                 class=" no-underline bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">
                                 Join Now !</NuxtLink>
                         </div>
@@ -29,10 +30,10 @@
                         
                         <div class=" h-[250px] m-auto overflow-hidden relative w-auto">
                             <div class="animate-[scroll_50s_linear_infinite]  w-[calc(250px_*_14)] mt-20 flex ">
-                                <div style="display: flex;" class=" owl-carousel flex gap-5 ">
+                                <div style="display: flex;" class=" owl-carousel flex gap-10 ">
                                     <div class="text-center">
                                         <div class="relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p1.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p1.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -48,7 +49,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p2.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p2.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -64,7 +65,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p3.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p3.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -80,7 +81,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p4.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p4.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -96,7 +97,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p5.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p5.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -112,7 +113,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p1.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p2.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -128,7 +129,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p1.png"
+                                            <img src="https://picsum.photos/200/200"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -144,7 +145,7 @@
                                     </div>
                                     <div class="text-center">
                                         <div class="relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p1.png"
+                                            <img src="https://picsum.photos/200/200"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -160,7 +161,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p2.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p1.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -176,7 +177,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p3.png"
+                                            <img src="https://picsum.photos/200/200"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -192,7 +193,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p4.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p5.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -208,7 +209,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p5.png"
+                                            <img src="https://picsum.photos/200/200"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -224,7 +225,7 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p1.png"
+                                            <img src="https://picsum.photos/200/200"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -240,7 +241,23 @@
                                     </div>
                                     <div class=" text-center">
                                         <div class=" relative mb-[30px]">
-                                            <img src="@/assets/frontend/images/registered/p1.png"
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p4.png"
+                                                class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <h4
+                                                class=" text-xl leading-[34px] font-semibold text-white uppercase mb-[15px]">
+                                                Dana Miles
+                                            </h4>
+                                            <p class="text-[#ff3366]">
+                                                25 Years Old
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class=" text-center">
+                                        <div class=" relative mb-[30px]">
+                                            <img src="https://pixner.net/peyamba/peyamba/assets/images/registered/p4.png"
                                                 class="w-[120px] h-[120px] inline-block rounded-[50%] border-[5px] border-solid border-white"
                                                 alt="">
                                         </div>
@@ -268,7 +285,8 @@
 
 </script>
 
-<style>
+<style lang="scss" >
+
 @keyframes scroll {
   0% {
     transform: translateX(0);

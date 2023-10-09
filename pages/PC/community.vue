@@ -2,7 +2,7 @@
     <div class=" dark:text-[white] dark:bg-[#202342]">
         <PublicUINavbar />
         <Breadcrumb title="Community" />
-        <commusection />
+        <commusection class="mt-[7.5rem]" />
         <PublicUINewsLatter />
 
     </div>

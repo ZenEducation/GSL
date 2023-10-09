@@ -10,12 +10,14 @@
                     <div class="lg:w-1/2 pr-4 pl-4">
                         <div>
                             <div class="text-left mb-[18px]">
-                                <h2 class=" text-white text-[50px] leading-[60px] font-bold block mb-[11px]">
+                                <h2 class=" text-white text-[50px] leading-[60px] font-bold block mb-[11px]" data-aos="fade-up" data-aos-duration="1000">
                                     Best Ways to Find Your True Sole Mate
                                 </h2>
                             </div>
 
-                            <NuxtLink to="#"
+                            <NuxtLink
+                            data-aos="fade-up" data-aos-duration="1000"
+                            to="#"
                                 class="relative no-underline bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]">
                                 Join Now !</NuxtLink>
                         </div>

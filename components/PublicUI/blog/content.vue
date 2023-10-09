@@ -7,7 +7,7 @@
                     <div class="lg:w-2/3">
                         <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px]  rounded-[20px]"
                             v-for="blog in data" :key=blog.id>
-                            <NuxtLink :to="'/blog/' + blog.link" class="w-full">
+                            <NuxtLink :to="'/PC/blog/' + blog.link" class="w-full">
                                 <img :src="blog.image" class="w-full" alt="">
                             </NuxtLink>
                             <div class="content flex pt-[30px] pb-[19px] px-[30px]">
@@ -39,7 +39,7 @@
                                         December 19, 2021
                                     </p>
                                     <div>
-                                        <NuxtLink :to="'/blog/' + blog.link">
+                                        <NuxtLink :to="'/PC/blog/' + blog.link">
                                             <h4
                                                 class=" dark:text-[white] text-[28px] leading-[38px] font-bold mb-[13px] pt-3">
                                                 {{ blog.title }}
@@ -111,8 +111,9 @@
                                     class="text-sm mb-[30px] bg-transparent dark:text-[white] pl-0 rounded-none dark:border-b-[rgba(256,256,256,0.15)] border-b-[rgba(0,0,0,0.15)] border-t-0 border-l-0 border-r-0 border-b border-b-solid focus:border-0 active:border-0 target:border-0 placeholder-[rgb(76,88,143)]"
                                     required>
                                 <button type="submit"
-                                    class="w-auto min-w-[130px] h-10 rounded-[20px] border-2 dark:text-[white] text-black outline-none"><i
-                                        class="fa fa-search mr-[5px]"></i>Search</button>
+                                    class="w-auto min-w-[130px] h-10 rounded-[20px]  dark:text-[white] border-none text-white outline-none search_btn">
+                                    <i
+                                        class="fa fa-search mr-[5px] normal_icon"></i>Search</button>
                             </form>
                         </div>
                         <div
@@ -172,39 +173,22 @@
                         </div>
                         <div
                             class="relative mb-8 pt-[31px] pb-[21px] px-[30px] bg-white dark:bg-[#262950] shadow-[0px_5px_20px_0px_rgba(78,64,128,0.1)] py-[30px] rounded-[20px]">
-                            <h5 class="dark:text-[white]">latest post</h5>
-                            <div class="flex flex-wrap py-2">
-                                <span
-                                    class="  hover:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] block w-5 h-5 leading-5 text-center cursor-pointer text-[10px] bg-[#fafbff] shadow-[0px_2px_5px_0px_rgba(0,18,50,0.2)] text-[#333333] dark:text-[white]  transition-all duration-[ease] delay-[0.3s] rounded-[50%]">&lt;</span>
-                                <span
-                                    class="text-white bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] block w-5 h-5 leading-5 text-center cursor-pointer text-[10px] bg-[#fafbff] shadow-[0px_2px_5px_0px_rgba(0,18,50,0.2)] transition-all duration-[ease] delay-[0.3s] rounded-[50%]">></span>
-                            </div>
-                            <div style="display: block;" class="owl-carousel owl-theme">
-                                <div>
-                                    <div class="overflow-hidden mb-[25px] rounded-xl">
-                                        <NuxtLink to="#" class=" block no-underline">
-                                            <img src="@/assets/frontend/images/blog/resent-post.png" class=" w-full"
-                                                alt="blog">
-                                        </NuxtLink>
-                                    </div>
-                                    <div>
-                                        <h6 class="text-lg dark:text-[white] mb-[7px]">
-                                            <NuxtLink to="#"
-                                                class="overflow-hidden dark:text-[white]  text-ellipsis no-underline">How to
-                                                Start, Plan, and Keep a
-                                                Date Night</NuxtLink>
-                                        </h6>
-                                        <div class="flex flex-wrap text-sm">
-                                            <NuxtLink to="#" class="mr-4 text-[#333333] dark:text-[white] "><i
-                                                    class="fas fa-user bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] mr-[5px]"></i>Admin
-                                            </NuxtLink>
-                                            <NuxtLink to="#" class="text-[#333333] dark:text-[white] "> <i
-                                                    class="far fa-comments bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] mr-[5px]"></i>
-                                                Comments</NuxtLink>
-                                        </div>
-                                    </div>
+                            
+                          
+                            <div style="display: block;" class="owl-carousel owl-theme h-[21rem]">
+                              
+                                    <div class="overflow-hidden mb-[25px] ">
+                                      
+                                       
+                                <image-slider />
+                        
+                                   
+                               
                                 </div>
                             </div>
+                      
+                           
+
                         </div>
                         <div
                             class=" mb-8 pt-8 pb-[30px] px-[30px] bg-white dark:bg-[#262950] shadow-[0px_5px_20px_0px_rgba(78,64,128,0.1)] py-[30px] rounded-[20px]">
@@ -214,8 +198,10 @@
                                     class="text-sm mb-[30px] pl-0  bg-transparent dark:text-[white]  rounded-none dark:border-b-[rgba(256,256,256,0.15)] border-b-[rgba(0,0,0,0.15)] border-t-0 border-l-0 border-r-0 border-b border-b-solid focus:border-0 active:border-0 target:border-0 placeholder-[rgb(76,88,143)]"
                                     required>
                                 <button type="submit"
-                                    class="w-auto min-w-[130px] h-10 rounded-[20px] dark:text-[white] border-2 text-black outline-none"><i
-                                        class="fa fa-search mr-[5px]"></i>Send</button>
+                                    class="w-auto min-w-[130px] h-10 rounded-[20px] dark:text-[white] border-0 text-white outline-none search_btn">
+                                    <i class="fa fa-envelope normal_icon mr-1" aria-hidden="true"></i>
+
+Send</button>
                             </form>
                         </div>
                         <div
@@ -264,7 +250,7 @@ import img4 from '@/assets/frontend/images/blog/blogs/04.jpg'
 import img5 from '@/assets/frontend/images/blog/blogs/05.jpg'
 import img6 from '@/assets/frontend/images/blog/blogs/06.jpg'
 import img7 from '@/assets/frontend/images/blog/blogs/07.jpg'
-
+import ImageSlider from '@/components/PublicUI/blog/ImageSlider'
 const data = [
     {
         id: 1,
@@ -325,6 +311,14 @@ const data = [
 i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+    background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+}
+.normal_icon{
+    background-image: -o-linear-gradient(284deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(166deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);  
+}
+.search_btn{
     background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
     background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
 }

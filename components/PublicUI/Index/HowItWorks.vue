@@ -12,13 +12,17 @@
                     <div class="lg:w-1/2 pr-4 pl-4">
                         <div>
                             <div class="text-center mb-[57px]">
-                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]">
+                                <h6 class="text-[#5650ce] block text-2xl leading-[34px] font-semibold mb-[30px]" 
+                                data-aos="fade-up" data-aos-duration="1000"
+                                >
                                     Meet New People Today!
                                 </h6>
-                                <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]">
+                                <h2 class="text-[50px] leading-[60px] font-bold block text-[#292929] mb-[11px]" 
+                                data-aos="fade-up" data-aos-duration="1000"
+                                >
                                     How Does It Work?
                                 </h2>
-                                <p class="inline-block text-[#333333]">
+                                <p class="inline-block text-[#333333]" data-aos="fade-up" data-aos-duration="1000" >
                                     You’re just 3 steps away from a great date
                                 </p>
                             </div>
@@ -26,7 +30,7 @@
                     </div>
                 </div>
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-1/3 md:w-1/2 max-md:w-full mb-12 pr-4 pl-4">
+                    <div class="lg:w-1/3 md:w-1/2 max-md:w-full mb-12 pr-4 pl-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class=" bg-white dark:bg-[#262950] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
                             data-wow-delay="0.1s">
                             <div class=" relative inline-block mb-[34px]">
@@ -44,7 +48,7 @@
                                 Join Now !</NuxtLink>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 max-md:w-full mb-12  md:w-1/2 pr-4 pl-4">
+                    <div class="lg:w-1/3 max-md:w-full mb-12  md:w-1/2 pr-4 pl-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class=" bg-white dark:bg-[#262950] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
                             data-wow-delay="0.2s">
                             <div class=" relative inline-block mb-[34px]">
@@ -62,7 +66,7 @@
                                 Join Now !</NuxtLink>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 max-md:w-full mb-12  md:w-1/2 pr-4 pl-4">
+                    <div class="lg:w-1/3 max-md:w-full mb-12  md:w-1/2 pr-4 pl-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class=" bg-white dark:bg-[#262950] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] text-center transition-all duration-[ease] delay-[0.3s] px-[30px] py-10 rounded-[20px] hover:translate-y-[-5px]"
                             data-wow-delay="0.3s">
                             <div class=" relative inline-block mb-[34px]">

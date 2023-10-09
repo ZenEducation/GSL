@@ -1,9 +1,9 @@
 <template>
   <div class=" dark:text-[white] dark:bg-[#202342]">
 
-    <PublicUINavbar/>
+    <PublicUINavbar   />
     <PublicUIIndexBanner/>
-    <PublicUIIndexFeature/>
+    <PublicUIIndexFeature />
     <PublicUIIndexFlirting/>
     <PublicUIIndexHowItWorks/>
     <PublicUIIndexStatistics/>

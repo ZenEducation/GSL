@@ -33,8 +33,11 @@
     "@mdi/js": "^7.0.96",
     "@rollup/plugin-inject": "^5.0.2",
     "@rollup/plugin-terser": "^0.2.0",
+    "aos": "^2.3.4",
     "aws-amplify": "^5.0.5",
+    "count-animation-vue": "^1.0.2",
     "jquery": "^3.6.4",
+    "number-flip-animation": "^1.1.1",
     "numeral": "^2.0.6",
     "owl.carousel": "^2.3.4",
     "paper": "^0.12.17",
@@ -44,6 +47,6 @@
     "tw-elements": "^1.0.0-beta2",
     "uuid4": "^2.0.3",
     "vue": "^3.2.33",
-    "vue-number-animation": "^1.1.2"
+    "vue3-carousel": "^0.3.1"
   }
 }

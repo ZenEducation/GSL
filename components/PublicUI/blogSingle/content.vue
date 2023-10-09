@@ -6,7 +6,7 @@
                 <div class="lg:w-2/3 pr-4 pl-4">
                     <div class="overflow-hidden bg-white dark:bg-[#262950] mb-[30px] rounded-[20px]">
                         <div>
-                            <img src="@/assets/frontend/images/blog/blog1.png" class="w-full" alt="">
+                            <img src="https://pixner.net/peyamba/peyamba/assets/images/blog/blog2.png" class="w-full" alt="">
                         </div>
                         <div class="content flex pt-[30px] pb-[19px] px-[30px]">
                             <div class="w-10 mr-[30px]">
@@ -95,7 +95,7 @@
                     <div class="bg-white dark:bg-[#262950] shadow-[0px_10px_5px_0px_rgba(119,123,146,0.02)] p-[30px] rounded-[10px] sm:flex ">
                         <div class="min-w-[100px] w-[100px] h-[100px] border p-[5px] rounded-[50%] border-solid border-[rgba(0,0,0,0.1)]">
                             <NuxtLink to="#" class="block overflow-hidden rounded-[50%]">
-                                <img src="@/assets/frontend/images/blog/blog-admin-big.png" class="w-full" alt="blog">
+                                <img src="https://pixner.net/peyamba/peyamba/assets/images/blog/blog-admin-big.png" class="w-full" alt="blog">
                             </NuxtLink>
                         </div>
                         <div class=" pl-[30px]">
@@ -109,16 +109,16 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mt-10 md:mt-[50px] min-[992px]:mt-20">
+                    <div class="mt-10 md:mt-[50px] min-[992px]:mt-20 pt-[5rem]">
                         <h5 class="uppercase   dark:text-[white] text-[22px] pb-[15px] min-[576px]:test-[28px]">comments</h5>
-                        <ul>
-                            <li class="px-0 py-[21px]  dark:border-t-[rgba(256,256,256,0.155)]  border-t-[rgba(0,0,0,0.1)] border-t border-solid sm:flex" v-for="index in 3" key="index">
-                                <div class=" sm:min-w-min">
+                        <ul class="">
+                            <li class="px-0 py-[21px]  dark:border-t-[rgba(256,256,256,0.155)]  border-t-[rgba(0,0,0,0.1)] border-t border-solid sm:flex" v-for="index in 3" :key="index">
+                                <div class=" sm:min-w-min flex items-center">
 
                                     <div class="ml-[30px] w-[65px] h-[65px] border p-[5px] flex justify-center rounded-[50%] border-solid border-[rgba(0,0,0,0.15)] ">
                                         <div>
                                             <NuxtLink to="#" class="block overflow-hidden rounded-[50%]">
-                                                <img src="@/assets/frontend/images/blog/comment-1.png" class="w-full" alt="blog">
+                                                <img src="https://pixner.net/peyamba/peyamba/assets/images/blog/comment-1.png" class="w-full" alt="blog">
                                             </NuxtLink>
                                         </div>
                                     </div>
@@ -139,15 +139,16 @@
                             <h5 class="uppercase  dark:text-[white] text-[22px] pb-[15px] min-[576px]:text-[28px]">leave comment</h5>
                             <form>
                                 <div class="mb-4">
-                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white  dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 rounded" placeholder="Enter Your Full Name" required>
+                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white  dark:bg-transparent dark:text-[white] text-gray-800    border_botton" placeholder="Enter Your Full Name" required>
+                                </div>
+                              
+                                <div class="mb-4">
+                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 " placeholder="Enter Your Email Address" required>
                                 </div>
                                 <div class="mb-4">
-                                    <input type="text" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 rounded" placeholder="Enter Your Email Address" required>
+                                    <textarea placeholder="Write A Message" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-transparent dark:text-[white] text-gray-800  border-gray-200 " required></textarea>
                                 </div>
-                                <div class="mb-4">
-                                    <textarea placeholder="Write A Message" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-transparent dark:text-[white] text-gray-800 border border-gray-200 rounded" required></textarea>
-                                </div>
-                                <div class="mb-4">
+                                <div class="mb-4 pt-4 ">
                                     <button class="bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.3)] font-semibold text-white inline-block cursor-pointer w-auto h-auto px-[35px] py-[11px] rounded-[50px] border-0 hover:text-white hover:shadow-[1px_10px_20px_0px_rgba(12,78,165,0.43)]" type="submit">Submit Now</button>
                                 </div>
                             </form>
@@ -164,8 +165,8 @@
                                 class="text-sm mb-[30px] bg-transparent dark:text-[white] pl-0 rounded-none dark:border-b-[rgba(256,256,256,0.15)] border-b-[rgba(0,0,0,0.15)] border-t-0 border-l-0 border-r-0 border-b border-b-solid focus:border-0 active:border-0 target:border-0 placeholder-[rgb(76,88,143)]"
                                 required>
                             <button type="submit"
-                                class="w-auto min-w-[130px] h-10 rounded-[20px] border-2 dark:text-[white] text-black outline-none"><i
-                                    class="fa fa-search mr-[5px]"></i>Search</button>
+                                class="w-auto min-w-[130px] h-10 rounded-[20px] border-none dark:text-[white] text-white outline-none search_btn"><i
+                                    class="fa fa-search mr-[5px] normal_icon"></i>Search</button>
                         </form>
                     </div>
                     <div
@@ -218,37 +219,11 @@
                     </div>
                     <div
                         class="relative mb-8 pt-[31px] pb-[21px] px-[30px] bg-white dark:bg-[#262950] shadow-[0px_5px_20px_0px_rgba(78,64,128,0.1)] py-[30px] rounded-[20px]">
-                        <h5 class="dark:text-[white]">latest post</h5>
-                        <div class="flex flex-wrap py-2">
-                            <span
-                                class="  hover:text-white hover:bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] hover:bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] block w-5 h-5 leading-5 text-center cursor-pointer text-[10px] bg-[#fafbff] shadow-[0px_2px_5px_0px_rgba(0,18,50,0.2)] text-[#333333] dark:text-[white]  transition-all duration-[ease] delay-[0.3s] rounded-[50%]">&lt;</span>
-                            <span
-                                class="text-white bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] block w-5 h-5 leading-5 text-center cursor-pointer text-[10px] bg-[#fafbff] shadow-[0px_2px_5px_0px_rgba(0,18,50,0.2)] transition-all duration-[ease] delay-[0.3s] rounded-[50%]">></span>
+                        <div style="display: block;" class="owl-carousel owl-theme h-[21rem]">
+                              
+                              <div class="overflow-hidden mb-[25px] ">
+                        <image-slider />
                         </div>
-                        <div style="display: block;" class="owl-carousel owl-theme">
-                            <div>
-                                <div class="overflow-hidden mb-[25px] rounded-xl">
-                                    <NuxtLink to="#" class=" block no-underline">
-                                        <img src="@/assets/frontend/images/blog/resent-post.png" class=" w-full"
-                                            alt="blog">
-                                    </NuxtLink>
-                                </div>
-                                <div>
-                                    <h6 class="text-lg dark:text-[white] mb-[7px]">
-                                        <NuxtLink to="#" class="overflow-hidden dark:text-[white]  text-ellipsis no-underline">How to
-                                            Start, Plan, and Keep a
-                                            Date Night</NuxtLink>
-                                    </h6>
-                                    <div class="flex flex-wrap text-sm">
-                                        <NuxtLink to="#" class="mr-4 text-[#333333] dark:text-[white] "><i
-                                                class="fas fa-user bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] mr-[5px]"></i>Admin
-                                        </NuxtLink>
-                                        <NuxtLink to="#" class="text-[#333333] dark:text-[white] "> <i
-                                                class="far fa-comments bg-[-o-linear-gradient(284deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] bg-[linear-gradient(166deg,rgb(242,40,118)_0%,rgb(148,45,217)_100%)] mr-[5px]"></i>
-                                            Comments</NuxtLink>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div
@@ -259,8 +234,8 @@
                                 class="text-sm mb-[30px] pl-0  bg-transparent dark:text-[white]  rounded-none dark:border-b-[rgba(256,256,256,0.15)] border-b-[rgba(0,0,0,0.15)] border-t-0 border-l-0 border-r-0 border-b border-b-solid focus:border-0 active:border-0 target:border-0 placeholder-[rgb(76,88,143)]"
                                 required>
                             <button type="submit"
-                                class="w-auto min-w-[130px] h-10 rounded-[20px] dark:text-[white] border-2 text-black outline-none"><i
-                                    class="fa fa-search mr-[5px]"></i>Send</button>
+                                class="w-auto min-w-[130px] h-10 rounded-[20px] dark:text-[white] border-0 text-white outline-none search_btn">
+                                <i class="fa fa-envelope normal_icon mr-2" aria-hidden="true"></i>Send</button>
                         </form>
                     </div>
                     <div
@@ -302,6 +277,7 @@
 </template>
 
 <script setup>
+import ImageSlider from '@/components/PublicUI/blog/ImageSlider'
 
 </script>
 
@@ -311,4 +287,35 @@ i {
     -webkit-text-fill-color: transparent;
     background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
     background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
-}</style>
+}
+
+.normal_icon{
+    background-image: -o-linear-gradient(284deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(166deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);  
+}
+.search_btn{
+    background-image: -o-linear-gradient(284deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+    background-image: linear-gradient(166deg, rgb(242, 40, 118) 0%, rgb(148, 45, 217) 100%);
+}
+
+input,textarea{
+    border:none !important;
+    border-bottom:1px solid gray !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+input:focus{
+    border:none !important;
+    border-color: rgb(238, 145, 5) !important;
+ 
+}
+input:hover,textarea:hover{
+    border-color: rgb(238, 145, 5) !important;
+
+}
+
+
+
+
+
+</style>

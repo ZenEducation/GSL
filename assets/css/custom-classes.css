@@ -1139,14 +1139,14 @@ input:focus {
 
 .mian-menu ul > li.menu-item-has-children:hover > ul, .mian-menu ul > li.menu-item-has-children:hover > .mega-menu {
   visibility: visible;
-  top: 105%;
+  top: 10%;
   opacity: 1;
 }
 
 .mian-menu ul ul li.menu-item-has-children:hover > ul {
-  visibility: visible;
-  top: 20px;
-  opacity: 1;
+  /* visibility: visible; */
+  /* top: 20px;
+  opacity: 1; */
 }
 
 .active-price span {

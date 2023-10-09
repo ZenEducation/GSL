@@ -21,60 +21,61 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap ">
-                    <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4 mt-8">
+                <div class="flex flex-wrap  h-auto">
+                    <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4 mt-8 h-full">
                         <div
                             class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)]">
                             <div class="relative inline-block mb-8">
                                 <img src="@/assets/frontend/images/e-c-u/icon1.png" alt="">
                             </div>
                             <h4 class="text-2xl dark:text-[white] leading-[34px] font-bold mb-[19px]">
-                                Dating
+                                Advanced Matching Algorithm 
                             </h4>
                             <p>
-                                Dating - Where two people who are attracted to each other spend time together.
+                                Our cutting-edge matching algorithm takes into account your interests, values, and preferences, ensuring that you are introduced to like-minded individuals who share your outlook on life and love.
                             </p>
                         </div>
                     </div>
-                    <div class="lg:w-1/4  md:w-1/2 pr-4 pl-4 mt-7">
+                    <div class="lg:w-1/4  md:w-1/2 pr-4 pl-4 mt-7  ">
                         <div
-                            class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)]">
+                            class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)] h-full">
                             <div class="relative inline-block mb-8">
                                 <img src="@/assets/frontend/images/e-c-u/icon2.png" alt="">
                             </div>
                             <h4 class="text-2xl dark:text-[white] leading-[34px] font-bold mb-[19px]">
-                                Great Advices
-                            </h4>
+                                Safe and Secure                            </h4>
                             <p>
-                                Dating - Where two people who are attracted to each other spend time together.
+                                Your safety is our top priority. We employ robust security measures to protect your personal information, ensuring a worry-free experience while you focus on building connections.
                             </p>
                         </div>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4 mt-8">
                         <div
-                            class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)]">
+                            class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)] h-full">
                             <div class="relative inline-block mb-8">
                                 <img src="@/assets/frontend/images/e-c-u/icon3.png" alt="">
                             </div>
                             <h4 class="text-2xl dark:text-[white] leading-[34px] font-bold mb-[19px]">
-                                24/7Support
+                                Diverse Community
                             </h4>
                             <p>
-                                Dating - Where two people who are attracted to each other spend time together.
+                                 GetSetLove embraces diversity and welcomes members from all backgrounds and orientations. We celebrate uniqueness and believe that love knows no boundaries.
+
                             </p>
                         </div>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 pr-4 pl-4 mt-8">
                         <div
-                            class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)]">
+                            class="bg-white dark:bg-[#202342] text text-center transition-all duration-[ease] delay-[0.3s] pt-10 pb-5 px-[30px] rounded-[10px] hover:translate-y-[-5px] hover:shadow-[0.872px_9.962px_20px_0px_rgba(12,78,165,0.1)] h-full">
                             <div class="relative inline-block mb-8">
                                 <img src="@/assets/frontend/images/e-c-u/icon4.png" alt="">
                             </div>
                             <h4 class="text-2xl dark:text-[white] leading-[34px] font-bold mb-[19px]">
-                                Relationship
+                                Genuine Profiles 
                             </h4>
                             <p>
-                                Dating - Where two people who are attracted to each other spend time together.
+                                Say goodbye to fake profiles and catfishing. Our dedicated team verifies each profile to maintain a genuine and authentic community of members.
+
                             </p>
                         </div>
                     </div>
